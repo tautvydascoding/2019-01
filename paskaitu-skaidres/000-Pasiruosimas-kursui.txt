@@ -1,4 +1,4 @@
- Sveiki,
+﻿ Sveiki,
 
 Užduotis 1)
 susirasyti i komputeri programas kaip: GoogleChrome (narsykle), Atom arba Visual Studio Code (programavimo redaktorius),
@@ -19,4 +19,5 @@ beautify // ivykdo ctrl + ALT + B
 color-picker // ijungimas ctrl + Alt + C
 jQuery-snippets
 jquery
+
 Files->Packages -> autosave -> settings -> varnele uzdeti
