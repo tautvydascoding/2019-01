@@ -1,4 +1,4 @@
-Parsisiusti: GoogleChrome
+﻿Parsisiusti: GoogleChrome
 
 Parsisiusti: Atom
 Isirasyti iskiepius: Atom -> FIle ->settings ->install
@@ -58,6 +58,9 @@ git config --global core.editor "vim"
 // John Doe - jusu username is www.GIThub.com puslapio
 git config --global user.name "tautvydascoding"
 git config --global user.name "tautvydascoding@gmail.com"
+
+// gal komanda ir tokia
+git config --global user.password "xxxxx"
  
 
 Kad neprasytu passwordo per git bash terminala:
