@@ -1,0 +1,64 @@
+.red{
+  color: #A93226;
+}
+.violet{
+  color: #8E44AD;
+}
+.blue{
+  color: #3498DB;
+}
+.mint{
+  color: #A3E4D7;
+}
+.green{
+  color: #28B463;
+}
+.yellow{
+  color: #F1C40F;
+}
+.orange{
+  color: #E67E22;
+}
+.grey{
+  color: #A6ACAF;
+}
+.pink{
+  color: #F1948A;
+}
+.darkblue{
+  color: #34495E;
+}
+.fonas_raudonas{
+  background-color: red;
+}
+.fonas_zalias{
+  background-color: green;
+}
+.fonas_melynas{
+  background-color: blue;
+}
+.fonas_geltonas{
+  background-color: yellow;
+}
+.fonas_rozinis{
+  background-color: pink;
+}
+.fonas_zydras{
+  background-color: skyblue;
+}
+.fonas_metinis{
+  background-color: lightgreen;
+}
+.fonas_smelinis{
+  background-color: beige;
+}
+.fonas_pilkas{
+  background-color: lightgrey;
+}
+.fonas_traudonas{
+  background-color: darkred;
+}
+
+article {
+  border: solid 2px #333;
+}
