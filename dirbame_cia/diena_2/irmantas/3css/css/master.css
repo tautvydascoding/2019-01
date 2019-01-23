@@ -1,0 +1,29 @@
+h1 {
+  color: red;
+}
+
+div h1 {
+  color: green;
+}
+
+.remelis1 {
+  border: solid 2px black;
+  border-radius: 1px;
+}
+
+.remelis2 {
+  border: solid 2px red;
+
+}
+h2, h3 {
+  font-size: 32px;
+}
+
+p {
+  font-family: fantasy;
+  font-size: 12px;
+}
+
+p.aaa {
+  font-family: monospace;
+}

@@ -1,0 +1,39 @@
+* {
+  background-color: rgb(98, 100, 88);
+}
+
+h1 {
+  color: red;
+  margin-bottom: 50px;
+}
+
+table {
+  background-color: blue;
+  color: red;
+  width: auto;
+  height: 100px;
+}
+
+.a {
+  background-color: green;
+
+}
+td {
+  text-align: center;
+}
+
+.b {
+  text-align: left;
+}
+
+#ar {
+  text-align: right;
+}
+
+.fonas-geltonas {
+  background-color: yellow;
+}
+
+#reklama1 {
+  border: solid 2px black;
+}
