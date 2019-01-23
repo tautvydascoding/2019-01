@@ -1,0 +1,14 @@
+h1 {
+  color: red;
+}
+.fonas-geltonas {
+  background-color: yellow;
+}
+.prekes-antraste {
+  background-color: green;
+  font-size: 14px;
+  width: 50%;
+}
+#reklama1 {
+  border: solid 3px red;
+  }

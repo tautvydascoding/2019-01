@@ -1,0 +1,27 @@
+div h2.spalva{
+  color: red;
+}
+
+.fonas.remelis{
+  border: solid 3px green;
+  background-color: yellow;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  color: orange;
+}
+
+#fonas{
+  background-color: blue;
+}
+
+.sriftas{
+  font-style: italic;
+  font-family: sans-serif;
+  font-size: 30px
+}

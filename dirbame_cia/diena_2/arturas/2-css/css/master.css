@@ -1,0 +1,22 @@
+h1 {
+  color: red;
+  background-color: green;
+  border-radius: 5px;
+}
+.fonas-geltonas {
+  background-color: yellow;
+}
+.remelis {
+  border: 2px solid black;
+}
+h1,
+h2,
+h4 {
+  font-style: italic;
+}
+div {
+  border: 2px dashed black;
+}
+h2 {
+  width: 25%;
+}
