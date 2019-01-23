@@ -1,4 +1,26 @@
-.fonas{color: olive;}
-.fonas.remelis{background-color: olive; border: solid; color: black;
+h1{color: #0066cc;}
+.fonas{color: #0040ff;
+  text-decoration: underline;
 }
-div h2{background-color: brown;}
+#reklama{color: #000099;
+  background-color: #e6e6ff;
+  text-align: center;
+}
+.fonas.remelis{background-color: #809fff;
+  border: solid; color: #002080;
+  width: 500px;
+  text-align: center;
+}
+h2{color: #330033;
+  background-color:#f9ecf2;
+  text-align: center;
+}
+div h2{color: #330033;
+  background-color:#f9ecf2;
+  text-align: center;
+}
+h1,
+h2,
+h6{color: #206020;
+  background-color:#ecf9ec;
+  text-align: center;}
