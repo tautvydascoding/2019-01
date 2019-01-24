@@ -1,0 +1,42 @@
+(trecioji savaite antrad)Tarpinis testas 5% (html, css) 
+(trecioji savaite ketvirt) Tarpinis atsiskaitymas 10% (js, jquery)
+(trecioji savaite treciad) Tarpinis atsiskaitymas 10% (js scopes: local ir global varible skirtumai)
+(ketritoji savaite penktadienis) Tarpinis atsiskaitymas 15% (programavimo pagrindai: Ciklai, f-jos)
+Galutinis testas 10%  (php, OOP- objektinis programavimas)
+Baigiamasis projektas 50%
+
+Baigiamasis:
+//——————Front End  (css, js, libs)———-
+PRIVALOMA PANAUDOTI: 
+-0.2 vector icons
+-0.5 responsive visas puslapis 
+-0.5 BOOTSTRAP (jei bent 6 klasiu nepanaudosi)
+
+1.5 Layout praktinis testas ( praktine uzduotis: per 30min pagal duoda foto sukurti puslapio maketa/layout )
+0.5 MDL (bent 7 klases panaudosi, is ju bet 3 pagrindines grido)
+0.5 scss / sass / less - (kintamieji bent 5x, nesting bend 2x, hover)
+0.5 slider/ carusel / bg-video (responsive)
+0.3 - 1.5 js efektai (po 0.3 uz java script efektus max. 1.5   pvz:  paralax, ...)
+ iki 1 balo js formos tikrinimas ( js form validator)  
+
+0.5 ajax (gauti duomenis is serverio) naudojant jQuery !!! Nenaudjant "Load" f-jos  !!!
+0.5 ajax (siusti duomenis i serrveri) naudojant jQuery !!! Nenaudjant Load f-jos !!!
+
+//——————Back End  (PHP)——————————————————
+PRIVALOMA:
+panaudoti bent 4x kartus: include("...")
+
+iki 0.5 Email siuntimas(mokinsimes kartu) (PRIVALOMA: po email issiuntimo - isvesti zinute"Jusu zinute sekmingai issiusta")
+3x 0.5  duomenu isvedimas is duomenu bazes (max 3 skirtingos lenteles,)
+3x 0.5  is HTML formos duomenu ivedimas i duomenu baze  (max 3 skirtingos lenteles) (Users, Registracija nesiskaito!!!)
+0.7 PHP  Registracija + Login + PHP sesion (PRIVALOMA: panaudoti, bent viena session kintamaji)
+0.3  MYGTUKAI DELETE (google “CRUD”)
+0.5  MYGTUKAS EDIT   
+0.5  Search laukas 
+0.5  Search laukas - su autocomplete
+... jusu idejos :)
+
+
+//-------------
+1 jeigu savo projekto (viena page) paleisi ant wordpress pvz: kontaktai arba  about arba gallery ...
+ 
