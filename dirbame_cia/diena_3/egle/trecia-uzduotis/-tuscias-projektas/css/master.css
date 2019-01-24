@@ -5,12 +5,13 @@ h1{
 body,
 html{
   height: auto;
+  width: 500px;
 }
 
 .grupe-1{
 display: inline-block;
 text-align: center;
-margin: 25px 10px 5px 10px;
+margin: 25px 8px 5px 8px;
 height: 100px;
 }
 
@@ -23,9 +24,12 @@ height: 100px;
 .grupe-3{
   display: inline-block;
   text-align: center;
-  margin: 0px 10px 5px 10px;
+  width: 70%;
+  margin: 0px 6px 5px 6px;
   height: 100px;
+  /* margin-inline-start:20%; */
 }
+
 .float-kaire{
 float: left;
 }
@@ -57,7 +61,8 @@ border: solid 3px rgb(223, 235, 54);
 
 .plotis-30 {width: 20%;}
 .plotis-45 {width: 25%;}
-.plotis-100 {width: 65%;}
+.plotis-100 {width: 72%;}
 
 .pirmas{margin-left: 25%;}
-.antras{margin-left: 25%}
+.antras{margin-left: 25%;}
+.papildomas{margin-inline-start:27%;}
