@@ -1,0 +1,43 @@
+html{height: auto;}
+h1{color: rgb(5, 196, 53);
+text-align: center;}
+
+article{
+  float: left;
+height: 350px;
+border: solid 3px;
+margin: 1%;
+text-align: center;
+}
+.isjungti-float{
+  clear: both; }
+
+div{
+height: 330px;
+border: solid 5px;
+text-align: center;
+margin: 4%;
+margin-top: 1%;
+margin-bottom: 1%;
+padding: 1%;
+}
+section{
+  margin-right: 8%;
+  margin-top: 0%;
+  margin-bottom: 20%;
+  padding: -30%;
+}
+
+
+.plotis30{width: 30%;}
+.plotis45{width: 45%;}
+.plotis100{width: 92%;}
+.float{float: right;}
+.fonas-blue{background-color: #ccffff;}
+.fonas-green{background-color: rgb(72, 145, 104);}
+.fonas-pink{background-color: #ff9999;}
+.bor-blue{border-color: rgb(154, 241, 241);}
+.bor-pink{border-color: rgb(112, 59, 99);}
+.bor-green{border-color: rgb(13, 55, 16);}
+.fonas-geltona{background-color: rgb(247, 250, 214);}
+.bor-div{border-color: rgb(213, 236, 25);}
