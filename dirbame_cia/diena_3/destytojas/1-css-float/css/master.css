@@ -1,0 +1,27 @@
+h1 {
+    color: red;
+}
+nav li {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+}
+.fonas-sviesus {
+    background-color: #f4f4f4;
+}
+.fonas-tamsus {
+    background-color: #c2c2c2;
+}
+div {
+    /* nepamirsti isjungti FLOAT */
+    height: 300px;
+    width: 50%;
+    float: left;
+}
+.isjungiu-float {
+    clear: both;
+    content: "";
+}
+
+
+/*  */
