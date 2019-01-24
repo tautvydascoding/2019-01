@@ -1,0 +1,67 @@
+/* virsuje esminius dalykus surasyt. body ir html komanda saugo nuo klaidu */
+*{
+  box-sizing: border-box;
+}
+
+body,
+html{
+  height: auto;
+}
+
+/* --------------------------------------------------- */
+
+h1{
+  font-size: 30px;
+  text-align: center;
+  font-family: cursive;
+  margin-top: 50px;
+}
+
+h2{
+  font-size: 20px;
+  text-align: center;
+  font-family: cursive;
+  width: 100px;
+  border-left: solid 2px black;
+  border-bottom: solid 2px black;
+
+  margin: 0;
+  position: absolute;
+  /* top, right, left, bottom veikia TIK su POSITION: absolute !!!*/
+  top: 0;
+  right: 0;
+  /* nepamirsti uzdeti ant kazkurio is proteviu Position: relative */
+}
+.fonas-rozinis{
+  background-color: rgb(208, 132, 182, 0.3);
+  /* 0.3 yra opacity permatomumas, 0 yra visai permatoma, 1 yra nepermatoma, aiskiai matosi spalva */
+}
+.fonas-raudonas{
+    background-color: darkred;
+    color: white;
+}
+.fonas-gelsvas{
+  background-color: lightyellow;
+}
+
+article{
+  background-color: grey;
+  border: solid 2px black;
+  width: 29.3%;
+  float: left;
+  margin-left: 3%;
+  position: relative;
+  min-height: 50vh;
+  /* 50vh reiskia, kad elemento aukstis bus puse ekrano - ar kompo, ar telefono */
+}
+
+.isjungiu-float{
+  clear: both;
+  content: "";
+}
+p{
+margin-top: 50px;
+font-family: cursive;
+padding: 2%;
+text-align: justify;
+}
