@@ -1,0 +1,18 @@
+h1 {
+    color: red;
+}
+.plotis-30 {
+    width: 30%;
+}
+.plotis-45 {
+    width: 45%;
+}
+.plotis-100 {
+    width: 100%;
+}
+.fonas-blue {    background-color: blue;   }
+.fonas-green {    background-color: green;   }
+.fonas-pink {    background-color: pink;   }
+.float-kaire {
+    float: left;
+}
