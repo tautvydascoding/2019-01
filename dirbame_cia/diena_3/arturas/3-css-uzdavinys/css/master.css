@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: red;
+  text-align: center;
+}
+body,
+html {
+  height: auto;
+}
+.plotis-30 {
+  width: 30%;
+}
+.plotis-45 {
+  width: 45%;
+}
+.plotis-100 {
+  width: 100%;
+}
+.float {
+  float: left;
+}
+.fonas-blue {
+  background-color: rgb(59, 213, 218);
+}
+.fonas-yellow {
+  background-color: yellow;
+}
+.fonas-zalias {
+  background-color: rgb(155, 226, 24)
+}
+.fonas-pink {
+  background-color: purple;
+}
+.nutraukiu-float {
+  clear:both;
+  content:"";
+}
+.remelis-pink {
+  border: 2px solid pink;
+}
+.remelis-blue {
+  border: 2px solid blue;
+}
+.remelis-yellow {
+  border: 2px solid rgb(155, 226, 24);
+}
