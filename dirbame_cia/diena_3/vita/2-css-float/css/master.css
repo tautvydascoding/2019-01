@@ -1,0 +1,56 @@
+ul{color: violet;}
+
+nav li{
+  display: inline-block;
+width: 8%;
+text-align: justify;
+margin-left: 13%;
+margin-top: 30px;
+text-decoration-style: double;}
+
+h2{text-align: center;}
+
+li{text-align: center;}
+
+div{float: left;
+width: 50%;}
+
+.rudas{
+  color: brown;
+  background-color: pink;
+}
+
+.melynas{
+  color: blue;
+  background-color: yellow;}
+
+div{
+  height: 150px;
+  width: 46%;
+  float: left;
+margin: 2%;
+text-align: center;
+align-items: center;
+padding-top: 150px;
+
+}
+
+.isjungti-float{
+  clear: both; content: "";}
+
+article{
+  float: left;
+width: 12%;
+font-size: 10px;
+margin-top: 5%;
+margin: 0,8%;
+padding: 1%;
+text-align: justify;
+border: 1px black; margin-left:23px; }
+
+.spalva1{background-color: #f2ffcc;}
+.spalva2{background-color: #e6fff9;}
+.spalva3{background-color: #e6f5ff;}
+.spalva4{background-color: #fff7e6;}
+.spalva5{background-color: #e6f2ff;}
+.spalva6{background-color: #f2e6d9;}
