@@ -62,3 +62,10 @@
 article {
   border: solid 2px #333;
 }
+
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  display: inline-block;
+}
