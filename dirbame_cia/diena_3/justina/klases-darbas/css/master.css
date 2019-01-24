@@ -1,0 +1,71 @@
+*{
+  box-sizing: border-box;
+}
+
+body,
+html{
+  height: auto;
+}
+
+/* --------------------------------------------------- */
+
+.plotis_30{
+  width: 30%;
+}
+.plotis_45{
+  width: 45%;
+}
+.plotis_100{
+  width: 100%;
+}
+.float{
+  float: left;
+}
+.fonas_blue{
+  background-color: lightblue;
+}
+.fonas_green{
+  background-color: lightgreen;
+}
+.fonas_pink{
+  background-color: pink;
+}
+.fonas_yellow{
+  background-color: yellow;
+}
+article{
+  font-size: 30px;
+}
+h2{
+  border: solid 6px;
+  text-align: center;
+  height: 300px;
+  margin: 0;
+}
+.isjungiu_float{
+  clear: both;
+  content: "";
+}
+.margin{
+  margin-left: 2.3%;
+}
+p{
+  text-align: justify;
+  font-size: 40px;
+  margin: 2%;
+}
+.margin_top{
+  margin-top: 110px;
+}
+.border_pink{
+  border-color: pink;
+}
+.border_blue{
+  border-color: blue;
+}
+.border_yellow{
+  border-color: yellow;
+}
+.margin_tarpai{
+  margin-top: 40px;
+}

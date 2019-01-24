@@ -10,6 +10,7 @@ div{
   text-align: center;
   font-size: 50px;
   margin-left: 2%;
+  /* IDEA: display: flex; align-items: center; justify-content: center; padaro, kad tekstas butu vertikaliai per vidury savo bloko elemento */
   display: flex;
   align-items: center;
   justify-content: center;
