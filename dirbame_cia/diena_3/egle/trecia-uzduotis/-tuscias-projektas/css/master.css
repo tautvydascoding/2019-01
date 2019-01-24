@@ -1,0 +1,68 @@
+h1{
+  color: rgb(57, 125, 142);
+  text-align: center;
+}
+body,
+html{
+  height: auto;
+  width: 500px;
+}
+
+.grupe-1{
+display: inline-block;
+text-align: center;
+margin: 25px 8px 5px 8px;
+height: 100px;
+}
+
+.grupe-2{
+  display: inline-block;
+  margin: 0px 10px 5px 10px;
+  height: 100px;
+}
+
+.grupe-3{
+  display: inline-block;
+  text-align: center;
+  width: 70%;
+  margin: 0px 6px 5px 6px;
+  height: 100px;
+  /* margin-inline-start:20%; */
+}
+
+.float-kaire{
+float: left;
+}
+
+.close-float{
+  clear: both;
+  content: "";
+}
+
+.fonas-blue{
+background-color: rgb(76, 161, 182);
+border: solid 3px rgb(191, 81, 147);
+}
+
+.fonas-pink{
+background-color: rgb(236, 107, 182);
+border: solid 3px rgb(76, 161, 182);
+}
+
+.fonas-green{
+background-color: rgb(83, 221, 124);
+border: solid 3px rgb(223, 235, 54);
+}
+
+.fonas-yellow{
+  background-color: rgb(244, 242, 78);
+  border: solid 3px rgb(76, 161, 182);
+}
+
+.plotis-30 {width: 20%;}
+.plotis-45 {width: 25%;}
+.plotis-100 {width: 72%;}
+
+.pirmas{margin-left: 25%;}
+.antras{margin-left: 25%;}
+.papildomas{margin-inline-start:27%;}

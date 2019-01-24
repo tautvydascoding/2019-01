@@ -1,0 +1,34 @@
+h1{
+  color: red;
+}
+header li{
+  display: inline-block;
+  width: 24.5%;
+  text-align: center;
+}
+div{
+  float:left;
+  width: 50%
+}
+.fonas-geltonas{
+  background-color: yellow;
+}
+.fonas-melynas{
+  background-color: blue;
+}
+div{
+  height: 300px;
+  width: 50%;
+  float:left;
+}
+/* nepamirsti isjungti float'a */
+.isjungiu-float{
+  clear: both;
+  content: "";
+}
+article{
+float: left;
+width: 16.66%;
+height: 100px;
+background-color: orange;
+}
