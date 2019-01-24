@@ -1,3 +1,43 @@
+* {
+    /* remeliai isiskaiciuoja i elemento vidu, nereikes sukti galvos, kok elemento plotis + remeliu polotis */
+    box-sizing: border-box;
+}
+body,
+html {
+    height: auto;
+}
+/* --------------------- */
+body {
+    background: lightgreen;
+}
 h1 {
     color: red;
+    text-align: center;
+}
+
+article {
+    /* ctrl + alt + c */
+    background-color:#f4f4f4;
+     width: 28.66%;
+     float: left;
+     margin-left: 2%;
+     position: relative;
+
+     padding: 1%;
+     padding-top: 30px;
+
+     min-height: 50vh;
+     border: solid 2px black;
+}
+h2 {
+    border-bottom: solid   1px #000;
+    border-left: solid   1px #000;
+    width: 120px;
+    margin: 0;
+
+    position: absolute;
+    /* top, right left bottom veikia TIK su position absolute!!!! */
+    top: 0;
+    right: 0;
+    /* nepamirsti uzdeti ant protevio position: reletive */
 }
