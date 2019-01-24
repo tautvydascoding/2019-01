@@ -7,7 +7,7 @@ h1{
   padding-bottom: 10px;
   margin-top: 5%;}
 
-h6{padding-top: 20px;}
+p{padding-top: 20px;}
 
 .paukstiena{background-color: rgb(167, 196, 226);}
 .jautiena{background-color: rgb(228, 238, 111);}
@@ -18,7 +18,7 @@ float: left;
 width: 30%;
 margin-left: 2%;
 text-align: left;
-min-height: 20vh;
+min-height: 15vh;
 padding: 1%;
 padding-top: 0;
 padding-right: 0;
