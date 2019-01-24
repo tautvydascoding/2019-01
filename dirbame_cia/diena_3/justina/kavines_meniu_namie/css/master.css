@@ -1,0 +1,68 @@
+*{
+  box-sizing: border-box;
+}
+
+body,
+html{
+  height: auto;
+}
+
+/* --------------------------------------------------- */
+h1{
+font-size: 40px;
+text-align: center;
+font-family: cursive;
+}
+h2{
+  border-bottom: solid 3px;
+  border-left: solid 3px;
+  width: 150px;
+  text-align: center;
+}
+article{
+  border: solid 3px;
+  width: 29%;
+}
+.float{
+  float:left;
+}
+.float_right{
+  float: right;
+}
+.isjungiu_float{
+  clear: both;
+  content: "";
+}
+.margin{
+  margin: 2%;
+}
+.margin_from_top{
+  margin-top: 50px;
+}
+.margin_nuimti{
+  margin: 0;
+}
+p{
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 10%;
+  margin-bottom: 4%;
+  text-align: justify;
+  font-family: cursive;
+  font-size: 20px;
+}
+.fonas_geltonas{
+  background-color: yellow;
+}
+.fonas_raudonas{
+  background-color: darkred;
+}
+.fonas_rozinis{
+  background-color: pink;
+}
+.fonas_pilkas{
+  background-color: grey;
+}
+.baltos_raides{
+  color: white;
+}
