@@ -1,0 +1,67 @@
+article {
+  border: solid 5px black;
+  border-radius: 10%;
+  margin: 50px;
+  padding: 10px;
+}
+
+ul {
+  position: fixed;
+  padding: 0px;
+  margin: 0px;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  width: 100px;
+  background-color: red;
+  padding: 0px;
+  margin: 0px;
+
+}
+
+.raudonas {
+  color: red;
+}
+
+.zalias {
+  color: green;
+}
+
+.geltonas {
+  color: yellow;
+}
+
+.melynas {
+  color: blue;
+}
+
+.a {
+  background-color: rgb(100, 100, 100);
+}
+
+.b {
+  background-color: #00FFFF;
+}
+
+.c {
+  background-color: #00FF99;
+}
+
+.d {
+  background-color: #00DDFF;
+}
+
+div article {
+  width: 40%;
+  display: inline-block;
+  font-size: 20px;
+  font-family: monospace;
+}
+
+article.ketvirtis {
+  width: 16%;
+  display: inline-block;
+  font-size: 10px;
+}
