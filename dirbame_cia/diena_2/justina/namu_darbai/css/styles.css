@@ -1,0 +1,28 @@
+.aukstis-200{
+  height: 200px;
+}
+
+.fonas-pilkas{
+  background-color: grey;
+}
+
+.plotis-50{
+  width: 50%;
+}
+
+.balta{
+  color: white;
+}
+
+.melyna{
+  color: blue;
+}
+
+.oranzine{
+  color: orange;
+}
+
+p {
+  text-align: center;
+  font-size: 10px;
+}

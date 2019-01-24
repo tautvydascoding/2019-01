@@ -1,0 +1,33 @@
+h1{color: #0066cc;}
+.fonas{color: #0040ff;
+  text-decoration: underline;
+}
+#reklama{color: #000099;
+  background-color: #e6e6ff;
+  text-align: center;
+}
+.fonas.remelis{background-color: #809fff;
+  border: solid; color: #002080;
+  width: 500px;
+  text-align: center;
+}
+h2{color: #330033;
+  background-color:#f9ecf2;
+  text-align: center;
+}
+div{color: #cccc00;
+  background-color:#f9ecf2;
+  text-align: center;
+}
+h1,
+h6{color: #206020;
+  background-color:#ecf9ec;
+  text-align: center;}
+.plotis{width: 50%;}
+.fonas2{background-color: #f2f2f2;}
+.aukstis{height: 200px;}
+.sekcija{text-align: center;
+font-size: 15px;}
+.spalva1{color: #803300; background-color: #fff0e6;}
+.spalva2{color: #009933; background-color: #e6ffee;}
+.spalva3{color: #e6ffee; background-color: #ccebff;}

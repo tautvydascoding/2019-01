@@ -1,0 +1,33 @@
+h1{
+  color: red;
+}
+nav li{
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+}
+div{
+  height: 200px;
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+.fonas-geltonas{
+  background-color: yellow;
+}
+.fonas-zydras{
+  background-color: lightblue;
+}
+div{
+  font-size: 30px;
+}
+.isjungiu-float{
+  clear: both;
+  content: "";
+}
+
+article{
+  float:left;
+  width: 16.4%;
+  text-align: center;
+}
