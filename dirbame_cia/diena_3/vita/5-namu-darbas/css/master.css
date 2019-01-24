@@ -1,0 +1,51 @@
+h1 {
+color: redrgb(34, 15, 110);
+text-align: center;
+}
+
+article{
+float: left;
+width: 21%;
+background-color: yellow;
+margin: 1%;
+padding:1%;
+}
+
+section{
+  float: left;
+  width: 100%;
+background-color: rgb(185, 166, 213);
+height: 800px;
+margin-top: 0%;
+}
+
+.mygtukas1{
+float: right;
+margin-right: 0px;
+margin-top: 350px;
+width:150px;
+}
+
+.mygtukas2{
+float: left;
+margin-top: 350px;
+width:150px;
+}
+
+.mygtukas3{
+margin-top: 0px;
+margin-left: 45%;
+width:150px;
+}
+
+.mygtukas4{
+width:150px;
+margin-top: 750px;
+margin-left: 45%;
+}
+
+
+.backcol1{background-color: rgb(209, 195, 226);}
+.backcol2{background-color: rgb(214, 255, 246);}
+.backcol3{background-color: rgb(242, 249, 221);}
+.backcol4{background-color: rgb(201, 193, 196);}
