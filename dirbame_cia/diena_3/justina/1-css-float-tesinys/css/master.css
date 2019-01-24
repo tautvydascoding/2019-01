@@ -1,0 +1,43 @@
+nav li{
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+}
+div{
+  height: 200px;
+  float: left;
+  width: 47%;
+  text-align: center;
+  font-size: 50px;
+  margin-left: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+.fonas-geltonas{
+  background-color: yellow;
+}
+.fonas-zydras{
+  background-color: lightblue;
+}
+.fonas-rozinis{
+  background-color: pink;
+}
+.fonas-pilkas{
+  background-color: lightgrey;
+}
+.isjungiu-float{
+  clear: both;
+  content: "";
+}
+article{
+  float:left;
+  width: 15.5%;
+  height: 200px;
+  text-align: justify;
+  margin-left: 1%;
+  margin-top: 30px;
+}
+h3{
+  text-align: center;
+}
