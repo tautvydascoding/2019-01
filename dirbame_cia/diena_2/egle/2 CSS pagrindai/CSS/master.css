@@ -1,0 +1,15 @@
+.spalva{
+  color: red;
+}
+#blah{
+background: green;
+}
+div h2{
+  font-style: italic;
+  border: black solid 5px;
+  color: gray;
+  background: orange
+}
+h1{
+  background: yellow;
+}
