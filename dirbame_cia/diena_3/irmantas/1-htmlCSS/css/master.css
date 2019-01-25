@@ -1,0 +1,52 @@
+nav li {
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+}
+div {
+  float: left;
+  width: 44%;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin-right:4%;
+  padding: 1%;
+}
+
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.clear-float {
+  clear: both;
+  content: "";
+}
+
+.spalva1 {
+  background-color: rgb(125, 0, 0);
+}
+.spalva2 {
+  background-color: rgb(255, 125, 0);
+}
+.spalva3 {
+  background-color: rgb(125, 0, 225);
+}
+.spalva4 {
+  background-color: #ff5566
+}
+.spalva5 {
+  background-color: #cc5533
+}
+.spalva6 {
+  background-color: #fc9966
+}
+
+article {
+  float: left;
+  width: 14%;
+  margin:10px;
+  padding: 8px;
+}
