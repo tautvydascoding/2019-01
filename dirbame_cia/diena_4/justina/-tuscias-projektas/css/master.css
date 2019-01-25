@@ -1,0 +1,111 @@
+*{
+  box-sizing: border-box;
+}
+
+body,
+html{
+  height: auto;
+}
+
+/* --------------------------------------------------- */
+html{
+  background-color: rgb(144, 144, 144);
+}
+body{
+  width: 1200px;
+  /* IDEA: sucentravimas ant X asies, t.y. horizontaliai su margin-left auto ir margin-right auto */
+  margin-left: auto;
+  margin-right: auto;}
+nav{
+  float:left;
+  width:70%;
+  height: 60px;
+}
+h1{
+  text-align: center;
+  text-shadow: 3px 2px rgba(25, 38, 24, 0.73);
+}
+.float{
+  float:left;
+}
+
+.fonas_rozinis{
+  background-color: pink;
+}
+.fonas_geltonas{
+  background-color: yellow;
+}
+.fonas_baltas{
+  background-color: white;
+}
+.isjungiu_float{
+  clear: both;
+  content: "";
+}
+nav li{
+  list-style: none;
+  text-transform: uppercase;
+  text-align: center;
+  width: 25%;
+  font-size: 25px;
+}
+
+#paieska{
+  background-color: red;
+  height: 60px;
+  float:left;
+  width: 29.8%;
+}
+/* IDEA: jei nori atitraukti tik paieskos forma, reik nurodyti teti, siuo atveju tai bus paieska. Jei rasytume tik form, tai pajudintu ir kontaktu forma ir kitas, esancias svetaineje */
+#paieska form{
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+nav ul{
+  padding-left: 0;
+}
+main{
+  width: 80%;
+  min-height: 350px; /* IDEA: jei daug straipsniu, tai baltas fonas bus tol, kol bus tekstas, kai uzzymeta min-height. */
+  padding: 30px 20px; /* IDEA: 30px yra ir top ir bottom atitraukimas, 20px yra nuo krastu atitraukimas */
+}
+aside{
+  width: 19%;
+  margin-left: 1%;
+  /* IDEA: automatinis fono aukscio apskaiciavimas: */
+  margin-bottom: -100%;
+  padding-bottom: 100%;
+}
+.wrapper{ /* IDEA: kai aside'ui surasai padding-bottom ir margin-bottom, reik paslepti tai, kas uzeina uz tevo ribu. Siuo atveju aside tevas yra section wrapper */
+  overflow:hidden;
+  width: 100%;
+}
+
+footer{
+height: 100px;
+width: 100%;
+}
+.footer_tekstas{
+  margin-top: 1%;
+}
+.margin_top{
+  margin-top: 1%;
+}
+
+aside li{
+  padding: 10px;
+}
+footer p{
+  padding: 20px;
+}
+p,
+nav li,
+#paieska input,
+aside li{
+  font-family: 'Open Sans Condensed', sans-serif, "Verdana", "George"; /* IDEA: verdana ir George pridet kaip alternatyvius fontus, jei vartotojas neturi Open Sans Condensed ar neranda internete */
+}
+h1,
+h2{
+  font-family: 'Indie Flower', cursive;
+}

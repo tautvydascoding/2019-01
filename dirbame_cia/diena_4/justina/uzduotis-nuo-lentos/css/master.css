@@ -1,0 +1,13 @@
+h2{
+  color: red;
+}
+ul li{
+  color: blue;
+}
+section li{
+  color: red;
+}
+
+li.pirmas{
+  color: green;
+}
