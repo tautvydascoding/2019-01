@@ -49,10 +49,6 @@ label{
 display: block;
 font: 1rem 'Fira Sans', sans-serif;}
 
-label{
-display: block;
-font: 1rem 'Fira Sans', sans-serif;}
-
 input,
 label{
 margin: .4rem 0;}
@@ -60,6 +56,8 @@ margin: .4rem 0;}
 .note{font-size: .8em;}
 
 .article-heading{text-align: center;}
+
+.button-color{background-color: black; color: white; border-color: black;}
 
 h2{color: black;}
 
@@ -86,9 +84,11 @@ height: 432px;
 padding-right: 2%;
 }
 
+.melynas-pabrauktas{color: blue; text-decoration: underline;}
+
 h1,
 h2,
-h3{ 
+h3{
 font-weight: 400;
 font-family: 'Major Mono Display', "Verdon", monospace;
 }

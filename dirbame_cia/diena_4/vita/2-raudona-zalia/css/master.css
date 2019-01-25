@@ -1,0 +1,11 @@
+
+
+h2{color: red;}
+
+.pirmas{color: green;}
+
+ul{font-style: italic;
+color: blue;}
+
+section>ul{color: red;
+font-style: normal;}
