@@ -1,0 +1,14 @@
+li {
+  font-style: italic;
+  color: blue;
+}
+h2 {
+  color: red;
+}
+li.pirmas {
+  color:green;
+}
+
+section li {
+  color: red ;
+}
