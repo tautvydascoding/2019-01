@@ -1,0 +1,27 @@
+*{
+box-sizing: border-box;
+}
+body,
+html{
+  height: auto;
+}
+
+h1 {
+    color: red;
+}
+
+li{
+  font-style: italic;
+}
+section li{
+  color: red;
+}
+
+ul .pirmas{
+color: green;
+}
+
+h2{
+  color: red;
+}
+li{ color: blue;}

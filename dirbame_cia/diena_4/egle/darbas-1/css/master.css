@@ -1,0 +1,130 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  width: 1200px;
+/* IDEA: elemento centravimas x-asyje(kaire-desine) */
+margin-left: auto;
+margin-right: auto;
+}
+html{
+  height: auto;
+  background-color: #ffe5b4;
+}
+
+/*---------------------------------------------------*/
+h1 {
+    color: #fa8072;
+    text-align: center;
+}
+h1,
+h2,
+h3{
+  font-family: 'Raleway', sans-serif;
+}
+/* IDEA: navigacija */
+nav{
+text-align: center;
+float: left;
+width: 70%;
+background-color: #f9cfae;
+}
+
+nav ul{
+float: left;
+width: 90%;
+padding-inline-start:0;
+}
+
+nav li{
+  text-align: center;
+  float: left;
+  width: 30%;
+  height: 20px;
+  list-style: none;
+  }
+  .float{
+    float:left;
+    width: 25%;
+  }
+/* IDEA: paieskos laukelis */
+#paieska{
+float: left;
+width: 30%;
+background-color: #f9cfae;
+height: 52px;
+text-align: center;
+}
+form{
+  text-align: center;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+input{
+  text-align: center;
+  float: left;
+  width:70%;
+  padding-right: 10px;
+}
+
+button{
+  float: right;
+  width: 25%;
+  color: rgb(122, 85, 74);
+  margin: 0px 10px 5px 1px;
+  background-color: #fa8072;
+  font-style: normal;
+  font-size: 14px;
+}
+
+.uzdaromas-float{
+  clear: both;
+  content: "";
+}
+/* ------------------------------------------------------------------ */
+/*-------------------Wrapper---------------------- */
+main{
+  background-color: white;
+  width: 75%;
+  margin-top: 2%;
+  /* margin-right: 2%; */
+  padding: 2% 1%;
+}
+
+.first{
+  text-align: center;
+}
+
+aside{
+margin-bottom: -5000px; /* any large number will do */
+padding-bottom: 5000px;
+position: absolute;
+right: 10%;
+top: 37%;
+background-color: #f9cfae;
+
+/* automatinis aukscio apskaiciavimas + .wrapper overflow command */
+}
+
+.wrapper{
+  overflow: hidden;
+  width: 100%;
+}
+
+aside h2{
+  text-align: center;
+}
+
+aside li{
+  padding: 10px;
+}
+
+.float{
+  float: right;
+  width: 18%;
+}
+
+.uzdaromas-float{
+  clear: both;
+  content: "";
+}
