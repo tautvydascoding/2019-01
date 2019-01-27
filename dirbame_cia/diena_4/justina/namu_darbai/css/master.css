@@ -1,0 +1,69 @@
+*{
+  box-sizing: border-box;
+}
+
+body,
+html{
+  height: auto;
+}
+
+/* --------------------------------------------------- */
+.isjungiu_float{
+  clear: both;
+  content: "";
+}
+.float{
+  float: left;
+}
+article{
+  background-color: skyblue;
+  width: 24.25%;
+  min-height: 250px; /* IDEA: jei daug straipsniu, tai baltas fonas bus tol, kol bus tekstas, kai uzzymeta min-height. */
+}
+h1 {
+  font-size: 50px;
+  font-family: cursive;
+  text-align: center;
+}
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+.margin {
+  margin-left: 1%;
+}
+p{
+  padding: 3%;
+  text-align: justify;
+}
+button{
+  width: 150px;
+  height: 50px;
+}
+section{
+  border: solid 1px black
+}
+.wrapper{
+  background-color: purple;
+  height: 800px;
+}
+.button1{
+  position: absolute;
+  top: 400px;
+  left: 20px;
+  }
+.button2{
+  position: absolute;
+  top: 400px;
+  right: 20px;
+  }
+.button3{
+  position: absolute;
+  top: 1130px;
+  left: 20px;
+  }
+.button4{
+  position: absolute;
+  top: 1130px;
+  right: 20px;
+  }
