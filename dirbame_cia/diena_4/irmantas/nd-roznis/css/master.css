@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: auto;
+}
+
+body {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: grey;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: pink;
+  padding: 20px;
+}
+
+nav {
+  width: 70%;
+}
+
+nav li {
+  float: left;
+  width: 25%;
+  font-family: monospace;
+  font-size: 18px;
+  list-style: none;
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+.menu {
+  float: left;
+  width: 30%;
+}
+
+input {
+  font-size: 18px;
+  width: 60%;
+}
+button {
+  width: 25%;
+  font-size: 18px;
+  background-color: #7439fe;
+  margin-left: 30px;
+}
+.float {
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+
+
+/* test */
