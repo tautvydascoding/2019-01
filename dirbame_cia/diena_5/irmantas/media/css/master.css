@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: auto;
+}
+
+body {
+  background-color: rgb(191, 184, 227);
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pirmas , .antras , .trecias {
+  float: left;
+  width: 32%;
+  padding: 1%;
+  margin: 0.5%;
+  border: 2px solid black;
+}
+
+.ketvirtas , .penktas {
+  float: left;
+  width: 49%;
+  padding: 1%;
+  margin: 0.5%;
+  border: 2px solid black;
+}
+
+.clear {
+  clear: both;
+}
+/* iki 768px */
+
+@media (max-width: 768px) {
+  .pirmas , .trecias {
+    float: left;
+    width: 49%;
+    padding: 1%;
+    margin: 0.5%;
+    border: 2px solid black;
+  }
+  .antras {
+    display: none;
+  }
+  .ketvirtas {
+    display: none;
+  }
+  .penktas {
+    width: 100%;
+  }
+}
+
+/* iki 425 */
+
+
+@media (max-width: 425px) {
+  .pirmas , .trecias , .antras , .ketvirtas {
+    display: block;
+    width: 99%;
+    padding: 1%;
+    margin: 0.5%;
+    border: 2px solid black;
+
+  }
+
+  .penktas {
+    display: none;
+  }
+}
