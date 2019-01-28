@@ -1,0 +1,16 @@
+
+.aukstis_100 {
+    height: 10vh; /* IDEA: vh yra ekrano aukstis procentais */
+}
+.aukstis_200 {
+    height: 20vh;
+}
+.aukstis_300 {
+    height: 30vh;
+}
+.aukstis_500 {
+    height: 50vh;
+}
+.width_90{
+  width: 90%;
+}
