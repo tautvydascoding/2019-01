@@ -1,0 +1,87 @@
+*{
+  box-sizing: border-box;
+} /* IDEA: kad remeli skaiciuotu i objekto vidu. Galima deti kiekviename projekte */
+
+body,
+html{
+  height: auto;
+} /* IDEA: panaikina balta tarpeli narsykles virsuje. Galima deti kiekviename projekte */
+
+/* --------------------------------------------------- */
+.background_yellow{
+  background-color: yellow;
+}
+.background_green{
+  background-color: green;
+}
+.background_skyblue{
+  background-color: skyblue;
+}
+.background_grey{
+  background-color: grey;
+}
+.background_red{
+  background-color: red;
+}
+h1,
+h2{
+  font-size: 30px;
+  text-align: center;
+}
+.float{
+  float: left;
+}
+.width{
+  width: 32%;
+}
+.margin{
+  margin-left: 1%;
+}
+.width_49{
+  width: 48.5%;
+}
+article{
+  min-height: 50vh;/* IDEA: 50vh yra puse ekrano aukscio */
+}
+
+.isjungiu_float{
+  clear: both;
+  content: "";
+}
+
+/* IDEA: sita media for tablet plansetei  nuo 0 iki 768px */
+@media (max-width: 768px) {
+.kubas2{
+  display: none;
+}
+.kubas4{
+  display: none;
+  }
+.kubas1,
+.kubas3{
+  width: 48.5%;
+  min-height: 30vh; /* IDEA: dabar 5 bloka pilka rodo siauresni, tai jo ploti redaguoti cia, nurodyti, kokio plocio, kai rodys per tablet */
+}
+.kubas5{
+  width: 98%;
+  min-height: 70vh;
+}
+} /* IDEA: tik cia uzsidaro media elementas */
+
+/* IDEA: sita media for mobile telefonui  nuo 0 iki 425px */
+@media (max-width: 425px) {
+  .kubas5{
+    display: none;
+  }
+  .kubas2,
+  .kubas4 {
+    display: block; /* IDEA: ijungiama, kad rodytu 2 ir 4 blokus */
+  }
+  .kubas1,
+  .kubas2,
+  .kubas3,
+  .kubas4 {
+    width: 100%;
+    min-height: 25vh; /* IDEA: cia surasiau aukscius ir plocius, kad graziai atrodytu mobilioje versijoje. Kad plotis per visa ekrana, o min aukstis 1/4 ekrano, kad visi 4 blokeliai matytusi ekrane */
+  }
+}
