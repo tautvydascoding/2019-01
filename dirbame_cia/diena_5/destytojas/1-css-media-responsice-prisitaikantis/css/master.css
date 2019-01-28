@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+h1 {
+    color: red;
+}
+.blokas {
+    display: block;
+    width: 30%;
+    min-height: 50vh;
+    border: solid 1px #000;
+    background-color: pink;
+
+    float: left;
+}
+/* ------for tablet---- */
+/*  nuo 0 iki 768px */
+@media (max-width: 768px) {
+    .antras {
+        display: none;
+    }
+    .ketvirtas {
+        display: none;
+    }
+}
+/* -----for Mobile----- */
+/*  nuo 0 iki 425px */
+@media (max-width: 425px) {
+     /* code .... */
+     .penktas {
+         display: none;
+     }
+     .antras,
+     .ketvirtas {
+         display: block;
+     }
+}
