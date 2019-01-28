@@ -1,3 +1,9 @@
+body {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 h1 {
   text-align: center;
 }
@@ -41,4 +47,23 @@ p {
 }
 .clear {
   clear: both;
+}
+
+@media (max-width: 768px) {
+  article.pirmas , article.antras {
+    width: 45%;
+  }
+  
+  article.trecias {
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
+@media (max-width: 425px) {
+  article.pirmas , article.antras , article.trecias {
+    width: 98%;
+    margin: 1%;
+
 }

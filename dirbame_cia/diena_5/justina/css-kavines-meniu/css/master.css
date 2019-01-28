@@ -1,0 +1,96 @@
+/* virsuje esminius dalykus surasyt. body ir html komanda saugo nuo klaidu */
+*{
+  box-sizing: border-box;
+}
+
+body,
+html{
+  height: auto;
+}
+
+/* --------------------------------------------------- */
+
+h1{
+  font-size: 30px;
+  text-align: center;
+  font-family: cursive;
+  margin-top: 50px;
+}
+
+h2{
+  font-size: 20px;
+  text-align: center;
+  font-family: cursive;
+  width: 100px;
+  border-left: solid 2px black;
+  border-bottom: solid 2px black;
+
+  margin: 0;
+  position: absolute;
+  /* top, right, left, bottom veikia TIK su POSITION: absolute !!!*/
+  top: 0;
+  right: 0;
+  /* nepamirsti uzdeti ant kazkurio is proteviu Position: relative */
+}
+.fonas-rozinis{
+  background-color: rgb(208, 132, 182, 0.3);
+  /* 0.3 yra opacity permatomumas, 0 yra visai permatoma, 1 yra nepermatoma, aiskiai matosi spalva */
+}
+.fonas-raudonas{
+    background-color: darkred;
+    color: white;
+}
+.fonas-gelsvas{
+  background-color: lightyellow;
+}
+
+article{
+  background-color: grey;
+  border: solid 2px black;
+  width: 29.3%;
+  margin-left: 3%;
+  position: relative;
+  min-height: 50vh;
+  /* 50vh reiskia, kad elemento aukstis bus puse ekrano - ar kompo, ar telefono */
+}
+p{
+margin-top: 50px;
+font-family: cursive;
+padding: 2%;
+text-align: justify;
+}
+.float{
+  float:left;
+}
+
+.isjungiu-float{
+  clear: both;
+  content: "";
+}
+
+/* IDEA: cia bus media tablet */
+
+@media (max-width: 768px) {
+  .chicken,
+  .beef {
+    width: 45.5%;
+    min-height: 30vh;
+  }
+  .sushi {
+    width: 94%;
+    min-height: 60vh;
+    margin-top: 3%;
+  }
+}
+
+/* IDEA: cia bus media mobile */
+/* IDEA: kai rasai max-width, tai nuo 0 iki 425px taiko si koda, jei rasai min-width, tai nuo 425px plocio ir daugiau */
+@media (max-width: 425px) {
+  .chicken,
+  .beef,
+  .sushi {
+    width: 94%;
+    min-height: 30vh;
+    margin-top: 3%;
+  }
+}

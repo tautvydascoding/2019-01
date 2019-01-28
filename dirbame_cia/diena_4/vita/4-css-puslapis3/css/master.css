@@ -1,0 +1,70 @@
+*{box-sizing: border-box;}
+body,
+html{height: auto;}
+/* ---------*/
+
+HTML{background-color: rgb(237, 231, 232);}
+
+body{width: 1200px;
+margin-left: auto;
+margin-right: auto;}
+
+h1,
+h2,
+h3,
+li{font-family: 'Syncopate', sans-serif;}
+
+p,
+footer {font-family:'Open Sans', sans-serif;}
+
+H1{color: white;
+text-align:center;}
+
+h2{text-align:center;}
+
+.meniu-paieska{background-color: rgb(130, 200, 200);
+height: 60px;}
+
+.floatnav{float: left;
+width: 75%;}
+
+.floatli{float: left;
+width: 25%;
+text-align: center;
+list-style: none;
+padding-top: 5px;
+}
+
+#paieska{float: left;
+width: 25%; padding-top: 20px;
+}
+
+.button-color{color: white; background-color: black; padding-left: 15px; padding-right:15px; border-style: none;}
+
+.wrapper{overflow: hidden;}
+
+main{float: left;
+width: 79%;
+background-color: white;
+margin-top: 1%;
+padding-left: 1%;
+padding-right: 1%;}
+
+aside{float: right;
+width: 20%;
+background-color: white;
+padding-left: 1%;
+padding-right: 1%;
+padding-bottom: 100%;
+margin-bottom: -100%;
+margin-top: 1%;
+margin-left: 1%;
+}
+.stopfloat{clear: both;}
+
+footer{height: 40px;
+padding-left: 10px;
+background-color: white;
+margin-top: 1%;
+margin-bottom: 5%;
+padding-top: 9px;}
