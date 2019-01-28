@@ -1,0 +1,11 @@
+h1 {
+    color: red;
+}
+.aukstis1{height: 15vh;}
+.aukstis2{height: 40vh;
+padding-bottom: 100%;
+margin-bottom: -100%;}
+.aukstis3{height: 30vh;}
+.aukstis4{height: 10vh;}
+
+.wrapper{overflow: hidden;}

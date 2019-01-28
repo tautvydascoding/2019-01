@@ -1,0 +1,40 @@
+
+h1 {
+    color: red;
+}
+
+.box1{background-color: rgb(189, 166, 184);
+padding: 2px;}
+.box2{background-color: rgb(217, 180, 157); padding: 2px;}
+.box3{background-color: rgb(192, 204, 237); padding: 2px;}
+.box4{background-color: rgb(247, 202, 218); padding: 2px;}
+.box5{background-color: rgb(215, 250, 205); padding: 2px;}
+
+.sekcija1{display: block;
+width: 30%;
+float: left;
+margin: 2px;
+min-height: 50vh;
+border: solid 1px black;}
+/* for tablet */
+/* nuo 0 iki 768px */
+@media (max-width: 768px) {
+.box2 {display: none;}
+.box4 {display: none;}
+.box1,
+.box3{width: 48%;}
+.box5 {width: 98%;}
+}
+/* for mobile */
+/* nuo 0 iki 425px */
+@media (max-width: 425px)  {
+/* code */
+.box5{display: none;}
+.box2,
+.box4{display:block;}
+.box1,
+.box2,
+.box3,
+.box4{display: block;
+width: 97%;}
+}
