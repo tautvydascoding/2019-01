@@ -1,5 +1,19 @@
-h1 {
-    color: red;
+ul li img {
+  height: 20px;
+  margin-top:10px;
+}
+nav img {
+  height: 40px;
+}
+.img-wrapper {
+ position: relative;
+ width: 100%;
+}
+.img-overlay {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
 }
 body{
   background-color:rgb(199, 184, 205);
