@@ -6,25 +6,55 @@ console.log(   " mano js failas "  );
 // vardas, pavarde, amzius, atlyginimas
 // ir panaudoti:
 // console.log( vardas, pavarde);
-
+let vardas = "Tomas";
+let pavarde = "Tomauskis";
+let amzius = 20;
+let atlyginimas = 890;
 
 // teo:
 //  typeof( k ); f-ja kuri isveda kintamojo tipa
-// console.log(    typeof(vardas)  );
-// console.log(    typeof(amzius)  );
+console.log(    typeof(vardas)  );
+console.log(    typeof(amzius)  );
+
+
+function suma() {
+    let x = 10;
+    let y = 5;
+    let suma = x + y;
+    console.log( "suma", suma );
+    // arba
+    // console.log( "suma", x + y );
+}
+suma();
+suma();
+suma();
+
 
 //  2 UZDUOTIS
 // sukurti funkcija "printVardasPavardeAmzius()" , kuri atspausdina i konsole pirmos uzduoties kintamuosius
-
+function printVardasPavardeAmzius() {
+    console.log(  vardas, pavarde, amzius);
+}
+printVardasPavardeAmzius();
+printVardasPavardeAmzius();
 
 //  3 UZDUOTIS
 // sukurti funkcija "printMetinisPajamuDydis()" ,
 // kuri  atspausdina i konsole suma 12 atlyginimu (vienas atlyginimas yra lygus "uzduotis 1" kintamajam - "atlyginimas")
-
+function printMetinisPajamuDydis() {
+    let metinis = atlyginimas * 12;
+    console.log( "metinis atl.:", metinis);
+}
+printMetinisPajamuDydis();
 
 //  4 UZDUOTIS
 // A) sukurti kintamuosius:  salis, miestas, adresas, pastoKodas
 // B) sukurti f-ja "printAddressData()",  kuri atspausdina i konsole visus siuos kintamuosius
+let salis = "Kinija";
+let miestas = "Pekinas";
+let adresas = "Rytu raj., Mao aps., Rouk 46-56";
+let pastoKodas = "CN312654";
+
 
 // ---- advance-----
 //  5 UZDUOTIS

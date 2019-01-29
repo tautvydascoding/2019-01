@@ -1,5 +1,26 @@
-h1 {
-    color: red;
+.h-foto {
+  height: 30vh;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer-font-size {
+  font-size: 1.5rem;
+}
+
+.absolute-right {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .aukstislogo{
 height: 15vh;

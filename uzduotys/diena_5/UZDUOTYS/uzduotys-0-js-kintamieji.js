@@ -7,3 +7,5 @@
 // VSD 24% nuo puses atlyginimo
 // sukikurti 4-5 kintamuosius
 // ir apskaiciuoti atlyginima i rankas
+
+
