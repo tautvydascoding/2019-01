@@ -1,3 +1,38 @@
 h1 {
     color: red;
 }
+.aukstislogo{
+height: 15vh;
+}
+
+.aukstispagr{
+height: 10vh;
+}
+.liststyle{list-style: none;
+}
+.floatvirsus{
+float: left;
+width: 80%;
+}
+.liplotis{
+width: 30%;
+}
+.foto{
+width: 20%;
+height: auto;
+object-fit: cover;
+}
+
+.plotisteksto{
+width: 33%;
+}
+
+.aukstisteksto{
+height: 100px;
+}
+.isjungiufloat{
+clear: both;
+}
+.fonas{
+background-image: url("https://image.smythstoys.com/original/mobile/159592.jpg")
+}
