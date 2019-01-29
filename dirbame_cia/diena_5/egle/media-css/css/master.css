@@ -1,0 +1,103 @@
+h1 {
+    color: red;
+}
+
+div{
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.one{
+  float: left;
+  width: 30%;
+  background-color: blue;
+  margin-left: 2%
+}
+
+.two{
+  float: left;
+  width: 30%;
+  background-color:green;
+  margin-left: 2%;
+}
+
+.three{
+  float: left;
+  width: 30%;
+  background-color:red;
+  margin-left: 2%;
+}
+
+.four{
+  float: left;
+  width: 45%;
+  background-color: orange;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+.five{
+  float: left;
+  width: 45%;
+  background-color:pink;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+.clear-float{
+  clear: both;
+  content: "";
+}
+
+@media (max-width: 768px) {
+  .four{ display: none;}
+  .two{ display: none;}
+  .one{
+    float:left;
+    width: 30%;
+    margin-right: 10%;
+  }
+  .three{
+    float:left;
+    width: 30%;
+    margin-left: 10%
+  }
+  .five{
+    float: left;
+    margin-left: 30%;
+    width: 30%;
+  }
+}
+
+
+@media (max-width:425px) {
+  .five{ display: none;}
+  .one{
+    float: left;
+    width: 40%;
+    margin-bottom: 2%;
+    margin-right: 40%;
+
+  }
+  .two{
+    float: left;
+    width: 40%;
+    margin-bottom: 2%;
+    display: block;
+    margin-right: 30%;
+  }
+  .three{
+    float: left;
+    width: 40%;
+    margin-bottom: 2%;
+    margin-right: 40%;
+  }
+  .four{
+    float: left;
+    width: 40%;
+    margin-bottom: 2%;
+    display: block;
+    margin-right: 40%;
+  }
+}

@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+body,
+html {
+  height: auto;
+}
+section article {
+  float:left;
+  width:28%;
+}
+h2 {
+  margin: 0 auto;
+  padding: 0 10%;
+  float:right;
+  border-left: 2px solid black;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 2px solid black;
+}
+p {
+  padding: 0 3%;
+}
+.margin-kaire {
+  margin-left: 2%;
+}
+.margin-desine {
+  margin-right:2%;
+}
+.nutraukiu-float {
+  clear:both;
+  content:"";
+}
+.fonas-pilkas {
+  background-color: grey;
+}
+.fonas-geltonas {
+  background-color: yellow;
+}
+.fonas-raudonas {
+  background-color: red;
+}
+.fonas-rozinis {
+  background-color: pink;
+}
+.remelis-2x {
+  border: 2px solid black;
+}
+.baltas-tekstas {
+  color:white;
+}
+/*---------------- for tablet------------------ */
+/* nuo 0 iki 768px */
+@media (max-width:768px) {
+  .a3 {
+    width: 92%;
+    margin-top: 2%;
+  }
+  .a1,.a2 {
+    width: 45%;
+  }
+}
+/*--------------- for mobile-------------------- */
+/* nuo 0 iki 425px */
+@media (max-width:425px) {
+  .a1,.a2,.a3 {
+    width:92%;
+    margin-top: 2%
+  }
+}
