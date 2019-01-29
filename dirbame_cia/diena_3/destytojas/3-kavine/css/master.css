@@ -41,3 +41,14 @@ h2 {
     right: 0;
     /* nepamirsti uzdeti ant protevio position: reletive */
 }
+@media(max-width: 426px){
+   article {
+       width: 200px;
+    min-height: 100%;
+
+   }
+   h1{
+       width: 200px;
+   }
+}
+   
