@@ -22,6 +22,7 @@
   top: 0;
   right: 0;
 }
+
 .aukstislogo{
 height: 15vh;
 }
@@ -29,15 +30,19 @@ height: 15vh;
 .aukstispagr{
 height: 10vh;
 }
+
 .liststyle{list-style: none;
 }
+
 .floatvirsus{
 float: left;
 width: 80%;
 }
+
 .liplotis{
 width: 30%;
 }
+
 .foto{
 width: 20%;
 height: auto;
@@ -51,9 +56,24 @@ width: 33%;
 .aukstisteksto{
 height: 100px;
 }
+
+.aukstisrekl{
+height: 500px;
+}
+
 .isjungiufloat{
 clear: both;
 }
+
 .fonas{
-background-image: url("https://image.smythstoys.com/original/mobile/159592.jpg")
+background-image: url("https://images.unsplash.com/photo-1501409745824-a498b0899f82?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=891&q=80")
+
 }
+h2{text-align: center;
+margin-top: 3%;
+}
+
+.button{position: absolute;
+transform: translate(-50%, -50%);
+left: 50%;
+top: 105%;}
