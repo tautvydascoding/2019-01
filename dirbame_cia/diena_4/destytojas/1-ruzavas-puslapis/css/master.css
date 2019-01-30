@@ -87,9 +87,4 @@ aside {
 .float {
     float: left;
 }
-/* responsive nuo 0 iki 768px */
-@media(max-width: 1199px){
-body{
-    width: 100%;
-}
-}
+ 
