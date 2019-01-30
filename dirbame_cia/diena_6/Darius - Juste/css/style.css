@@ -1,0 +1,17 @@
+.row_height_15{
+  height: 15vh;
+}
+.row_height_30{
+  height: 30vh;
+}
+.fonas_su_foto{
+  background-image: url("../img/bg_dino.jpg");
+  background-size: cover;
+}
+/* IDEA: sucentravimas objekto i pati viduri */
+.centras{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
