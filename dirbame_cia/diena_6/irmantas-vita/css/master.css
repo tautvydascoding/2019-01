@@ -58,7 +58,7 @@ height: 100px;
 }
 
 .aukstisrekl{
-height: 500px;
+height: 600px;
 }
 
 .isjungiufloat{
@@ -67,8 +67,8 @@ clear: both;
 
 .fonas{
 background-image: url("https://images.unsplash.com/photo-1501409745824-a498b0899f82?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=891&q=80")
-
 }
+
 h2{text-align: center;
 margin-top: 3%;
 }
@@ -76,4 +76,4 @@ margin-top: 3%;
 .button{position: absolute;
 transform: translate(-50%, -50%);
 left: 50%;
-top: 105%;}
+top: 110%;}
