@@ -1,0 +1,31 @@
+
+
+$pagrindineSpalva: rgb(45, 164, 221);
+
+$spalva1: rgb(151, 222, 140);
+$spalva2: rgb(91, 87, 96);
+$antrastes-dydis: 30px;
+$font-dydis: 16px;
+
+
+h1{
+  color: $pagrindineSpalva;
+}
+
+section{
+  h2{
+    font-size: $antrastes-dydis;
+
+  }
+  p{
+    font-size: $font-dydis;
+  }
+}
+
+.s-antra{
+  background-color: $spalva1;
+}
+
+.s-pirma{
+  background-color: $spalva2;
+}
