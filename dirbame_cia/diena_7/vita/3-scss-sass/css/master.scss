@@ -1,0 +1,29 @@
+$pagrindineSpalva: #ff0022;
+
+$spalva1: #00ff00;
+$spalva1: #000fff;
+$tekstodydis1: 30px;
+$tekstodydis2: 16px;
+
+
+
+
+
+.pagrindinis h2 {
+    color: green;
+    font-size: 30px;
+    p {
+      color: black;
+      font-size: 16px;
+}
+}
+
+.sekantis  {
+  h2 {
+  color: black;
+  font-size: 16px;}
+  p {
+    color: green;
+    font-size: 30px;
+}
+}

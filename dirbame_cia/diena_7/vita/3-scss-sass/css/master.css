@@ -1,0 +1,19 @@
+.pagrindinis h2 {
+  color: green;
+  font-size: 30px;
+}
+
+.pagrindinis h2 p {
+  color: black;
+  font-size: 16px;
+}
+
+.sekantis h2 {
+  color: black;
+  font-size: 16px;
+}
+
+.sekantis p {
+  color: green;
+  font-size: 30px;
+}
