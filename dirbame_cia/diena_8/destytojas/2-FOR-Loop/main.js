@@ -19,11 +19,18 @@ for (var i = 0; i < 40; i++) {
 
 // 1.1 UZDUOTIS
 // isvesti i ekrana "<h3> Azuolas </h3>" su document.write arba innerHTML
+document.write("Sveiki");
+for (var i = 0; i < 30; i++) {
+    document.write("<h3> Azuolas </h3>", i);
+}
 
 // 1.2 UZDUOTIS
 // (HTML faile susikurti article elementa)
 // isvesti 50 kartu zodi "<h2> Azuolas</h2> " i <article> elementa su  innerHTML pagalba
-
+document.querySelector('body').innerHTML +=  "Viso" ;
+for (var i = 0; i < 30; i++) {
+    document.querySelector('body').innerHTML += "<h2>1Azuolas </h2>"+i ;
+}
 // 2.1 UZDUOTIS
 // sukurti f-ja "printX(xx)", kuri  i browser langa atspausdins paduota "xx" teksta (panaudojanti document.write arba innerHTML)
 
