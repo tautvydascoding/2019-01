@@ -40,7 +40,7 @@ spausdintiStulpeli(5);
 function algaPo10Metu(x) {
   let kiekMenesiu = x * 12;
   let menAtlyginimas = 680;
-  let algosPokytis = 1;
+  let algosPokytis = 2;
   let atlyginimasPoXMetu = 680;
   for (var i = 0; i < kiekMenesiu; i++) {
     algosPokytisEurais = atlyginimasPoXMetu * (algosPokytis / 100);
