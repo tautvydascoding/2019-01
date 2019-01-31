@@ -1,3 +1,5 @@
+console.log(   " mano js failas "  );
+
 //==============TEORIJA ++ / -- ==========
     var x = 10;
     x = x + 3;  // x = 13
@@ -11,10 +13,15 @@
 // 1 UZDUOTIS
 // isvesti 50 kartu zodi "Azuolas" i konsole  (! bandant tai padaryti, atsiras skaicius 50)
 
+for (var i = 0; i < 40; i++) {
+    console.log( " Azuolas", i);
+}
+
 // 1.1 UZDUOTIS
 // isvesti i ekrana "<h3> Azuolas </h3>" su document.write arba innerHTML
 
 // 1.2 UZDUOTIS
+// (HTML faile susikurti article elementa)
 // isvesti 50 kartu zodi "<h2> Azuolas</h2> " i <article> elementa su  innerHTML pagalba
 
 // 2.1 UZDUOTIS
@@ -31,16 +38,6 @@
 // 4 UZDUOTIS
 // A) sukurti f-jas piestiEilute(x); spausdintiStulpeli(x);
 // B) nupiesti tuscia lentele paleidiznat f-jas (  antrastine eilute "vardas |  pavarde | amzius" - teks isvesti be f-jos)
-funcion piestiEilute20() {
-let eilute = "";
-for (var i = 0; i < 20; i++) {
-  eilute = eilute + "-";
-}
-  console.log(eilute);
-
-
-}
-piestiEilute(20);
 
 
 

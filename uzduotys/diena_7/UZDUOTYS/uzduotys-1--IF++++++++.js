@@ -34,6 +34,11 @@ if(true){
 // }
 
 //=============IF====================
+// UZDUOTIS
+// sukurti kintamuosius: arVedes ir arDuotiPaskola = false
+// patikrinti ar zmogus vedes. Jeigu "vedes" - duoti paskola, jeigu "nevedes" - neduoti paskolos
+// su console.log pranesti ar paskola zmogui bus duodama
+
 // 0 UZDUOTIS
 // A)
 // susikurti : vardas1 = "Tomas", vardas2 = "Antanas"
@@ -46,15 +51,19 @@ if(true){
 
 // C)
 // Patikrinti ar varda1 yra "Tomas", IR butinai vardas2  yra "Karolis"
+// pranesti kad vardai: "Tomas ir Karolis"
+// arba pranesti, kad : "vardai NE Tomas ir Karolis"
+// pakeitineti vardus ir paziureti ar veikia
 
 // D)
 // Patikrinti ar bent vienas is vardu "Tomas"
 // || - arba
-
+// pranesti: "kazkuris is vardu yra Tomas"
+// pakeitineti vardus ir paziureti ar veikia
 
 // 1 UZDUOTIS
 // turesime vartotojo amziu
-// var age = 24;
+// let age = 24;
 // gapal ji, turesiem isvesti tam tikra reklamos teksta
 
 
@@ -78,8 +87,9 @@ if(true){
 
 
 // 2 UZDUOTIS
-// sukurti 3 vardus "Tomas", "Paulius", "Airidas"
-// susikurti kintamaji 'klietoVardas' - kurio reiksme lyginsime
+// susikurti kintamaji 'klietoVardas' - (ja ivesime betkokia) kurio reiksme lyginsime
+// sukurti 3  vardas1= "Tomas", vardas2 ="Paulius", vardas3 ="Airidas" (gimianiciu vardai , jie tures akcijas))
+
 // kai "if"-ui padauodame klietoVardas ir vardas1 - isvesti "Masinoms 10% nuolaida"
 // kai "if"-ui padauodame klietoVardas ir vardas2 - isvesti "Buitinei technikai  30% nuolaida"
 // kai "if"-ui padauodame bet ka kita - isvesti "5% nuolaida kelionems"
@@ -87,6 +97,7 @@ if(true){
 // 3 UZDUOTIS
 // sukurti 3 kintamuosius (klientu tipus) "bronze", "silver", "gold"
 // susikurti kintamaji 'klietoTipas' - kurio reiksme lyginsime
+
 // kai 'klietoTipas' yra "bronze" - isvesti " 15% nuolaida"
 // kai 'klietoTipas' yra "silver" - isvesti " 30% nuolaida"
 // kai 'klietoTipas' yra   bet koks kitas - isvesti " 5% nuolaida  "
