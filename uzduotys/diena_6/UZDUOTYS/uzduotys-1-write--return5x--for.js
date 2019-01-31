@@ -29,7 +29,7 @@
 //  1.1 UZDUOTIS
 //  sukurti funkcija "printKaina(x)" ,
 //  kuri atspausdina i konsole "x" reiksme
-//  iskviesti f-ja print(15.99);
+//  iskviesti f-ja printKaina(15.99);
 
 //  1.2 UZDUOTIS
 // iskviesti f-ja print 3 kartus, kad atspausdintu 3 skirtingas kainas:  999 , 13.49, 100.05
@@ -61,11 +61,11 @@
 // A) parasyti f-ja "getPelnas()", kuri turi "return" zodeli ir grazina apskaiciuota pelna
 // B) f-joje sukurti kintamaji "pajamos" 12500
 // B) f-joje sukurti kintamaji "islaidos" 7500
-// B) f-joje apskaiciuoti pelna  ( pvz: pelnas = pajamos - islaidos)  
+// B) f-joje apskaiciuoti pelna  ( pvz: pelnas = pajamos - islaidos)
 // C) patikrinti ar veikia f-ja
 
 // 3.2 UZDUOTIS
-// A) parasyti f-ja "getPelnas(pajamos, nuostoliai)", kuri turi "return" zodeli ir grazina apskaiciuota pelna
+// A) parasyti f-ja "getPelnas2(pajamos, nuostoliai)", kuri turi "return" zodeli ir grazina apskaiciuota pelna
 // B) f-joje apskaiciuoti pelna  ( pvz: pelnas = pajamos - nuostoliai)
 // C) patikrinti ar veikia f-ja
 
@@ -91,6 +91,7 @@
 // ####
 // #####
 // ######
+
 
 //=========== =KOMANDINE (3-4h) Bootstrap && GIT=================
 // ant lentos

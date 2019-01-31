@@ -1,0 +1,34 @@
+$pagrindineSpalva: #ff0022;
+$tekstas1: 16px;
+$tekstas2: 30px;
+$spalva1: yellow;
+$spalva2: grey;
+h1 {
+    color: $pagrindineSpalva;
+}
+body {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: green;
+  width: 80%;
+}
+.pagrind {
+  h2 {
+    background-color: $spalva1;
+    font-size: $tekstas2;
+  }
+  p {
+    background-color: $spalva2;
+    font-size: $tekstas1;
+  }
+}
+.sekantis {
+  h2 {
+    background-color: $spalva2;
+    font-size: $tekstas2;
+  }
+  p {
+    background-color: $spalva1;
+    font-size: $tekstas1;
+  }
+}

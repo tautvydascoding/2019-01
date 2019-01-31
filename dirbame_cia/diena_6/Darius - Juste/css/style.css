@@ -1,5 +1,24 @@
+
+.row_height_15{
+  height: 15vh;
+}
+.row_height_30{
+  height: 30vh;
+}
+.fonas_su_foto{
+  background-image: url("../img/bg_dino.jpg");
+  background-size: cover;
+}
+/* IDEA: sucentravimas objekto i pati viduri */
+.centras{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .navbar a{
-    
+
     margin: 0 0 0 20px;
     font-size: 36px;
 }
@@ -10,10 +29,7 @@ nav img{
 
 .pagrindinis{
     text-align: center;
-    color: azure;   
-}
-h2{
-    text-align: center;
+    color: azure;
 }
 .pagrindinis p{
     color: azure;
@@ -23,7 +39,5 @@ h2{
     left:50%;
 }
 .aukstis{
-    height: 400px;
+    height: 300px;
 }
-
-

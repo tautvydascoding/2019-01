@@ -1,0 +1,19 @@
+$pagrindineSpalva:  #ff0022;
+$spalva1: #00ff00;
+$spalva2: #000fff;
+$antraste-dydis: 30px;
+$teksto-dydis: 16px;
+
+ 
+section {
+    h2 { font-size: $antraste-dydis; }
+    p { font-size: $teksto-dydis; }
+}
+.s-pirma {
+    h2 { background-color: $spalva1;  }
+    p  { background-color: $spalva2;  }
+}
+.s-antra {
+    h2 { background-color: $spalva2;  }
+    p  { background-color: $spalva1;  }
+}

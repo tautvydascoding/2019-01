@@ -90,8 +90,10 @@ function getH1ElementoAukstis() {
 // ####
 // #####
 // ######
+var text = "";
 var i;
-var text = "#";
-for (i = 0, i < 5, i++) {
-  return text + text;
+for (i = 0; i < 6; i++) {
+  text += "#";
+  console.log(text);
+  document.querySelector("h1").innerHTML += text + "<br>";
 }
