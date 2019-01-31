@@ -67,9 +67,10 @@ let menAtlyginimas = 680;
 let kiekMenesiu = 10 * 12;
 let algosPokytis = 0.01;
 for (let i = 0; i < kiekMenesiu ; i++) {
+  menAtlyginimas = menAtlyginimas+(menAtlyginimas*algosPokytis)
+  console.log(menAtlyginimas);
+};
 
-  console.log();
-}
 
 
 
