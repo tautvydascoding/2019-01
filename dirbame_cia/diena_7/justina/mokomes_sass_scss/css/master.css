@@ -1,0 +1,17 @@
+section h2 {
+  font-size: 30px; }
+
+section p {
+  font-size: 16px; }
+
+.pagrindinis h2 {
+  background-color: green; }
+
+.pagrindinis p {
+  background-color: grey; }
+
+.sekantis h2 {
+  background-color: grey; }
+
+.sekantis p {
+  background-color: green; }
