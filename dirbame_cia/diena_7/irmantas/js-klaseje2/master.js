@@ -29,13 +29,13 @@ for (let i = 0; i < 50; i++) {
 //   printXX("aaaa <br>");
 // };
 
-function printLoop(tekstas="Cikla kartoja 100kartu!", kartai=100) {
-  for (let i = 0; i < kartai; i++) {
-    document.write(tekstas + "<br>")
+function printLoop() {
+  for (let i = 0; i < 13; i++) {
+    document.write('<img src="https://g3.dcdn.lt/images/pix/430x260/W7BW16MZivw/prasidejo-baikeriu-naktys-kaune-74768044.jpg" alt="">' + "<br>")
   };
 };
 
-// printLoop('<img src="https://g3.dcdn.lt/images/pix/430x260/W7BW16MZivw/prasidejo-baikeriu-naktys-kaune-74768044.jpg" alt="">', 12);
+printLoop();
 
 // 4 UZDUOTIS
 

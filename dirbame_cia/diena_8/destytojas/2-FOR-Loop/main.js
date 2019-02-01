@@ -27,16 +27,29 @@ for (var i = 0; i < 30; i++) {
 // 1.2 UZDUOTIS
 // (HTML faile susikurti article elementa)
 // isvesti 50 kartu zodi "<h2> Azuolas</h2> " i <article> elementa su  innerHTML pagalba
+
 document.querySelector('body').innerHTML +=  "Viso" ;
 for (var i = 0; i < 30; i++) {
     document.querySelector('body').innerHTML += "<h2>1Azuolas </h2>"+i ;
 }
+
+
 // 2.1 UZDUOTIS
 // sukurti f-ja "printX(xx)", kuri  i browser langa atspausdins paduota "xx" teksta (panaudojanti document.write arba innerHTML)
 
+function printX(x) {
+    let tekstas = "<h2> " + x + "</h2>";
+    document.querySelector('body').innerHTML += tekstas;
+}
+printX("Tomas");
+printX("Jurgis");
+printX("Antanas");
+
 // 2.2 UZDUOTIS
 // paleisti f-ja "printX(xx)" 100 kartu
-
+for (var i = 0; i < 20; i++) {
+    printX("Tomas" );
+}
 // 2.3 UZDUOTIS
 // paleisti f-ja "printX(xx)" 12 kartu ir atspausdinti <img ...
 // PATARIMAS:
