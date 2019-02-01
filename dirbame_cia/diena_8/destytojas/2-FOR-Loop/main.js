@@ -74,11 +74,21 @@ for (var i = 0; i < 20; i++) {
 
 // advance
 // 5 UZDUOTIS
-// sukurti f-ja, kuri apskaiciuos kiek uzdirbsime po 10 metu , jei pradzioje uzdirbdami 680, ir kai alga i menesi pakyla 1% (~6.8eur)
-// var kiekMenesiu = 10 * 12;
-// var menAtlyginimas = 680;
-// var algosPokytis = 1;  // 1%
+// sukurti f-ja, kuri apskaiciuos kiek uzdirbsime po 10 metu , jei pradzioje uzdirbdami 680, ir kai alga i menesi pakyla 1% nuo ta menesi esamos algos (~6.8eur)
+let kiekMenesiu = 10 * 12;
+let menAtlyginimas = 680;
+let algosPokytis = 1;  // 1%
 
+let algosPokytisPinigais = menAtlyginimas * algosPokytis / 100;
+// console.log( "1% nuo 680:", algosPokytisPinigais);
+menAtlyginimas += algosPokytisPinigais;
+// console.log( "atlyginimas po pakelimo:",  menAtlyginimas );
+
+for (var i = 0; i < 120; i++) {
+    algosPokytisPinigais = menAtlyginimas * algosPokytis / 100; // 1%
+    menAtlyginimas += algosPokytisPinigais;  // ATLYGINIMAS PO PADIDEJIMO
+    console.log(  "po 10 metu atlyginmas: ", menAtlyginimas);
+}
 // ==============SCSS============================
 
 //========= local/global or Frog/Garden =======
