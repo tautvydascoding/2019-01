@@ -1,0 +1,34 @@
+$pagrindineSpalva: #ff0022;
+$spalva1: green; // IDEA: kintamieji su $ zenklu.
+$spalva2: grey;
+
+$antraste-dydis: 30px;
+$teksto-dydis: 16px;
+
+
+section{
+  h2{
+    font-size: $antraste-dydis;
+  }
+  p{
+    font-size: $teksto-dydis;
+  }
+}
+
+.pagrindinis{
+  h2{
+    background-color: $spalva1;
+  }
+  p{
+    background-color: $spalva2;
+  }
+}
+
+.sekantis{
+  h2{
+    background-color: $spalva2;
+  }
+  p{
+    background-color: $spalva1;
+  }
+}
