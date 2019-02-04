@@ -48,6 +48,14 @@ visosPrekes[0] = preke;
 visosPrekes[1] = ["Melynas", "5.jpg", "melynas fotelis", 50];
 visosPrekes[2] = ["Baltas", "6.png", "baltas fotelis", 60];
 visosPrekes[3] = ["Balionas", "balionas.png", "Juodai baltas balionas", 100];
+visosPrekes[4] = ["Melynas", "6.png", "melynas fotelis", 50];
+visosPrekes[5] = ["Baltas", "balionas.png", "baltas fotelis", 60];
+visosPrekes[6] = ["Balionas", "5.jpg", "Juodai baltas balionas", 100];
+visosPrekes[7] = ["Melynas", "5.jpg", "melynas fotelis", 50];
+visosPrekes[8] = ["Baltas", "6.png", "baltas fotelis", 60];
+visosPrekes[9] = ["Balionas", "balionas.png", "Juodai baltas balionas", 100];
+visosPrekes[10] = ["Melynas", "5.jpg", "melynas fotelis", 50];
+visosPrekes[11] = ["Baltas", "6.png", "baltas fotelis", 60];
 
 document.querySelector("div").className += "fluid-container";
 let rowNumber = 0;
@@ -55,7 +63,9 @@ function getRow() {
   rowNumber++;
   document.querySelector("div.fluid-container").innerHTML += "<div class = 'row  p-" + rowNumber + "'></div>";
 }
-for (var i = 1; i < 4; i++) {
-  getRow();
-  document.querySelector("div.p-1").innerHTML += "<div class='col-4'>" + visosPrekes[i][0] + "<br>" + "<img src='img/" + visosPrekes[i][1] + "' height='150px'>" + "<br>" + visosPrekes[i][2] + "<br>" + visosPrekes[i][3] + " €" + "</div>";
+for (var i = 1; i < visosPrekes.length; i++) {
+  if ((i+2) % 3 == 0) {
+    getRow();
+  }
+  document.querySelector("div.p-" + rowNumber).innerHTML += "<div class='col-4 text text-center'><p>" + visosPrekes[i][0] + "</p>" + "<img src='img/" + visosPrekes[i][1] + "' height='150px'>" + "<p>" + visosPrekes[i][2] + "</p><p>" + visosPrekes[i][3] + " €" + "</p></div>";
 }
