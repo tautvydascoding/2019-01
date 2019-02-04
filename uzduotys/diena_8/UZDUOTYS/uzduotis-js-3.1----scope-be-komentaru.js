@@ -31,8 +31,8 @@
  // A) sukurti kintamaji var katinas = "juodas"
  // B) sukurti f-ja
  // C) sukurti f-jos viduje kintamaji var katinas = "baltas"
- // D) atspauzdinti abu f-jos viduje
- // E) atspauzdinti  uz f-jos
+ // D) atspausdinti abu f-jos viduje
+ // E) atspausdinti  uz f-jos
 
  // var katinas = "juodas";
  //
@@ -61,7 +61,7 @@
  // var vardas = "Jonas";
  // function myName ( vardas ) {
  //     console.log( " vardas" + vardas);
- //     console.log("this.vardas - f-jos viduje: ",  this.vardas);   
+ //     console.log("this.vardas - f-jos viduje: ",  this.vardas);
  // }
  // myName("PETRAS");
 //======================TEKSTO ISVEDIMAS===============
