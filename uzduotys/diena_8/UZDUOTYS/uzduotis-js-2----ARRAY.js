@@ -10,9 +10,9 @@
 // 4.1 atspausdinti visus pakeistus masyvo duomenis
 // 5. i masyva ideti papildomus duomenis: masinos metai "2004"
 
-// sunkesne:
-// html elementus: article, h2, ... susikurti su javascript/ innerHTML
-// 6. atspausdinti masyvo duomenis i ekrana:
+// 6. sunkesne:
+// html elementus: article, h2, ... susikurti su javascript/ innerHTML ir 
+//  atspausdinti masyvo duomenis i ekrana:
 // <article>
 //      <h2> pavadinimas </h2>
 //      <div> savininko vardas: ...</div>
