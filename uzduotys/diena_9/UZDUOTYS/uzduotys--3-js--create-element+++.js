@@ -1,14 +1,17 @@
 
 
-// 0. HTML faile  po H1 elementu  -  sukurti <aside> elementa
+// 0.  HTML faile  po H1 elementu  -  sukurti <aside> elementa
+// isitikinti ar jau turite H1 elmenta ir <aside>
+// TIKSLAS: naudojant TIK Javascript, sukurti <header> elementa su viduje tekstu
+// ir <header> elementa ideti po h1 elementu (tarp h1 ir <aside elementu>)
 
-// 1. naudojant javascript sukurti "header"  elementa  (document.createElment)
+// 1. naudojant TIK javascript sukurti "header"  elementa  (document.createElment)
 // nepamirskite patestuot ar pavyko
 // console.log(  manoHeader );  // test
 
 // 1.2. naudojant javascript sukurti (var manotekstas = "Antraste") kintamaji ir sukurti teksto Node : panaudojant js document.createTextNode(manotekstas)
 
-// 2. i susikuta 'header' elemneta  ideti 'tekstas' elementas (Node)
+// 2. i susikuta 'header' elementa  ideti 'tekstas' elementas (Node)
 // test
 // console.log(  manoHeader );
 

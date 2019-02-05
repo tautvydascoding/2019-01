@@ -46,8 +46,8 @@ printDuomenys();
  // A) sukurti kintamaji var kakis = "juodas"
  // B) sukurti f-ja
  // C) sukurti f-jos viduje kintamaji var kakis = "baltas"
- // D) atspauzdinti abu f-jos viduje
- // E) atspauzdinti  uz f-jos
+ // D) atspausdinti abu f-jos viduje
+ // E) atspausdinti  uz f-jos
  var kakis = "juodas";
  function testLocalVar() {
      var kakis = "baltas";

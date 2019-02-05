@@ -23,8 +23,10 @@ var elmText = document.createTextNode("lorem lorem lorem");
 console.log(elmText);
 
 // elemento idejimas i kita elementa
+// i kur               ka dedame
 elmAside.appendChild(elmText);
 //console.log(elmAside);
+document.querySelector('body').appendChild( elmAside );
 
 // ! sukurti elementai - buna dar neideti i window  document html puslapi
 

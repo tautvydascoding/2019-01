@@ -9,7 +9,7 @@ var zmogus; // undefined
 // (ir priskirti reiksmes pvz: 'Jurgis', "Jurgauskas", 7)
 
 // 1.1 UZDUOTIS
-// atspauzdinti visus duomenis
+// atspausdinti visus duomenis
 
 // UZDUOTIS 1.2
 // PAKEISTI : perkelti mokini i sekancia klase
@@ -27,7 +27,8 @@ var zmogus; // undefined
 // A) tevas : vardas(string), pavarde(string), vaikas(object)
 // B) vaikas:  vardas (string), klase(number)
 // 2.1) priskirti "vaikas" objekta - tevo kintamajam vaikas  (kintamajam)
-
+// atspausdinti
+// 2.2 UZDUOTIS: pakeisti vaika ir atspausdinti teva ir vaika
 
 // 3 UZDUOTIS
 // sukurti  objekto "darbuotojas" construktoriu. Objektas darbuotojas: nr, vardas, pavarde, alga
