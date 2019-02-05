@@ -23,57 +23,53 @@
   right: 0;
 }
 
-.aukstislogo{
-height: 15vh;
+.aukstis-logo{
+  height: 15vh;
 }
 
-.aukstispagr{
-height: 10vh;
+.float-virsus{
+  float: left;
+  width: 80%;
+  list-style: none;
 }
 
-.liststyle{list-style: none;
+.li-plotis{
+  float: left;
+  width: 30%;
+  font-weight: 900;
 }
 
-.floatvirsus{
-float: left;
-width: 80%;
+.aukstis-pagr{
+  height: 10vh;
+  font-size: 2rem;
 }
 
-.liplotis{
-width: 30%;
+.aukstis-teksto{
+  height: 150px;
+  text-align: center;
+  padding: 36px;
+  font-weight: 900;
+  font-family: serif;
 }
 
-.foto{
-width: 20%;
-height: auto;
-object-fit: cover;
-}
-
-.plotisteksto{
-width: 33%;
-}
-
-.aukstisteksto{
-height: 100px;
-}
-
-.aukstisrekl{
-height: 600px;
-}
-
-.isjungiufloat{
-clear: both;
+.isjungiu-float{
+  clear: both;
 }
 
 .fonas{
-background-image: url("https://images.unsplash.com/photo-1501409745824-a498b0899f82?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=891&q=80");
+  height: 700px;
+  background-image: url("https://images.unsplash.com/photo-1501409745824-a498b0899f82?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=891&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-h2{text-align: center;
-margin-top: 3%;
+h2{
+  text-align: center;
+  margin-top: 3%;
 }
 
 .button{position: absolute;
-transform: translate(-50%, -50%);
-left: 50%;
-top: 50%;}
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+}

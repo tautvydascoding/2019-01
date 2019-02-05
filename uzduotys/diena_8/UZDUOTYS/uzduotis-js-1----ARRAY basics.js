@@ -1,6 +1,6 @@
 // ========js best practice & common mistakes (~2h)
 
-// -------- --Array / Masyvai  TEORIJA (~2h)--------------------
+// ------Array / Masyvai  TEORIJA (~2h)--------------------
 
 
 	// UZDUOTIS
