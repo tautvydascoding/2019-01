@@ -28,7 +28,7 @@ nav img{
 }
 
 .pagrindinis{
-    text-align: center;
+    
     color: azure;
 }
 .pagrindinis p{
@@ -40,4 +40,7 @@ nav img{
 }
 .aukstis{
     height: 300px;
+}
+.aukstis2{
+    height: 80px;
 }
