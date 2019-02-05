@@ -27,12 +27,12 @@ var katinas = "juodas";
 function koksKatinas() {
   var katinas = "baltas";
 // C) sukurti f-jos viduje kintamaji var katinas = "baltas"
-// D) atspauzdinti abu f-jos viduje
+// D) atspausdinti abu f-jos viduje
   console.log("1 katinas:", katinas);
   console.log("2 katinas:", this.katinas);
 }
 koksKatinas();
-// E) atspauzdinti  uz f-jos
+// E) atspausdinti  uz f-jos
 console.log("3 katinas:", katinas);
 //  1.1 UZDUOTIS
 //  sukurti funkcija "printAntraste(x)" ,

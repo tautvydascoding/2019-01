@@ -8,7 +8,7 @@ var zmogus; // undefined
 // (ir priskirti reiksmes pvz: 'Jurgis', "Jurgauskas", 7)
 
 // 1.1 UZDUOTIS
-// atspauzdinti visus duomenis
+// atspausdinti visus duomenis
 
 // UZDUOTIS 1.2
 // PAKEISTI : klase i sekancia

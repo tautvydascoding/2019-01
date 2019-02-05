@@ -1,0 +1,9 @@
+h1 {
+    color: red;
+}
+p[name="tautvydas"] {
+    color:red;
+}
+p[sudetis="metalas"] {
+    background-color: pink;
+}
