@@ -21,7 +21,13 @@
 //    console.log("y", y);
 //    console.log("z", z);
 // }
+ // KLAUSIMAS:  pries paleidziant/atkomentuojant    consoles (apacioje)- atspekite kurios nesuveiks
+// console.log("x", x);
+// console.log("z", z);
+// console.log("y", y);
+ // KLAUSIMAS:  pries paleidziant f-ja - atspekite kurios  consoles (f-joje) nesuveiks
 // testLocalVar();
+ // KLAUSIMAS:  pries paleidziant/atkomentuojant    consoles (apacioje)- atspekite kurios nesuveiks
 // console.log("x", x);
 // console.log("z", z);
 // console.log("y", y);
@@ -31,8 +37,8 @@
  // A) sukurti kintamaji var katinas = "juodas"
  // B) sukurti f-ja
  // C) sukurti f-jos viduje kintamaji var katinas = "baltas"
- // D) atspauzdinti abu f-jos viduje
- // E) atspauzdinti  uz f-jos
+ // D) atspausdinti abu f-jos viduje
+ // E) atspausdinti  uz f-jos
 
  // var katinas = "juodas";
  //
@@ -41,8 +47,9 @@
  //    console.log("1 katinas:", katinas);
  //    console.log("2 this.katinas - f-jos viduje: ",  this.katinas);
  // }
+ // KLAUSIMAS: Pries paleidziant f-ja - atspekite kurios  consoles (f-joje) nesuveiks
  // test2();
- //
+ // KLAUSIMAS: Ka isves konsole "3 katinas" - juodas AR bartas????
  // console.log("3 katinas:", katinas);
 
 //==========================
@@ -54,14 +61,18 @@
  //     console.log( "1. xx:", xx);
  //     console.log( "2. this.xx:",   this.xx);
  // }
+ // KLAUSIMAS: Ka isves konsole "3. XX" - 10 AR 20 AR klaida????
  // console.log( "3. xx:", xx);
-
+ // KLAUSIMAS: Pries paleidziant f-ja - atspekite Ka isves konsole "1. XX ir 2. xx" - 10 AR 20 AR 999????
+ // isvesti( 999 );
+ // KLAUSIMAS: Ka isves konsole "4. XX" - 10 AR 20 AR klaida????
+ // console.log( "4. xx:", xx);
 
  //======================
  // var vardas = "Jonas";
  // function myName ( vardas ) {
  //     console.log( " vardas" + vardas);
- //     console.log("this.vardas - f-jos viduje: ",  this.vardas);   
+ //     console.log("this.vardas - f-jos viduje: ",  this.vardas);
  // }
  // myName("PETRAS");
 //======================TEKSTO ISVEDIMAS===============
