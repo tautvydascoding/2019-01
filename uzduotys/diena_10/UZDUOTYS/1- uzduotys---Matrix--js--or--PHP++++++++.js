@@ -29,16 +29,31 @@
      // UZDUOTIS 1.4
      // isvesti visa informacija apie kiekviena  darbuotoja  (naudojant DU FOR ciklus)
 
+     // PAPAILDOMI LOGIKOS UZDAVINIAI (tiems kas juda greiciau nei visa klase ):
+     // 1.5) surasti jauniausia darbuotoja
+     // 1.6) surasti seniausia darbuotoja
+     // 1.6) apskaiciuoti darbuotoju amziaus vidurki
 
     // UZDUOTIS 2 --------------
     // sukurti matrica, kurioje bus saugoma kiekvienos prekes info:
     // Antraste, img pavadinimas, kaina, prekes aprasymas
 
-    // A. sukurti masyva preke: Antraste, img pavadinimas, prekes aprasymas, kaina
-    // B. i masyva visosPrekes, ideti "preke" masyva
-    // C. atvaizduodi kiekvienoje eiluteje po 3 prekes (naudojant for arba foreach) ir bootstrap dizaina
+    // 2.A. sukurti masyva preke: Antraste, img pavadinimas, prekes aprasymas, kaina
+    // butu gerai, jei kainos butu nuo 10 iki 200 eur (ivairios)
+    // 2.B. i masyva visosPrekes, ideti "preke" masyva
+    // 2.C. atvaizduodi kiekvienoje eiluteje po 3 prekes (naudojant for arba foreach(PHP kalba)) ir bootstrap dizaina
+
+   // nuotrauka (javascript kalbai)
+   // let x = "<img src='img/1.jpg' alt='medziginis fotelis'>";
+
+   // 2  budai nuotraukoms (PHP kalbai)
+    // printf("<img src='./img/" . $visosPrekes[$i][1] . "' width='200px;' alt=''  />");
+    // printf("<img src='./img/%s' width='200px;' alt=''  />", $visosPrekes[$i][1]);
 
 
-       // 3 budai nuotraukoms
-        // printf("<img src='./img/" . $visosPrekes[$i][1] . "' width='200px;' alt=''  />");
-        // printf("<img src='./img/%s' width='200px;' alt=''  />", $visosPrekes[$i][1]);
+
+    // PAPAILDOMI LOGIKOS UZDAVINIAI (tiems kas juda greiciau nei visa klase ):
+    // 3.1 surikiuoti prekes pagal kaina didejanciai
+    // 3.2 atrinkti prekias iki 100 eur
+    // sukurti visu prekiu masyvo kopija: i ja sudeti prekias iki 100 naudojant for arba foreach( PHP f-ja)
+    // 3.3 suapvalinti prekiu kainas , kad nebutu centu  google convert variable into integer
