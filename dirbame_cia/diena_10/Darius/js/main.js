@@ -42,8 +42,8 @@ visidarbuotojai[2] = darbuotojas3;
 
 //pirmo darbuotojo isvedimas i ekrana
 
-for (let i = 0; i < darbuotojas1.length; i++) {
-        console.log(darbuotojas1[i]);
+for (let i = 0; i < visidarbuotojai[0].length; i++) { // 0 kelintas darbuotojas
+        console.log(visidarbuotojai[0][i]);
           
 }
 //Visu darbuotoju vardai
@@ -58,34 +58,42 @@ for (let i = 0; i < visidarbuotojai.length; i++) {
         
 }
 //isvesti visa informacija apie kiekviena  darbuotoja  (naudojant DU FOR ciklus)
-for (let i = 0; i < (visidarbuotojai.length) - 1; i++) {
+     
+
+for (let i = 0; i < visidarbuotojai.length; i++) {
+        console.log("------------");
         
-                console.log(visidarbuotojai[i]);
-                if(((visidarbuotojai.length) - 1) > visidarbuotojai[i]){
-                        return false;
-                }
         
-        for (let i = 0; i < darbuotojas3.length; i++) {
-                console.log(darbuotojas3[i]);   
+       for (let j = 0; j < visidarbuotojai[i].length; j++) {
+               console.log(visidarbuotojai[i][j]);
                
-                
-        }
+               
+       }
         
-          
 }
 
 
+//Ieskoti jauniausio, ieskom didziausios datos
+let didziausiadata = 0;
+let jauniausioNr = -999;
+for (let k = 0; k < visidarbuotojai.length; k++) {
+        // console.log(visidarbuotojai[k][2]);
+let didziausiadata = 0;
+        if(visidarbuotojai[k][2] > didziausiadata ){
+                jauniausias = visidarbuotojai[k][2];
+                jauniausioNr = k;      
+        }
+}
+console.log(jauniausias, jauniausioNr);
+
 // //uzduotis 2
 
-let antraste = ["pepsi", "muilas", "cola"];
-let img_pavadinimas = [];
-let kaina = [2, 1, 2];
-let prekes_aprasymas = ["lorem1", "lorem2", "lorem3"];
-let visosprekes = [];
-visosprekes[0] = antraste;
-visosprekes[1] = img_pavadinimas;
-visosprekes[2] = kaina;
-visosprekes[3] = prekes_aprasymas;
-
-
-
+// let antraste = ["pepsi", "muilas", "cola"];
+// let img_pavadinimas = [];
+// let kaina = [2, 1, 2];
+// let prekes_aprasymas = ["lorem1", "lorem2", "lorem3"];
+// let visosprekes = [];
+// visosprekes[0] = antraste;
+// visosprekes[1] = img_pavadinimas;
+// visosprekes[2] = kaina;
+// visosprekes[3] = prekes_aprasymas;
