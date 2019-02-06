@@ -10,7 +10,19 @@
 </head>
 <body>
     
+<?php
+//komentaras
+/*ilgas komentas*/
 
+$a = aaa
+$a = aaa
+$a = aaa
+$a = aaa
+
+
+
+
+?>
 
     <script src="script.js"></script>
 </body>
