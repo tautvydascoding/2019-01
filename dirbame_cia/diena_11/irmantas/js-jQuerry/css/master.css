@@ -1,0 +1,12 @@
+.second {
+  width: 25%;
+  height: 50px;
+  background-color: grey;
+}
+
+
+.mano {
+  cursor: pointer;
+  color: blue;
+  background-color: red;
+}
