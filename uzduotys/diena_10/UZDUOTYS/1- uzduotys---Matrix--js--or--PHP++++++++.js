@@ -20,6 +20,8 @@
      // C. sukurti masyva darbuotojas3: Kestas, Kerta, 2001, pavaduotojas
      // D. sukurti masyva 'visiDarbuotojai'
      // E.   i masyva 'visiDarbuotojai'  ideti visus dartuotoju masyvus
+     // UZDUOTIS 1.0
+     // isvesti visa informacija apie pirma darbuotoja (NEnaudojant FOR cikla)
      // UZDUOTIS 1.1
      // isvesti visa informacija apie pirma darbuotoja (naudojant FOR cikla)
      // UZDUOTIS 1.2

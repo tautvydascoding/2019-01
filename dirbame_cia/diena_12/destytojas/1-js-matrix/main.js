@@ -44,19 +44,62 @@ for (var i = 0; i < masinos.length; i++) {
      // A. sukurti masyva darbuotojas1: Jonas, Jonaitis, 1980, Inspektorius
      // B. sukurti masyva darbuotojas2: Ona, Onute, 1980, sekretore
      // C. sukurti masyva darbuotojas3: Kestas, Kerta, 2001, pavaduotojas
+     let  darbuotojas1 = [ "Jonas", "Jonaitis", 1980, "Inspektorius"];
+     let  darbuotojas2 = [  "Ona", "Onute", 1981, "sekretore"];
+     let  darbuotojas3 = [ "Kestas", "Kerta", 2001, "pavaduotojas"];
      // D. sukurti masyva 'visiDarbuotojai'
+     let visiDarbuotojai = [];
      // E.   i masyva 'visiDarbuotojai'  ideti visus dartuotoju masyvus
+     visiDarbuotojai[0] = darbuotojas1;
+     visiDarbuotojai[1] = darbuotojas2;
+     visiDarbuotojai[2] = darbuotojas3;
+     console.log(    visiDarbuotojai    );
+     // UZDUOTIS 1.0
+     // isvesti visa informacija apie pirma darbuotoja (NEnaudojant FOR cikla)
+     console.log( "vardas: ",  visiDarbuotojai[0][0] );
+     console.log( "pavarde: ",  visiDarbuotojai[0][1] );
+     console.log( "gimimo: ",  visiDarbuotojai[0][2] );
+     console.log( "pareigos: ",  visiDarbuotojai[0][3] );
      // UZDUOTIS 1.1
-     // isvesti visa informacija apie pirma darbuotoja (naudojant FOR cikla)
+     // isvesti visa informacija apie pirma darbuotoja ( naudojant FOR cikla)
+     for (var i = 0; i < visiDarbuotojai[0].length; i++) {
+         // 0 - kelintas darbuotojas
+         // i - dideja nuo 0  iki ...   [i] -  konkretaus darbuotojo duomenis (is skirtingu stalciuku: vardas, po to pavarde, po to gimimo, po to pareigos)
+         console.log(    visiDarbuotojai[0][i] );
+     }
      // UZDUOTIS 1.2
      // isvesti visu  darbuotoju tik vardus (naudojant FOR cikla)
+     for (var i = 0; i < visiDarbuotojai.length; i++) {
+         console.log( "vardas: ", visiDarbuotojai[i][0] );
+     }
      // UZDUOTIS 1.3
      // isvesti visa informacija apie kiekviena  darbuotoja  (naudojant VIENA FOR cikla)
+     for (var i = 0; i < visiDarbuotojai.length; i++) {
+         console.log(   visiDarbuotojai[i][0],  visiDarbuotojai[i][1],  visiDarbuotojai[i][2],  visiDarbuotojai[i][3]);
+     }
      // UZDUOTIS 1.4
      // isvesti visa informacija apie kiekviena  darbuotoja  (naudojant DU FOR ciklus)
+     for (var i = 0; i < visiDarbuotojai.length; i++) {
 
+         for (var k = 0; k < visiDarbuotojai[i].length; k++) {
+             console.log(    visiDarbuotojai[i][k]   );
+         }
+         console.log("-----------------");
+     }
      // PAPAILDOMI LOGIKOS UZDAVINIAI (tiems kas juda greiciau nei visa klase ):
      // 1.5) surasti jauniausia darbuotoja
+     let didziausiaData  =  0;
+     let jauniausioNR = -99999999;
+     for (var k = 0; k < visiDarbuotojai.length; k++) {
+         // console.log(   visiDarbuotojai[k][2] ,  jauniausias);
+
+         if (visiDarbuotojai[k][2] > didziausiaData) {
+             didziausiaData = visiDarbuotojai[k][2];
+             jauniausioNR =  k;
+         }
+     }
+     console.log("jauniausias darbuotojo nr: ", jauniausioNR);
+     console.log("jauniausias darbuotojo  amziaus: ", didziausiaData);
      // 1.6) surasti seniausia darbuotoja
      // 1.6) apskaiciuoti darbuotoju amziaus vidurki
 
