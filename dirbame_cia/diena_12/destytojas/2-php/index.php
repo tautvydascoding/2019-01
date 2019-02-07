@@ -21,12 +21,37 @@
             /*  ilgas
                 komentaras
             */
-            $a = aaa
-            $a = aaa
-            $a = aaa
-            $a = aaa
+            $a = "Laba diena";
+            echo "Viso <br>";
+            echo $a;
+            echo "Tekstas" . " " . " sujungtas (jungtukas .  ) <br>";
 
+
+            $slaptazodis = "drakonas1";
+            echo $slaptazodis;
+
+            // die( "po sitos zinutes, nebus vykdomos komandos (eilutes)");
+            print( "isvedimas panaudojus print()   <br />" );
+
+            $name = "Tom";
+            $name2 = "Paul";
+            echo "Per dyvynis ezerus ejo $name ir sutiko $name2.  <br />";
+            echo 'Per dyvynis ezerus ejo $name ir sutiko $name2.  <br />';
+
+            // primityvus kintamieji
+            $lname = "tomaitis"; // string
+            $age = 21;          // number - integer (sveikas)
+            $atlyginimas = 960.50; // number - float/double (su kableliu)
+            $mirtiesData = NULL;   // NULL
+            $arDuotiPaskola = false;  // boolean
+            // NERA undefined reiksmes
+
+            // neprimityvus kintamieji
+            $miestai = ["kaunas", "marijampole"];  // array
+            // $zmogus = new KlasesPavadinimas();  // objektai
+            // $failas;  // resurso tipo
          ?>
+         <h2>aaaaaaa</h2>
 
         <!-- ------------------------ -->
         <script type="text/javascript"  src="libs/bootstrap-4/js/bootstrap.min.js">      </script><script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
