@@ -74,3 +74,8 @@ for (var i = 0; i < ieskomiZmones.length; i++) {
 // if ( a <= 0.1) {
 //     console.log("laimejai");
 // }
+let ca = 5;
+function fun3() {
+  window.c = 3
+}
+fun3();
