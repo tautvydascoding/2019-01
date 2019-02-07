@@ -29,6 +29,7 @@
 // <img src='img/4.jpg' alt=''  />
 
 $foto = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "1.jpg","2.jpg"];
+echo count($foto);
  ?>
 <section class="row">
     <?php for ($i=0; $i < count($foto); $i++) : ?>
@@ -39,6 +40,24 @@ $foto = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "1.jpg","2.jpg"];
         </div>
     <?php endfor; ?>
 </section>
+
+<section class="row bg-info">
+    skirtukas ekrane
+</section>
+
+<!-- ==============tas pats issprestas su foreach================== -->
+
+<!-- $foto = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "1.jpg","2.jpg"]; -->
+
+        <section class="row">
+            <?php foreach ($foto as   $stalciausTurinys): ?>
+                 <div class="col-md-3">
+                     <img src="img/<?php echo $stalciausTurinys ?>"  class="img-fluid" alt="">
+                     <!-- ARBA -->
+                     <!-- <?php printf(  '<img src="img/%s" alt="" class="img-fluid">', $stalciausTurinys  ) ?> -->
+                 </div>
+            <?php endforeach; ?>
+        </section>
 
 
         <!-- ------------------------ -->
