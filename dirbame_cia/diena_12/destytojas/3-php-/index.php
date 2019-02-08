@@ -52,18 +52,58 @@ $preke4 = [ "reiduciai", "4.jpg", "3 ratuku pritaikyti suoliams", 250];
         for ($i=0; $i < count($visosPrekes); $i++) {
             echo "<div class='col'>
                         <h2 class='bg-info'>  {$visosPrekes[$i][0]}  </h2>
-                 </div>";
+                        <p>      {$visosPrekes[$i][2]}  </p>
+                        <button class='btn btn-success'> {$visosPrekes[$i][3]}  </button>
+                 ";
+                 printf("<img src='img/" . $visosPrekes[$i][1] . "' width='200px;' alt=''  />");
+                 printf("<img src='img/%s' width='200px;' alt=''  />", $visosPrekes[$i][1]);
+            echo  "</div>";
         }
     echo  "</div>";
+    //-------------------------ARBA--------------------------
+    ?>
+    <!-- html komentaras  --- nutraukem PHP -->
+    <div class="row">
+        <?php   for ($i=0; $i < count($visosPrekes); $i++) :    ?>
+                    <div class="col">
+                        <h2>     <?php echo  $visosPrekes[$i][0]; ?>     </h2>
+                        <img class="img-fluid" src="img/<?php   echo  $visosPrekes[$i][1]; ?>"  alt="<?php echo  $visosPrekes[$i][0]; ?>  ">
+                        <p>        <?php echo  $visosPrekes[$i][2]; ?>    </p>
+                        <button >  <?php echo  $visosPrekes[$i][3]; ?>       </button>
+                    </div>
+        <?php   endfor; ?>
+    </div>
+    <!-- ================================ -->
 
+    <!-- html komentaras  --- nutraukem PHP -->
+    <h1>=======prekiu isvedimas 3 stulpeliai===========</h1>
+    <div class="row">
+        <?php   for ($i=0; $i < count($visosPrekes); $i++) :
+                    if ($i % 3 === 0 && $i !== 0) :
+                        echo "</div> <div class='row'> ";
+                    endif;  ?>
+                    <div class="col-md-4">
+                        <h2>     <?php echo  $visosPrekes[$i][0]; ?>     </h2>
+                        <img class="img-fluid" src="img/<?php   echo  $visosPrekes[$i][1]; ?>"  alt="<?php echo  $visosPrekes[$i][0]; ?>  ">
+                        <p>        <?php echo  $visosPrekes[$i][2]; ?>    </p>
+                        <button >  <?php echo  $visosPrekes[$i][3]; ?>       </button>
+                    </div>
+        <?php   endfor; ?>
+    </div>
+
+<?php
+$vardas1 = "Tom";
+$tikslas = "Silelis";
+$kiekis = 9.5;
+printf("Aukstas %s nori nukeliauti uz %.2f ezeru i %s ", $vardas1, $kiekis, $tikslas);
 
 
    // nuotrauka (javascript kalbai)
    // let x = "<img src='img/1.jpg' alt='medziginis fotelis'>";
 
    // 2  budai nuotraukoms (PHP kalbai)
-    // printf("<img src='./img/" . $visosPrekes[$i][1] . "' width='200px;' alt=''  />");
-    // printf("<img src='./img/%s' width='200px;' alt=''  />", $visosPrekes[$i][1]);
+    // printf("<img src='img/" . $visosPrekes[$i][1] . "' width='200px;' alt=''  />");
+    // printf("<img src='img/%s' width='200px;' alt=''  />", $visosPrekes[$i][1]);
 
 
 

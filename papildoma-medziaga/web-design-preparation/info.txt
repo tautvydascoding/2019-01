@@ -1,0 +1,71 @@
+How to Organize Your Design Files for the Perfect Developer Handoff
+
+https://uxdesign.cc/https-medium-com-91bilal-guide-to-successful-design-handoffs-18345f42d5d6
+https://thenextweb.com/dd/2015/09/09/how-to-design-websites-developers-wont-hate/
+
+All images exported to all required sizes in the format needed.
+All strings in the format needed by the platform, or at the very least, a text file.
+Pixel perfect mockups of each main screen. Not necessarily for all devices though — one phone and one tablet set is usually enough.
+GIFs or prototypes of all non-standard animation.
+We work out file naming convention together, but I name all the files.
+A list of fonts and sizes used.
+A list of the colours used, in the correct format for the platform.
+If possible, it's great to have access to the Git repo, so I can make image changes myself.
+
+
+Design Handoff Document.
+
+A Design Handoff Document is a throwaway artefact. It serves the goal to build something, and that’s it.
+
+Mockups
+Interactions
+Copy
+Specs & Assets
+Checklist
+//
+
+2. Use the Right Tools
+Tools such as Adobe Illustrator or InDesign are where many designers feel most comfortable, but they are not meant to create web user interfaces. Don’t give files to a developer in these formats.
+Instead use Adobe Photoshop or Sketch (developers will love you for using the latter).
+
+3. Practice Good File Management
+Create layer masks to make it easy to edit or transform shapes and masks independently. (Here’s a tutorial if you need it.)
+Import vector elements as smart objects so the attributes of the original file are maintained. (Here’s how to do it.)
+
+
+Organize Files
+One of the most important parts of the handoff is the ability for the developer to understand the intent of the designer. Good file management goes a long way here.
+
+5. Develop and Use a Grid
+There are a lot of different types of grids out there. The grid is the common language that will help the design and developer communicate how space, perspective and aspect ratios work and appear.
+
+Start with a grid overlay – here’s a primer on different types from Tuts+ — and use it. For everything.
+
+. Prepare Handoff Elements
+If you think you can just give the developer a PSD file and move on, you are dead wrong. Every image, illustration, font, color swatch and logo needs to be handoff-ready as well. Without these assets, the developer will be reaching back out sooner or later..
+Include all high-resolution image files individually, and include them at a resolution that is 3x what you’d expect them to be used at.
+
+Include fonts in the handoff files. Although you can technically use any font you have a web usage licence for, it’s important to recognize that fonts are a large file type that needs to be loaded along with everything else. Instead, consider using a universal web-based tool such as Adobe Typekit or Google Fonts.  Between Google Fonts and Typekit, you have hundreds of high quality fonts to choose from.
+
+Include a separate document with all approved copy.. A text file makes it easy to go back and find certain text elements and copy and paste if needed.
+
+Make a PDF proof for the developer and PNG files
+
+
+Host the files in an accessible location.
+Dropbox and/or Google Drive are perfect solutions that allow you to pass along access permissions to all members of the team.
+
+
+PS - PLUGINS.
+For Photoshop:
+
+Duplllicator: Clone a layer or group and move it. (Great for making copies of small elements or buttons.)
+GuideGuide: This little tool make it easier to use guides and takes some of the awkwardness out of the process.
+Perspective Mockups: This tool allows you to change the perspective and see a Photoshop (flat) design as it would inside an actual interface.
+PSD Cleaner: If your file management is lacking, this tool can clean up your files before handoff.
+
+
+<H2> Create styleguide OR Export actionable stylesheet
+Style Guide by Sebastiano Guerriero for CodyHouse
+
+<H2> Export the actual design
