@@ -52,15 +52,39 @@
         }
       echo "</div>";
 
+      // ---------------------ARBA---------------------------
       echo "<div class='row'>";
         for ($i=0; $i < count($visosPrekes); $i++) {
           echo "<div class='col'>
             <h2 class='bg-success'> {$visosPrekes[$i][0]} </h2>
-          </div>";
+            <p>{$visosPrekes[$i][2]}</p>
+            <button class='btn btn-sm btn-outline-primary'>{$visosPrekes[$i][3]}€</button>";
+            printf("<img src='img/%s' class='img-fluid' alt=''  />", $visosPrekes[$i][1]);
+          echo "</div>";
         }
       echo "</div>";
-     // nuotrauka (javascript kalbai)
-     // let x = "<img src='img/1.jpg' alt='medziginis fotelis'>";
+       ?>
+      <!-- html-e iterptas php -->
+      <div class='row'>
+        <?php for ($i=0; $i < count($visosPrekes); $i++) :
+                if ($i % 3 == 0 && $i != 0) :
+                  echo "</div> <div class='row'>";
+                endif;     ?>
+          <div class="col-md-4">
+            <h2 class="bg-warning"><?php echo $visosPrekes[$i][0] ?></h2>
+            <p><?php echo $visosPrekes[$i][2] ?></p>
+            <button class="btn btn-outline-danger"><?php echo $visosPrekes[$i][3] ?>€</button>
+            <img class="img-fluid" src="img/<?php echo $visosPrekes[$i][1] ?>" alt="<?php echo $visosPrekes[$i][0] ?>">
+          </div>
+
+        <?php endfor; ?>
+      </div>
+
+      <?php
+      $vardas1 = "Tomas";
+      $tikslas = "Silelis";
+      $kiekis1 = 9.5;
+      printf("Aukstas %s nori keliauti uz %.1f ezeru i %s.", $vardas1, $kiekis1, $tikslas);
 
      // 2  budai nuotraukoms (PHP kalbai)
       // printf("<img src='./img/" . $visosPrekes[$i][1] . "' width='200px;' alt=''  />");
