@@ -1,8 +1,8 @@
 ============WIN===================
 einam MAMP/bin/mysql/bin
-randame mysql.exe ir ant jo spaudizma DPK -  Send To  Desctop
+randame mysql.exe ir ant jo spaudizma DPK -  Send To  Desktop
 ant to failiuko, kuri nusiuntem mysql.exe
-spaudzima DPK - > Properties
+spaudziam DPK - > Properties
 ....exe -u root -p
 //arba
 ....exe -u root -p  --default-character-set=utf8    // nebutina
