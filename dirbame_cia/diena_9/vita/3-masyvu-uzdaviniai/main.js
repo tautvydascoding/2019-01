@@ -52,7 +52,7 @@ console.log(names);
 
 // .length kintamasis, nes nera skliausteliu
 // .join() pagal nutylejima kableli, bet galima nurodyti kita skirtuka, pvz .join('  ')
-// .shift()
+// .shift() // ismeta elementa is masyvo priekio
 // push() istumia i pati gala nauja elementa
 // .pop()
 // .unshift(); // ideda nauja elementa i masyvo prieki

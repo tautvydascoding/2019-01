@@ -1,0 +1,7 @@
+h1 {
+     margin: 30px;
+}
+
+h5 { margin: 30px;}
+h6 { margin: 30px;}
+h5, h6 {background-color: rgb(234, 240, 207); padding: 5%;}
