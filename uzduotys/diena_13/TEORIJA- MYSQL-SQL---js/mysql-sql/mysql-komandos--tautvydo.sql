@@ -19,7 +19,7 @@ SELECT USER, PASSWORD, password_expired FROM user;
 
  -- tratata - spaltazodis
  -- username - pas kai kuriuos negali tureti skaiciu!!!
- CREATE USER 'tautvydas11'@'localhost' IDENTIFIED BY 'tratata'  PASSWORD EXPIRE NEVER;
+ CREATE USER 'tautvydas11'@'localhost' IDENTIFIED BY 'slaptazodis'  ;
  ALTER USER 'tautvydas11'@'localhost' PASSWORD EXPIRE NEVER;
  GRANT ALL PRIVILEGES ON * . * TO 'tautvydas11'@'localhost' WITH GRANT OPTION;
 
