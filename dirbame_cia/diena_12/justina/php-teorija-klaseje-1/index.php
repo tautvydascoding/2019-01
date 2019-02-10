@@ -22,11 +22,20 @@
           echo $a;    //isvedimas Nr1 su echo
           echo "Tekstas" . " " . "sujungtas (jungtukas yra . TASKAS ) <br>"; // teksto sujungimas vyksta su tasku.
           print("isvedimas su print()"); //isvedimas Nr2 su print
-          print_r ($preke); // isvedimas Nr3. spausdina masyvus, objektus ir tekstus
-          var_dump ($preke); // isvedimas Nr4. spausdina masyvus, objektus, tekstus ir var TIPA (ar number, ar string ir tt)
+          // print_r ($preke); // isvedimas Nr3. spausdina masyvus, objektus ir tekstus
+          // var_dump ($preke); // isvedimas Nr4. spausdina masyvus, objektus, tekstus ir var TIPA (ar number, ar string ir tt)
           // die ("isvedimas su die()"); //isvedimas Nr5, po sios zinutes nebus vykdomos jokios komandos
 
+// ------------------------prinf komandos panaudojimas------------------------
+          $vardas1 = "Tom";
+          $tikslas = "Silelis";
+          $kiekis = 9.5;
 
+          printf ("Aukstas %s nori nukeliauti uz %.2f ezeru i %s", $vardas1, $kiekis, $tikslas);
+
+          // vietoje % zenklu ideda pvz vartotojo ivesta teksta. Ideda tokia tvarka, kokia yra surasyta kintamieji, t.y. i pirma % ides $vardas, i antra % ides $kiekis, i trecia % ides tikslas. Prie % reik nurodyti ir kintamojo tipa, kurio laukia (string - s)
+
+// ----------------------------------------------------------------------------
 
           $slaptazodis = "drakonas1"; // php galima saugoti slaptazodzius ir kt info, bet vartotojai ju nematys, nes jis niekur neisvedamas ir neatspausdinamas. Jei nepanaudoji echo, tai ir nesimato. Matys tik kiti programuotojai.
 
