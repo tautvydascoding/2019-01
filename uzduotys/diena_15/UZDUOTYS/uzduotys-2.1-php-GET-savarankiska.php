@@ -5,10 +5,7 @@
     echo $x;
 // 3. pasileisti Narsykleje si puslapi
 // 3.1 Narsykles adreso ivedimo lange (paciam gale) prirasyti :
- //     ?tekstas=Mano ivestas tekstas
+     ?tekstas=Mano ivestas tekstas
 
 // 4. Narsykleje  pakeisti zodi "tekstas" i koki nors kitoki
 // 4.1 istaisyti klaidas index.php faile
-
-
-  
