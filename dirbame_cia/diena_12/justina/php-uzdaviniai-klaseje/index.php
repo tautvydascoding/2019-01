@@ -25,15 +25,20 @@
 
   $visosPrekes = [];
 
-  $preke1 = ["kompiuteris", "komp.img", 200, "kompiuteris su lieciamu ekranu"];
-  $preke2 = ["telefonas", "telef.img", 85, "telefonas Samsung 5000 ix"];
-  $preke3 = ["plansete", "plans.img", 150, "plansete Sony su papildoma iranga"];
-  $preke4 = ["pele", "pele.img", 10, "pele juoda ir belaide"];
+  $preke1 = ["kompiuteris", "komp.png", 200, "kompiuteris su lieciamu ekranu"];
+  $preke2 = ["telefonas", "telef.jpg", 85, "telefonas Samsung 5000 ix"];
+  $preke3 = ["plansete", "plans.jpg", 150, "plansete Sony su papildoma iranga"];
+  $preke4 = ["pele", "pele.jpg", 10, "pele juoda ir belaide"];
+  $preke5 = ["kompas", "komp.png", 200, "kompiuteris su lieciamu ekranu"];
+  $preke6 = ["tele2", "telef.jpg", 85, "telefonas Samsung 5000 ix"];
+
 
    $visosPrekes [0] = $preke1;
    $visosPrekes [1] = $preke2;
    $visosPrekes [2] = $preke3;
    $visosPrekes [3] = $preke4;
+   $visosPrekes [4] = $preke5;
+   $visosPrekes [5] = $preke6;
 
    print_r ($visosPrekes ); // spausdina masyvus, objektus ir tekstus.
    echo ("<br />");
@@ -61,13 +66,54 @@
           }
       echo "</div>";
 
+      // IDEA: ------------Aprasymas ir mygtukas su kaina----------------
+
+      echo "<div class='row'>";
+          for ($i=0; $i < count($visosPrekes) ; $i++) {
+                echo "<div class='col'>
+                          <h2 class='bg-info'> {$visosPrekes [$i][0]}</h2>
+                          <p> {$visosPrekes [$i][3]}</p>
+                          <button class='btn btn-primary active btn-warning'> {$visosPrekes [$i][2]}</button>
+                ";
+                echo "</div>";
+          }
+      echo "</div>";
+
+      // ----------------------KAIP IDETI NUOTRAUKAS---------------------------
 
      // nuotrauka (javascript kalbai)
      // let x = "<img src='img/1.jpg' alt='medziginis fotelis'>";
 
+
      // 2  budai nuotraukoms (PHP kalbai)
-      // printf("<img src='./img/" . $visosPrekes[$i][1] . "' width='200px;' alt=''  />");
-      // printf("<img src='./img/%s' width='200px;' alt=''  />", $visosPrekes[$i][1]);
+      // printf("<img src='img/" . $visosPrekes[$i][1] . "' width='200px;' alt=''  />");
+      // printf("<img src='img/%s' width='200px;' alt=''  />", $visosPrekes[$i][1]);
+
+      echo "<div class='row'>";
+          for ($i=0; $i < count($visosPrekes) ; $i++) {
+                echo "<div class='col'>
+                          <h2 class='bg-info'> {$visosPrekes [$i][0]}</h2>
+                          <p> {$visosPrekes [$i][3]}</p>
+                          <button class='btn btn-primary active btn-warning'> {$visosPrekes [$i][2]}</button>
+                ";
+                printf("<img src='img/" . $visosPrekes[$i][1] . "' width='200px;' alt=''  />");
+                // printf("<img src='img/%s' width='200px;' alt=''  />", $visosPrekes[$i][1]); // antras printf budas
+
+                echo "</div>";
+          }
+      echo "</div>";
+
+      // ------------------------prinf komandos panaudojimas------------------------
+
+        $vardas1 = "Tom";
+        $tikslas = "Silelis";
+        $kiekis = 9.5;
+
+        printf ("Aukstas %s nori nukeliauti uz %.2f ezeru i %s", $vardas1, $kiekis, $tikslas);
+
+        // vietoje % zenklu ideda pvz vartotojo ivesta teksta. Ideda tokia tvarka, kokia yra surasyta kintamieji, t.y. i pirma % ides $vardas, i antra % ides $kiekis, i trecia % ides tikslas. Prie % reik nurodyti ir kintamojo tipa, kurio laukia (string - s)
+
+      // ----------------------------------------------------------------------------
 
 
 
@@ -79,12 +125,58 @@
   // -->
 
  ?>
+ <!-- html komentaras - nutraukiame PHP -->
+<!-- cia uzdarome div container  -->
 
+    <div class="row">
 
-
+        <?php  for ($i=0; $i < count($visosPrekes) ; $i++) : ?>
+          <div class='col'>
+                <h2 class='bg-info'> <?php echo $visosPrekes [$i][0]; ?> </h2>
+                <p> <?php echo $visosPrekes [$i][3]; ?> </p>
+                <button class='btn btn-primary active btn-warning'> <?php echo $visosPrekes [$i][2]; ?> </button>
+                <img class="img-fluid" src="img/<?php echo $visosPrekes [$i][1]; ?>" alt="">
+          </div>
+        <?php       endfor; ?>
 
 </div>
-<!-- cia uzdarome div container  -->
+
+<!-- kaip padaryti 3 stulpelius ir tada nukelt i sekancia eiluteje sunkus budas su IF -->
+
+<div class="row">
+
+    <?php  for ($i=0; $i < count($visosPrekes) ; $i++) :
+                  if ($i % 3 === 0 && $i !== 0) : //kai nori sudet 3 foto ir tada nukelti i nauja eilute. i turi dalintis is 3 bet neturi buti lygu 0). Kai i%3 be liekanos, tada isspausdini, kad sena row uzdarytu (</div>) ir atidaryti nauja div su class=row.
+                    echo "</div> <div class = 'row'>";
+                  endif; ?>
+      <div class='col'>
+            <h2 class='bg-info'> <?php echo $visosPrekes [$i][0]; ?> </h2>
+            <p> <?php echo $visosPrekes [$i][3]; ?> </p>
+            <button class='btn btn-primary active btn-warning'> <?php echo $visosPrekes [$i][2]; ?> </button>
+            <img class="img-fluid" src="img/<?php echo $visosPrekes [$i][1]; ?>" alt="">
+      </div>
+    <?php       endfor; ?>
+</div>
+
+
+<!-- kaip padaryti 3 stulpelius ir tada nukelt i sekancia eiluteje su BOOTSTRAP class="col-md-3" -->
+
+<h1>=======prekiu isvedimas 3 stulpeliai===========</h1>
+<div class="row">
+    <?php   for ($i=0; $i < count($visosPrekes); $i++) :
+                if ($i % 3 === 0 && $i !== 0) :
+                    echo "</div> <div class='row'> ";
+                endif;  ?>
+                <div class="col-md-4">
+                    <h2>     <?php echo  $visosPrekes[$i][0]; ?>     </h2>
+                    <img class="img-fluid" src="img/<?php   echo  $visosPrekes[$i][1]; ?>"  alt="<?php echo  $visosPrekes[$i][0]; ?>  ">
+                    <p>        <?php echo  $visosPrekes[$i][2]; ?>    </p>
+                    <button >  <?php echo  $visosPrekes[$i][3]; ?>       </button>
+                </div>
+    <?php   endfor; ?>
+</div>
+
+<?php
 
 
 
