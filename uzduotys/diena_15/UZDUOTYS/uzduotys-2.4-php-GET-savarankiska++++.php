@@ -1,7 +1,7 @@
 <?php
 // 1. sukurti index.php
 // 2. parasyti Forma su vienu ivedimo lauku:
-//  elpastas ir mygtuku "subscribe"
+//  'elpastas' ir mygtuku "subscribe"
 
 // 2. kai paspaudzia 'subscribe',
 // vartotoja perkelti i subscribe.php faila
@@ -10,6 +10,7 @@
 // 3.
 // 3. subscribe.php faile
 // isvesti elpasta
+
 // 5. subscribe.php faile suprogramuoti tikrinima:
 // kad vartotojui nieko neivedus ismestu pranesima
 // jeigu vartotojas kazka ivede - isvesti jo email i ekrana
