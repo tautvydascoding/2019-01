@@ -7,10 +7,18 @@ html{
   height: auto;
 }
 /* ========================= */
+.color_white {
+  color: #ffffff
+}
 .color_grey {
   color: #efeded
 }
-
+.color_pink {
+  color: #f8d2c8
+}
+.color_blue {
+  color: #355C6D
+}
 .bg_color_blue {
   background-color: #355C6D
 }
@@ -35,8 +43,8 @@ html{
 .aukstis_300 {
     height: 300px;
 }
-.aukstis_500 {
-    height: 500px;
+.aukstis_450 {
+    height: 450px;
 }
 .flex_align_items_center {
   display: flex;
