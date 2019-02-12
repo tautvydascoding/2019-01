@@ -9,8 +9,8 @@ createDoctor("Juozas", "Juozaitis");
     localhost/ ... /naujasGydytojas.php
 
 
-deleteDoctor() paleidimas per narsykle
 // 2.1. sukurti PHP faila  trintiGydytoja.php
+deleteDoctor() paleidimas per narsykle
 // 2.2. faile paleisti:
 include('db_functions.php');
 deleteDoctor(4);
