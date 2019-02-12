@@ -10,6 +10,6 @@
 // Tomas, 1981, Buhalteris
 // Ona 1980 Programuotoja
 // Petras, 1975, Direktorius
-// 2.1) atspausdinti su FOR ciklu
+// 2.1) atspausdinti su FOR ciklu 
 // 2.2) atspausdinti su FOR FOR ciklu
 // 2.3) atspausdinti su FOREACH

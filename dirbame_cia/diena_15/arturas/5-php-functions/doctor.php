@@ -1,29 +1,14 @@
 <?php
 require_once('db-functions.php');
-// $numeris = $_GET['nr'];
-// $gydytojas = getDoctor($numeris);
-// echo "<p>Gydytojas: ".$gydytojas['name']." ".$gydytojas['lname']." Numeris: ".$gydytojas['id']."</p>";
-
-// ---------SUKURIMAS------------
-if (isset($_GET['vardas'], $_GET['pavarde'])) {
-  $vardas = $_GET['vardas'];
-  $pavarde = $_GET['pavarde'];
-  $gydytojas = createdoctor($vardas, $pavarde);
+if (isset($_GET['nr'])) {
+  $numeris = $_GET['nr'];
+  $gydytojas = getDoctor($numeris);
+  echo "<h2>Nr: " . $gydytojas['id'] . "</h2>";
+  echo "<h3> {$gydytojas['name']} {$gydytojas['lname']}</h3>";
 }
-// ----------TRYNIMAS------------
-if (isset($_POST['nrdel'])) {
-  $nr = $_POST['nrdel'];
-  deleteDoctor($nr);
-}
-// ----------ATNAUJJINIMAS--------
-if (isset($_POST['nrupd'], $_POST['vardasupd'], $_POST['pavardeupd'])) {
-  $nr = $_POST['nrupd'];
-  $vardas = $_POST['vardasupd'];
-  $pavarde = $_POST['pavardeupd'];
-  updateDoctor($nr, $vardas, $pavarde);
-}
-// ----------  --------
-
+echo " <a href='atnaujintiGydytoja.php?nr=".$gydytojas['id']."'><button class='btn btn-outline-info' type='button' name='button'>Atnaujinti</button></a>";
+echo " <a href='trintiGydytoja.php?nr=".$gydytojas['id']."'><button class='' type='button' name='button'>Šalinti</button></a>";
 ?>
+
 <hr>
 <a href="index.php">Back</a>
