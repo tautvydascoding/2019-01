@@ -5,7 +5,7 @@
 // 5. createDoctor($vardas, $pavarde)
 // 6. deleteDoctor($nr)
 // 7. updateDoctor($nr, $vardas, $pavarde)
-// 8. getDoctors($kiekGydytoju=99999) 
+// 8. getDoctors($kiekGydytoju=99999)
 
 
 
