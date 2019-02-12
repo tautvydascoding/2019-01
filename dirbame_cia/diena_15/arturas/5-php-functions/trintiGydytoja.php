@@ -6,3 +6,7 @@
   } else {
     echo "Toks gydytojas neegzistuoja.";
   }
+  
+  ?>
+  <hr>
+  <a href="index.php">Back</a>
