@@ -13,12 +13,21 @@
 
     </head>
     <body>
+      <form class="" action="kurtiGydytoja.php" method="post">
+        <p>Naujo gydytojo sukūrimas:</p>
+        <input type="text" name="vardas" value="" placeholder="Vardas">
+        <input type="text" name="pavarde" value="" placeholder="Pavardė">
+        <input type="submit" name="" value="Pridėti gydytoją">
+      </form>
+      <br>
+      <p>Dabartiniai gydytojai:</p>
       <?php
       include("db-functions.php");
        $gydytojai = getDoctors();
         while ($gydytojas = mysqli_fetch_assoc($gydytojai)) {
-          echo $gydytojas['name']." ".$gydytojas['lname'];
-          echo " <a href='trintiGydytoja.php?nr=".$gydytojas['id']."'><button class='btn btn-outline-info' type='button' name='button'>Šalinti</button></a>";
+          echo "<a href='doctor.php?nr=" . $gydytojas['id'] . "'>" . $gydytojas['name'] . " " . $gydytojas['lname'] . "</a>";
+          echo " <a href='atnaujintiGydytoja.php?nr=".$gydytojas['id']."'><button class='' type='button' name='button'>Atnaujinti</button></a>";
+          echo " <a href='trintiGydytoja.php?nr=".$gydytojas['id']."'><button class='' type='button' name='button'>Šalinti</button></a>";
           echo "<br>";
           echo "<br>";
         }
