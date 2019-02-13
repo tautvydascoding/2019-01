@@ -17,12 +17,27 @@ if($prisijungimas) {
   echo "Nepavyko prisijungti prie DB" . mysqli_connect_error();
 }
 
-function getDoctor($nr){
-
+function getPrisijungimas() {
+    global $prisijungimas;
+    return $prisijungimas;
 }
 
+
+function getDoctor($nr){
+    $manoSQL = "SELECT * FROM doctors WHERE id = $nr ";
+    // mysqli_query - ivykdo komandas (SQL kalba)
+    $rezultatai = mysqli_query(  getPrisijungimas(),    $manoSQL );
+
+    // print_r( $rezultatai  );
+    $rezultatai_masyvas = mysqli_fetch_assoc(  $rezultatai);
+    // print_r( $rezultatai_masyvas  );
+    return $rezultatai_masyvas;
+}
+$pirmasGydytojas = getDoctor(3);
+print_r(  $pirmasGydytojas );
+
 $pirmasGydytojas = getDoctor(1);
-print_r($pirmasGydytojas);
+print_r(  $pirmasGydytojas );
 
 
 
