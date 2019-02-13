@@ -3,12 +3,13 @@
 // 2. parasyti PHP koda:
     //  susikurti masyv1- preke1: kaina, pavadinimas, kiekis
     $numeris = $_GET['x'];
+    echo "numeris: $numeris <br />";
     echo $preke1[$numeris] . "<hr />";
 // 3. pasileisti Narsykleje si puslapi
 // 3.1 Narsykles adreso ivedimo lange (paciam gale) prirasyti :
      ?x=1
- // 4. Narsykles adrese  pakeisti ?nr=0
- // 4. Narsykles adrese  pakeisti ?nr=2
+ // 4. Narsykles adrese  pakeisti ?x=0
+ // 4. Narsykles adrese  pakeisti ?x=2
  // ir paziureti kas bus
 
 // 5.===============sunkesnis====================
@@ -23,6 +24,6 @@
  // 7. pasileisti Narsykleje si puslapi
  // 3.1 Narsykles adreso ivedimo lange (paciam gale) prirasyti :
       ?x=1
-  // 4. Narsykles adrese  pakeisti ?nr=0
-  // 4. Narsykles adrese  pakeisti ?nr=2
+  // 4. Narsykles adrese  pakeisti ?x=0
+  // 4. Narsykles adrese  pakeisti ?x=2
   // ir paziureti kas bus
