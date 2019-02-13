@@ -13,7 +13,7 @@ $prisijungimas = mysqli_connect(HOST, USER, PASSWORD, NAME);  // mysqueli rasosi
 // tikriname, ar pavyko prisijungti:
 
 if ($prisijungimas) {
-  echo "Prisijungti prie DB pavyko. <br />";
+  //echo "Prisijungti prie DB pavyko. <br />"; testuojam, jei viskas veikia, nereikia tokio pranesimo. svarbu,kad kai neveikia, ismestu error
 } else {
   echo "ERROR: Prisijungti prie DB nepavyko. <br />".mysqli_connect_error();
 }
@@ -39,6 +39,8 @@ function getDoctor($nr){  //vienaskaita, nes ieskai vieno id informacijos;
     return $rezultatai_masyvas;
 }
 
+
+// testuojam:
 $pirmasGydytojas = getDoctor (1);  // isspausdins pirmo gydytojo duomenis i ekrana
 print_r( $pirmasGydytojas);
 
@@ -66,6 +68,8 @@ function getPatient($nr){  //vienaskaita, nes ieskai vieno id informacijos;
     return $rezultatai_masyvas;
 }
 
+
+// testuojam:
 $pirmasPacientas = getPatient (1);  // isspausdins pirmo paciento duomenis i ekrana
 print_r( $pirmasPacientas);
 
@@ -102,6 +106,7 @@ function getImage($nr){  //vienaskaita, nes ieskai vieno id informacijos;
     return $rezultatai_masyvas;
 }
 
+//testuojam:
 $pirmaImage = getImage (1);  // isspausdins pirmo paciento duomenis i ekrana
 print_r( $pirmaImage);
 

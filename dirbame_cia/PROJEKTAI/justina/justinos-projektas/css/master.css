@@ -1,0 +1,61 @@
+*{
+  box-sizing: border-box;
+}
+
+body,
+html{
+  height: auto;
+}
+/* ========================= */
+.color_white {
+  color: #ffffff
+}
+.color_grey {
+  color: #efeded
+}
+.color_pink {
+  color: #f8d2c8
+}
+.color_blue {
+  color: #355C6D
+}
+.bg_color_blue {
+  background-color: #355C6D
+}
+.bg_color_pink {
+  background-color: #f8d2c8
+}
+.bg_color_grey {
+  background-color: #efeded
+}
+.logo_height {
+  height:100px;
+}
+.aukstis_80 {
+    height: 80px;
+}
+.aukstis_130 {
+    height: 130px;
+}
+.aukstis_200 {
+    height: 200px;
+}
+.aukstis_300 {
+    height: 300px;
+}
+.aukstis_450 {
+    height: 450px;
+}
+.flex_align_items_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex_align_items_left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.text_center {
+  text-align: center;
+}
