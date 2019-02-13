@@ -3,13 +3,16 @@ console.log(   " mano js failas "  );
 //$("h1").hide(1); //letai paslepia elementa skaicius skliaustuose yra greitis
 //$("h1").show(3000); //letai parodo elementa
 
-$("h1").click(function(){
-$("p").hide(2000);
-});
+
 
 $("h1").click(function(){
-  $("p").togle(2000);
+$("p").show(500);
 });
+
+$("h1").mouseleave(function(){
+  $("p").hide(500);
+});
+
 
 let manoH1 = $("h1");
 $("h1").mouseenter(function(event) {

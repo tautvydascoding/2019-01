@@ -24,16 +24,10 @@ for (var i = 0; i < names.length; i++) {
   break; // visas for ciklas nutraukiamas . Taip pat veikia zodelis return
   }
 }
-
 //  if (names[i] === ieskomasTekstas) { break; } {
   //console.log("Radom Rico, Jis yra stalciuje:", i);
   //}
-
-
-
 // 1B) papildyti ^: jeigu tokio vardo neranda, isvesti VIENĄ pranesima "Nepavyko rasti...Bandykite kita zodi"
-
-
 let arRadau = false;
 let ieskomasTekstas1 = 'Ricoss';
 for (var i = 0; i < names.length; i++) {
@@ -66,7 +60,7 @@ function getStalciausNumeris(ieskomasTekstas2){
   }
   return -999; // si eilute suveiks, tik jei for cikle nesuveiks return
 }
-console.log( getStalciausNumeris("Sybil"));
+console.log( getStalciausNumeris("Enriqueta"));
 
 
 // uzduotis:----------------------------
