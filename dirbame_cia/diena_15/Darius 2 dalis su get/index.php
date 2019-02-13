@@ -17,32 +17,53 @@
 //jeigu rado grazina true
 // GET - masyvas
 
-if(in_array("aaa", $_GET)) {
-    echo "kazkurio stalciaus turinys yra: aaa" ;
-}
+// if(in_array("aaa", $_GET)) {
+//     echo "kazkurio stalciaus turinys yra: aaa" ;
+// }
 
-//ar egzistuoja toks stalcius array
+// //ar egzistuoja toks stalcius array
 
-if(array_key_exists('vardas', $_GET)) {
-    $x = $_GET['vardas'];
-    echo "stalciaus tekstas egzistuoja", $x . "<hr />";
-}else{
-    echo "nera" . "<hr />";
-}
+// if(array_key_exists('vardas', $_GET)) {
+//     $x = $_GET['vardas'];
+//     echo "stalciaus tekstas egzistuoja", $x . "<hr />";
+// }else{
+//     echo "nera" . "<hr />";
+// }
 
 
-// ar "y" turi kokia nors reiksme
+// // ar "y" turi kokia nors reiksme
 
-$y;
+// $y;
 
-if (isset($y)) {
-    echo $y;
-}else{
-    echo "neturi reiksmes";
-}
+// if (isset($y)) {
+//     echo $y;
+// }else{
+//     echo "neturi reiksmes";
+// ?
 
 ?>
-   
+<!-- 2.1.2 uzduotis  -->
+
+<?php
+
+
+$preke1=[700, "dviratis", 5];
+$preke2=[200, " xxl dviratis", 9];
+$preke3=[400, " xs dviratis", 7];
+$visosPrekes = [$preke1, $preke2, $preke3];
+echo ($visosPrekes);
+$numeris = $_GET['x'];
+     $manoPreke =  $visosPrekes[$numeris];
+     print_r($manoPreke);
+     echo "<hr />";
+
+$numeris = $_GET['x'];
+echo $preke1[$numeris] . "<hr />";
+ // gale url adreso irasom ?x=1 ir paima pirma pav. is masyvo - dviratis
+
+?>
+
+<!-- 2.2 uzduotis -->
     
 
       <!-- javascript -->
