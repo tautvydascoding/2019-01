@@ -9,6 +9,9 @@ html {
 .clear-float {
   clear: both;
 }
+.float {
+    float: left;
+}
 
 .plotis-30 {
   width: 30%;
@@ -106,7 +109,11 @@ div.bg-foto {
     margin: 0;
 }
 
-
+.position-absolute2 {
+  position: absolute;
+  left: 100%;
+  transform: translate(-50%);
+}
 
 
 
