@@ -16,7 +16,7 @@
 // susikurti  objektus: Monika
 
 // UZDUOTIS 2.2
-// Atspasudinti varda ir ugi naudojant
+// Atspausdinti varda ir ugi naudojant
 // f-ja 'manoUgis()'
 // f-ja 'manoVardas()'
 

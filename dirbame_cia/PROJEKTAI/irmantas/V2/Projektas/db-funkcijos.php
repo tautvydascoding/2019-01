@@ -40,8 +40,6 @@ function getContacts($nr=99999){
     return $rezultatai;
 }
 
-
-
 function insertMessage($vardas, $email, $tel, $message){
   $message = "INSERT INTO messages VALUES (NULL, '$vardas', '$email','$tel','$message')";
   $result = mysqli_query(getPrisijungimas(), $message);
@@ -51,6 +49,22 @@ function insertMessage($vardas, $email, $tel, $message){
     echo " " .mysqli_error(getPrisijungimas());
   }
 }
+
+
+function getPaslaugos($nr=99999){
+    $manoSQL = "SELECT * FROM paslaugos LIMIT $nr";
+    $rezultatai = mysqli_query(  getPrisijungimas(),    $manoSQL );
+    return $rezultatai;
+}
+
+function getAbout($nr){
+    $manoSQL = "SELECT * FROM about WHERE $nr";
+    $rezultatai = mysqli_query(  getPrisijungimas(),    $manoSQL );
+    $rezultatai_masyvas = mysqli_fetch_assoc($rezultatai);
+    return $rezultatai_masyvas;
+}
+
+
 
 // insertMessage("Dalius", "kazkas@gmail.lt", "+370546652","Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
 
