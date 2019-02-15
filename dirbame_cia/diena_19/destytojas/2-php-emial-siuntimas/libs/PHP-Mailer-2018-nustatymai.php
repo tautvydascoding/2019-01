@@ -1,5 +1,7 @@
 <?php
 
+    // !!! PHPMailer-Autoload faile reiks pakeisti f-jos pavadinima is 
+    //     __autoload  pakeisti i    spl_autoload_register
 
     // papildomi PhpMailer nustatymia, jeigu neveikia su standartiniais
 

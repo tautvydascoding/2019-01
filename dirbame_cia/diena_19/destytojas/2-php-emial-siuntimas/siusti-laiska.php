@@ -36,14 +36,14 @@ try {
 
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
     $mail->Username = 'testascoding@gmail.com';                 // SMTP username
-    $mail->Password = 'slaptazodis';                          // SMTP username
+    $mail->Password = 'aaa';                          // SMTP username
 
 
 
     //Recipients
-    $mail->setFrom('testascoding@gmail.com', 'Prezidendas');
-    $mail->addAddress('testascoding@gmail.com', 'Puslapiu kurejai');     // Add a recipient
-    $mail->addReplyTo( $klientoPastas, $klientoVardas . $klientoPavarde);
+    $mail->setFrom('testascoding@gmail.com', 'Puslapiu kurejai');
+    $mail->addReplyTo('testascoding@gmail.com', 'Puslapiu kurejai');     // Add a recipient
+    $mail->addAddress( $klientoPastas, $klientoVardas . $klientoPavarde);
 
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
