@@ -14,6 +14,9 @@ if ($prisijungimas) {
 } else {
     echo "ERROR: Prisijungti prie DB nepavyko.<BR />" . mysqli_connect_error();
 }
+mysql_set_charset('utf8');
+
+
 function getPrisijungimas() {
     global $prisijungimas;
     return $prisijungimas;
