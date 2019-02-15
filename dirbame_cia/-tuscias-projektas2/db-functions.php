@@ -50,6 +50,20 @@ function createDoctor($vardas, $pavarde) {
         // mysqli_error - is DB paima klaida
     }
 }
+// saugus
+function createDoctorSaugus($vardas, $pavarde) {
+    $vardasUzkoduotas = htmlspecialchars($vardas, ENT_QUOTES);
+    $pavardeUzkoduotas = htmlspecialchars($pavarde, ENT_QUOTES);
+
+    $manoSQL = "INSERT INTO doctors
+                       VALUES (NULL, '$vardasUzkoduotas', '$pavardeUzkoduotas') "   ;
+    $arPavyko = mysqli_query( getPrisijungimas(),  $manoSQL   );
+    if ($arPavyko == NULL) {
+        echo "ERROR. sukurti gydytojo $vardasUzkoduotas, $pavardeUzkoduotas NEPAVYKO. "
+                . mysqli_error(  getPrisijungimas()  );
+        // mysqli_error - is DB paima klaida
+    }
+}
 
 // createDoctor("Gita", "Gitaitiene");
 // createDoctor("Morta", "Mortaitiene");
@@ -57,6 +71,7 @@ function createDoctor($vardas, $pavarde) {
 
 // 6. deleteDoctor($nr)
 function deleteDoctor($nr) {
+    $nr = htmlspecialchars($nr, ENT_QUOTES);
     $manoSQL = "DELETE FROM doctors WHERE id = '$nr'   LIMIT 1 ";
     $arPavyko = mysqli_query( getPrisijungimas(),  $manoSQL   );
     if ($arPavyko == NULL) {

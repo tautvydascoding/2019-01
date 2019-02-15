@@ -17,6 +17,7 @@
         <h1> Isijunk Inspect-console (mokomes js) </h1>
 
 
+        <div id='results'> AAA: </div>
 
 
 
