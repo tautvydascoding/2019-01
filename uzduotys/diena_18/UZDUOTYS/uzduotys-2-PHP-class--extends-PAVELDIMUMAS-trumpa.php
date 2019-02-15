@@ -18,10 +18,10 @@ class Vyras  extends Zmogus {
 // 2. isveda 'testosrerono' kieki
 
 // UZDUOTIS 2  (private-protected skirtumas)
-// Vyras klases viduje atspausdinti:
-// f-ja printVyroDuomenys()
-// ugi, pusrycius, turtas
+// Vyras klases viduje sukurti
+// f-ja printVyroDuomenys() , kuri atspausdina duomenis:
+// ugi, pusrycius, turtas, testosrerono
 // kur gausite klaida? Kurio kintamojo neiseina atspausdinti?
 
 // UZDUOTIS 3 (atspausdinti kintamaji, kurio neleido 2 uzdavinys)
-// klases viduje (atspekite kurios) sukurti f-ja, kuri prieina prie privataus kintamojo . ir ji atspausdina
+// klases viduje (atspekite kurios) sukurti f-ja, kuri prieina prie privataus kintamojo  ir ji atspausdina
