@@ -21,5 +21,5 @@ function printsuma(x = -99, z = -99) { // isankstines reiksmes
     console.log("ivyko klaida, bandykite vel, (klaidos Nr:PS111) ");
   }
 }
-console.log(x + z);
+//console.log(x + z);
 printsuma();
