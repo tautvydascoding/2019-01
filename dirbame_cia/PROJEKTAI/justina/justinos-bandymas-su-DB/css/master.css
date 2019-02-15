@@ -8,29 +8,29 @@ html{
 }
 /* ========================= */
 .color_white {
-  color: #ffffff
+  color: #ffffff;
 }
 .color_white_opac {
   color: #ffffff;
   opacity: 0.5;
 }
 .color_grey {
-  color: #efeded
+  color: #efeded;
 }
 .color_pink {
-  color: #f8d2c8
+  color: #f8d2c8;
 }
 .color_blue {
-  color: #355C6D
+  color: #355C6D;
 }
 .bg_color_blue {
-  background-color: #355C6D
+  background-color: #355C6D;
 }
 .bg_color_pink {
-  background-color: #f8d2c8
+  background-color: #f8d2c8;
 }
 .bg_color_grey {
-  background-color: #efeded
+  background-color: #efeded;
 }
 .logo_height {
   height:100px;
@@ -50,6 +50,9 @@ html{
 .aukstis_450 {
     height: 450px;
 }
+.aukstis_600 {
+    height: 600px;
+}
 .flex_align_items_center {
   display: flex;
   align-items: center;
@@ -68,4 +71,23 @@ html{
 }
 .text_center {
   text-align: center;
+}
+
+
+
+
+/* ====== hoover link ======== */
+/* unvisited link grey*/
+a:link {
+  color: #efeded;
+}
+
+/* visited link pink */
+a:visited {
+  color: #f8d2c8;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
 }

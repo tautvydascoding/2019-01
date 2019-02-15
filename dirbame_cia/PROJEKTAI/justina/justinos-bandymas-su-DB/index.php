@@ -18,21 +18,39 @@
 
 <body>
 
-<h2>testuoju savo projekta</h2>
 <?php
+
+// $visiGydytojai = getDoctors();
+// while ($gydytojas = mysqli_fetch_assoc($visiGydytojai)) {
+//   echo ("<h2>" . $gydytojas['antraste'] . " " . $gydytojas['aprasymas'] . "</h2>");
+//   echo "<hr />";
+// }
 require_once('db_functions.php');
 
 $visiGydytojai = getDoctors();
 while ($gydytojas = mysqli_fetch_assoc($visiGydytojai)) {
-  echo ("<h2>" . $gydytojas['data'] . " " . $gydytojas['antraste'] . " " . $gydytojas['aprasymas'] . "</h2>");
-  echo "<hr />";
+  ?>
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title"><?php echo $gydytojas['antraste']?></h4>
+      <p class="card-text"><?php echo $gydytojas['aprasymas'] ?></p>
+      <p class="card-text"><?php echo $gydytojas['data'] ?></p>
+     </div>
+  </div>
+<?php
 }
-
-
-
-
-
  ?>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
