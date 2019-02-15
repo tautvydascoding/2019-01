@@ -21,7 +21,7 @@
  // UZDUOTIS 3
  // klaseje 'Vilkas' sukurti f-jas:
  // public printLigos()
- // public printPusryciai() // neveiks
+ // public printPusryciai() // neveiks, gal zinote kodel
 
  // UZDUOTIS 4
  // klaseje 'Gyvunas' sukurti f-jas:
