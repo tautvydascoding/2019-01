@@ -16,7 +16,17 @@
 
         <h1> Isijunk Inspect-console (mokomes js) </h1>
 
+    <form action="siusti-laiska.php" method="post">
+        <input type="text" name="vardas" placeholder="Jusu vardas"  value="Timas">
+        <input type="text" name="pavarde" placeholder="Jusu pavarde" value="Logan">
+        <input type="text" name="antraste" placeholder="Tema"      value="del kainos ">
+        <textarea          name="klausimas" rows="8" cols="80"          placeholder="jusu klausimas">
+             Kiek kainuoja dviratis raudonas XXL?
+        </textarea>
+        <input type="email" name="pastas" placeholder="jusu el.pastas"  value="as@a.lt"    >
 
+        <button type="submit" name="button">  KLAUSTI  </button>
+    </form>
 
 
 
