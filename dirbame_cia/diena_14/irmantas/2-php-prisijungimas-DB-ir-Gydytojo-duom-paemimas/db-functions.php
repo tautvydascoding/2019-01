@@ -36,7 +36,21 @@ print_r(  $pirmasGydytojas );
 $pirmasGydytojas = getDoctor(1);
 print_r(  $pirmasGydytojas );
 
+function getImages($nr){
+    $manoSQL = "SELECT * FROM images WHERE id = $nr ";
+    // mysqli_query - ivykdo komandas (SQL kalba)
+    $rezultatai = mysqli_query(  getPrisijungimas(),    $manoSQL );
 
+    // print_r( $rezultatai  );
+    $rezultatai_masyvas = mysqli_fetch_assoc(  $rezultatai);
+    // print_r( $rezultatai_masyvas  );
+    return $rezultatai_masyvas;
+}
+$nuotrauka1 = getImages(3);
+print_r(  $nuotrauka1 );
+
+$nuotrauka2 = getImages(1);
+print_r(  $nuotrauka2 );
 
 
 // neuzdarom PHP   nes    kad nebutu   tarpu simboliu

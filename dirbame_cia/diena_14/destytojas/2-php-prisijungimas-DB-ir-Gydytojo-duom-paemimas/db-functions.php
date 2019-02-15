@@ -2,9 +2,9 @@
 
 // Konstantos:
  DEFINE('NAME', "hospital2");
- DEFINE('PASSWORD', "tratata");  // arba root
+ DEFINE('PASSWORD', "root");  // arba root
  DEFINE('HOST', "localhost");
- DEFINE('USER', "tautvydas");  // arba root
+ DEFINE('USER', "root");  // arba root
 
 $prisijungimas = mysqli_connect(HOST,  USER, PASSWORD, NAME );
 
@@ -20,8 +20,8 @@ function getPrisijungimas() {
 }
 
 
-function getDoctor($nr){
-    $manoSQL = "SELECT * FROM doctors WHERE id = $nr ";
+function getImages($nr){
+    $manoSQL = "SELECT * FROM images WHERE id = $nr ";
     // mysqli_query - ivykdo komandas (SQL kalba)
     $rezultatai = mysqli_query(  getPrisijungimas(),    $manoSQL );
 
@@ -30,11 +30,11 @@ function getDoctor($nr){
     // print_r( $rezultatai_masyvas  );
     return $rezultatai_masyvas;
 }
-$pirmasGydytojas = getDoctor(3);
-print_r(  $pirmasGydytojas );
+$nuotrauka1 = getImages(3);
+print_r(  $nuotrauka1 );
 
-$pirmasGydytojas = getDoctor(1);
-print_r(  $pirmasGydytojas );
+$nuotrauka2 = getImages(1);
+print_r(  $nuotrauka2 );
 
 
 
