@@ -2,7 +2,7 @@
 require_once("head.php");
 require_once("header.php");
 require_once("db-funkcijos.php");
-$pradinis = getPradinis(3);
+$pradinis = getPradinis(1);
 ?>
 
 <div class="container-fluid">
