@@ -1,11 +1,6 @@
 <?php
   // print_r($_POST);
   require_once('libs\PHPMailer-master\PHPMailerAutoload.php');
-  $klientoVardas = $_POST['name'];
-  $klientoPavarde = $_POST['lname'];
-  $klientoAntraste = $_POST['subject'];
-  $klientoKlausimas = $_POST['question'];
-  $klientoEmail = $_POST['email'];
 
   $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
   try {
@@ -24,6 +19,7 @@
     //Server settings
     $mail->SMTPDebug = 0;                                 // Enable verbose debug output
     $mail->isSMTP();                                      // Set mailer to use SMTP
+    $mail->CharSet = 'UTF-8';
 
     $mail->SMTPAuth = true;                               // Enable SMTP authentication
     $mail->Username = 'tomastomsonas1234@gmail.com';                 // SMTP username
@@ -31,17 +27,16 @@
 
     //Recipients
     $mail->setFrom('tomastomsonas1234@gmail.com', 'Projektas');
-    $mail->addAddress('tomastomsonas1234@gmail.com', 'Projektas');     // Add a recipient
-    $mail->addReplyTo($klientoEmail, $klientoVardas . $klientoPavarde);
+    $mail->addAddress($email, "$name $lname");     // Add a recipient
 
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = $klientoAntraste;
-    $mail->Body    = "$klientoEmail. $klientoVardas . $klientoPavarde <b>Kliento klausimas:</b> $klientoKlausimas";
-    $mail->AltBody = "Kliento klausimas:</b> $klientoKlausimas";
+    $mail->Subject = "Projektas.lt užsakymas patvirtintas";
+    $mail->Body    = "<h2>Užsakymas Nr. $order_id patvirtintas.</h2> <p><strong>Prekė</strong>: $item_name</p> <p><strong>Siuntimo būdas:</strong> $shipping_name</p> <p><strong>Pristatymo adresas: </strong>$name $lname $tel</p> <p>$address $postcode $city</p> <p><strong>Kaina: $total_price €</strong></p> <p>Pinigus pervesti į sąskaitą: LT00 1111 2222 3333 5555</p>";
+    $mail->AltBody = "Užsakymas Nr. $order_id patvirtintas. Pristatymo adresas:$name $lname $address $postcode $city";
 
     $mail->send();
-    echo '<div class="bg-info">Emailas has been sent</div>';
+    echo '<div class="bg-info">Užsakymo ir apmokėjimo informacija išsiųsta el. paštu. Užsakymo būseną galite sekti pagal užsakymo numerį.</div>';
 } catch (Exception $e) {
     echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
 }
