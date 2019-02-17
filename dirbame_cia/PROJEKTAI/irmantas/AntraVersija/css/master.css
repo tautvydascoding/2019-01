@@ -178,6 +178,12 @@ p {
   visibility: hidden;
 }
 
+a.carousel-control-next ,
+a.carousel-control-prev {
+    height: 250px;
+    margin-top: 200px;
+}
+
 @media (max-width: 1280px) {
   #header-image {
     position: absolute;
