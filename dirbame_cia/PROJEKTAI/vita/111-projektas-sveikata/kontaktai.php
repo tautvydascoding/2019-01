@@ -5,7 +5,7 @@
 
 
 
-<hr>
+
 <section class="container  ">
 
 <div class="rows forma">
@@ -33,7 +33,7 @@
       <div class="row forma">
         <div class="form-group col-md-8 ">
           <label for="">Įveskite savo žinutę *</label>
-          <textarea   name="klausimas"  class="form-control"></textarea>
+          <textarea   name="klausimas"  class="form-control" style="height:200px"></textarea>
           <p>* Laukeliai pažymėti žvaigždute - privalomi.</p>
         </div>
       </div>

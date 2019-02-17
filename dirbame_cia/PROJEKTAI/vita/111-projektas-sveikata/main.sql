@@ -15,6 +15,9 @@
         --data  VARCHAR(30)
 --);
 
+ALTER TABLE komentarai
+ADD email varchar(255);
+
 INSERT INTO prenumeratoriai VALUES (NULL, 'Ausra', 'ausra@lab.lt');
 INSERT INTO prenumeratoriai VALUES (NULL, 'Greta', 'greta@lab.lt');
 INSERT INTO prenumeratoriai VALUES (NULL, 'Karolina', 'karolina@lab.lt');
@@ -44,6 +47,11 @@ INSERT INTO straipsniai VALUES (NULL, 'Apie mėgstamiausių vasaros uogų naudą
 INSERT INTO straipsniai VALUES (NULL, '5 moterų sveikatai ir grožiui svarbūs prieskoniai', DATE '2019-02-05', 'Cinamonas – šildantis prieskonis. Teigiama, kad kasdienis jo vartojimas gali sumažinti cholesterolio ir reguliuoti cukraus kiekį kraujyje. Todėl cinamonas labai tinka tiems, kurie serga diabetu ir nori atsikratyti nepageidaujamų kilogramų. Moterims cinamonas dar naudingas tuo, kad gali malšinti skausmus menstruacijų metu.
 Gvazdikėliai gerina virškinimą, stiprina atmintį, slopina uždegimą, valo kepenis. Dar žiloje senovėje jie buvo pasitelkiami danties skausmui malšinti. Iš šių kvapių prieskonių gaminami eteriniai aliejai naikina bakterijas, užkerta kelią virusų dauginimuisi, atpalaiduoja kvėpavimo takus.');
 INSERT INTO straipsniai VALUES (NULL, 'Kraujo tyrimai: ką reiškia pakitę rodikliai?',  DATE '2019-02-07', 'Kiekybinio kraujo ląstelių tyrimo metu nustatomas absoliutus ir santykinis ląstelių kiekis kraujo tūryje. Vertinamas rodiklių nuokrypis nuo normalių verčių, jų tarpusavio santykio pokyčiai. BKT suteikia informaciją apie visus tris kraujodaros kamienus: raudonąsias kraujo ląsteles (eritrocitus), baltąsias kraujo ląsteles (leukocitus) ir krešėjimo plokšteles (trombocitus). Sumažėję raudonųjų kraujo ląstelių rodiklių pokyčiai byloja apie mažakraujystę, o jų padidėjimas gali rodyti skysčių trūkumą arba pernelyg didelį kaulų čiulpų aktyvumą, sukeliantį eritrocitozę. Maži baltųjų kraujo ląstelių rodikliai rodo organizmo atsparumo sutrikimus, kuriuos dažnai sukelia kaulų čiulpų nepakankamumas, o padidėję rodikliai būdingi įvairiems reakciniams pokyčiams (fizinis sužeidimas, infekcija) arba kraujo vėžiui.');
+INSERT INTO straipsniai VALUES (NULL, 'Vanduo sveikatai',  DATE '2019-02-16', 'Žmogui yra būtinas tam tikras mineralinių medžiagų kiekis, kurį jis privalo gauti su maistu ir gerdamas vandenį. Su geriamuoju vandeniu į žmogaus organizmą patenka nuo 1 iki 10 proc. reikalingo per parą mikroelementų kiekio. Nepakankamas mikroelementų kiekis arba jų perteklius vandenyje gali turėti įtakos įvairiems organizmo funkcijų pakitimams ir ligoms.
+Lietuvoje nėra požeminio vandens, kuris mineralinių medžiagų turėtų mažiau kaip 50 mg/l, o geriamąjį vandenį tiekiančiose vandenvietėse nėra vandens, kuriame tų medžiagų būtų daugiau kaip 1500 mg/l. Todėl galima teigti, jog iš čiaupo bėgančio vandens žmogus gauna daug jam reikalingų mineralų. Pavyzdžiui, Panevėžio miesto vandenvietėje išgaunamame vandenyje yra apie 450 mg/l mineralinių medžiagų.
+Visi mikroelementai pasižymi dideliu biologiniu aktyvumu: jie užtikrina normalią fiziologinių reakcijų ir apykaitos procesų eigą, dalyvauja mineralinių medžiagų apykaitoje ir, kaip įvairių biocheminių reakcijų katalizatoriai, turi įtakos bendrai organizmo medžiagų apykaitai. Mikroelementai įeina į aktyvių biologinių junginių sudėtį: fermentų (Zn, Cu, Mo, Mn ir kt. ), vitaminų (Co), hormonų (J, Co), kvėpavimo fermentų (Fe, Cu). Remiantis šiuolaikiniais duomenimis, užtikrinti normalią organizmo gyvybinę veiklą reikia apie 30 mikroelementų, kurių dauguma yra metalai (Fe, Cu, Mg, Zn, Mn, Co, Mo ir kt.) ir tik keli metaloidai (J, Br, As, F, Se).
+Nuo kalcio ir magnio druskų kiekio priklauso vandens kietumas. Bendras druskų kiekis geriamajame vandenyje neturi viršyti 1000 mg/l. Druskų koncentracija yra didesnė tik mineraliniame vandenyje.
+Kietas vanduo sveikatai nekenksmingas. Gerdami kietesnį vandenį, žmonės mažiau serga širdies ligomis ir hipertonija, o vartodami minkštą vandenį – dažniau, taip pat neįrodyta, kad kietas vanduo sukelia akmenligę. Jungtinės Karalystės mokslininkai, atlikę vandens tyrimus 253 miestuose, nustatė, kad minkšto geriamojo vandens paplitimo regionuose mirties atvejų nuo širdies ligų yra 10–15 proc. daugiau nei kietą vandenį vartojančiuose regionuose. Atlikti tyrimai 100 didžiausių Amerikos miestų leidžia daryti prielaidą, kad gyventojai, vartojantys vidutiniškai mineralinių medžiagų turintį kietą vandenį (apytiksliai 300 mg/l), nuo vėžinių susirgimų miršta 10–25 proc. rečiau.');
 
 SELECT * FROM  straipsniai;
 
@@ -65,6 +73,7 @@ SELECT * FROM  komentarai;
         INSERT INTO foto VALUES (NULL, '17.jpg', 4);
         INSERT INTO foto VALUES (NULL, '18.jpg', 5);
         INSERT INTO foto VALUES (NULL, '19.jpg', 6);
+        INSERT INTO foto VALUES (NULL, '20.jpg', 7);
         SELECT * FROM  foto;
 
 

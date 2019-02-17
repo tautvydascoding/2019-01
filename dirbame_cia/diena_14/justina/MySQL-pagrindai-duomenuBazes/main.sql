@@ -189,3 +189,6 @@ UPDATE patients
 SELECT patients.doctor_id, doctors.lname
     FROM patients.name WHERE name = "Mark"
     INNER JOIN doctors ON patients.doctor_id = doctors.id;
+
+
+  

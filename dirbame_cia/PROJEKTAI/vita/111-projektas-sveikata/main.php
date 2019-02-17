@@ -10,7 +10,7 @@
  </div>
 </div>  <!-- uzdaro container -->
 
-<div class="container-fluid circles link-text mx-auto">
+<div class="container-fluid link-text mx-auto">
   <div class="row">
     <div class="col-md-10 main links mx-auto centruojam">
       <div class="centr-antraste">
@@ -55,39 +55,6 @@
         </a>
         <p>Terapija</p>
       </div>
-    </div>
-  </div> <!-- uzdaro col -->
-</div> <!-- uzdaro row -->
-
-</div> <!-- uzdaro container -->
-
-<hr/>
-
-<div class="container-fluid straipsniu-centravimas">
-  <div class="row ">
-    <div class="col-md-12 main straipsniu-centravimas">
-
-      <div class="card mr-4" style="width: 24rem;"> <a href="#">
-        <img src="./img/17.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> </a>
-          </div>
-        </div>
-
-      <div class="card mr-4" style="width: 24rem;"> <a href="#">
-        <img src="./img/18.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> </a>
-          </div>
-        </div>
-
-      <div class="card" style="width: 24rem;"> <a href="#">
-        <img src="./img/19.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> </a>
-          </div>
-        </div>
-
-    </div> <!-- uzdaro col -->
+    </div>  <!-- uzdaro col -->
   </div> <!-- uzdaro row -->
 </div> <!-- uzdaro container -->
