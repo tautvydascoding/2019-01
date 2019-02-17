@@ -2,6 +2,7 @@
 require_once('model/db-connect.php');
 require_once('model/product.php');
 require_once('model/shipping.php');
+require_once('header.php');
 if (isset($_GET['id'])) {
   $id = $_GET['id'];
 }
@@ -34,3 +35,5 @@ echo "<hr>";
   <input type="text" name="tel" value="" placeholder="Telefono numeris">
   <input type="submit" name="" value="Patvirtinti">
 </form>
+<?php require_once('footer.php');
+ ?>
