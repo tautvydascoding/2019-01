@@ -150,7 +150,7 @@ menAtlyginimas += algosPokytisPinigais;
     algosPokytisPinigais = menAtlyginimas * algosPokytis / 100;
     menAtlyginimas += algosPokytisPinigais;
   }
-console.log("alga po 10m:", menAtlyginimas);
+console.log("alga po 10m:", menAtlyginimas, k);
 
 // ==============SCSS============================
 

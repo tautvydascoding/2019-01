@@ -1,0 +1,146 @@
+*{box-sizing: border-box;}
+body,
+html{height: auto;
+  margin: 0;
+  margin-top: 2px;
+  background-color: rgb(241, 241, 241);
+}
+
+header{
+  margin-bottom: 100px;
+  background-color: rgba(236, 9, 9, 0.05);
+}
+
+img:hover {
+  opacity: 0.5;
+  filter: opacity(50 );
+}
+
+ul {display: block;
+   float: left;
+  width: 100%;
+  margin: 0;
+  padding-top: 5px;
+  padding-bottom: 40px;
+  list-style: none;
+  color: black;
+}
+
+
+
+ li .desine{
+  float: right;
+  width: 11%;
+  padding-top: 35px;
+  margin-right: 0;
+  padding-right: 0;
+  font-size: 16px;
+  color: black;
+    font-family: 'Cinzel', serif;
+    font-family: 'Vidaloka', serif;
+}
+
+ul li.logo{
+  float: left;
+  width: 20%;
+  height: 70px;
+  margin-right: 5%;
+  color: rgb(81, 89, 68);
+  font-size: 28px;
+  font-family: 'Cinzel', serif;
+  font-family: 'Vidaloka', serif;
+  text-align: center;
+}
+
+.search{
+  padding-top: 35px;
+  width: 45%;
+  flex-flow: nowrap;
+}
+/* end header*/
+
+/* start main*/
+.fonas{
+height: 700px;
+  background-image: url("../img/444.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 80px;
+}
+.relative{
+  position: relative;
+}
+
+.tema{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left:50%;
+  top: 10%;
+}
+h2, h4{
+  font-family: 'Cinzel', serif;
+  font-family: 'Vidaloka', serif;
+ color: rgb(81, 89, 68);}
+
+
+.main.links.centruojam {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.link-text{
+  font-size: 14px;
+  font-family: 'Cinzel', serif;
+  font-family: 'Vidaloka', serif;
+  color: rgb(81, 89, 68);
+}
+
+.centr-antraste{
+margin: 0, auto;
+align-items: center;
+}
+
+.straipsniu-centravimas{
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.card{
+  width: 31%;
+}
+
+.footer{
+margin-top: 100px;
+display: flex;
+justify-content: center;}
+
+
+.antraste1{
+  margin-left: 20%;
+}
+.antraste2{
+  margin-left: 18%;
+}
+
+.straipsniai{
+  height: auto;
+}
+
+.ciklas-str{
+  width: 30%;
+}
+
+.susisiekite{
+  margin-top: 80px;
+
+}
+
+.forma{
+display: flex;
+justify-content: center;
+  margin-bottom: 5px;
+}

@@ -36,11 +36,11 @@ console.log(mokinys);
 // prideti nauja f-ja begu(), kuri isves i console 'bugu begu'
 // prideti nauja kintamaji: miestas = 'kaunas'
 
-mokinys.kelintokas >= 13;
+mokinys.kelintokas = 13;
 
-if (mokinys.kelintokas === 13) {
+if (mokinys.kelintokas >= 13) {
   console.log("mokinys pabaige mokykla");
-} else if (mokinys.kelintokas === 5) {
+} else if (mokinys.kelintokas == 5) {
   console.log("pabaige pradine mokykla");
 }
 
@@ -97,35 +97,27 @@ console.log("vaikas", vaikas);
 // 3 UZDUOTIS
 // sukurti  objekto "darbuotojas" construktoriu. Objektas darbuotojas: nr, vardas, pavarde, alga
 // 3.1 sukurti pora darbuotoju ir atspausdinti ju duomenis
-
 function darbuotojas(eilNr, darbVardas, darbPavarde, darbAlga) {
   this.numeris = eilNr;
   this.vardas = darbVardas;
   this.pavarde = darbPavarde;
   this.alga = darbAlga;
 };
-
 let Darbuotojas1 = new darbuotojas (1,"Jonas", "Jonaitis", 900);
 let Darbuotojas2 = new darbuotojas (2,"Petras", "Petraitis", 950);
 console.log(Darbuotojas1);
-
 //============3=pvz: construktorius =====
-
 function Car(dSkaicius, spalva, greitis) {
      this.numberOfDoors = dSkaicius;
      this.color = spalva;
      this.maxSpeed = greitis;
  }
-
  // objekto kurimas
  var AudiTT  = new Car(2, "red", 280);
  var Audi100 = new Car(5, "black", 200);
  let Mitsubishi = new Car (4,"red, 210");
-
 console.log(AudiTT);
 console.log(Audi100);
-
-
  //let x = new Integer(); // cia yra blogai
  let y = 5; // cia yra kopijaNEGERAI
 let tekstas = new String(); // cia yra blogai
