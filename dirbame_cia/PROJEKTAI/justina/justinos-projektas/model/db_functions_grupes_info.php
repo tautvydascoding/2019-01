@@ -30,6 +30,7 @@ function getPrisijungimas(){
 // 2. Paimti gydytojo, kurio id=3, duomenis:
 
 function getDoctor($nr){  //vienaskaita, nes ieskai vieno id informacijos;
+    $nrUzkoduotas = htmlspecialchars($nr, ENT_QUOTES);
     $manoSQL = "SELECT * FROM grupesinfo WHERE id = $nr"; //issigalvotas kintamasis, tiesiog stringas, gali bet koki teksta rasyti.
     $rezultatai = mysqli_query ( getPrisijungimas(),  $manoSQL);  // mysqli_query tiesiog ivykdo komandas; jei nori delete ar update, tai uztenka sios f-jos
 
@@ -42,6 +43,7 @@ function getDoctor($nr){  //vienaskaita, nes ieskai vieno id informacijos;
 // 8. getDoctors($kiekGydytoju=99999)
 
 function getDoctors($kiekGydytoju=99999){  //daugiskaita, nes ieskai visu;
+    $kiekGydytojuUzkoduotas = htmlspecialchars($kiekGydytoju, ENT_QUOTES);
     $manoSQL = "SELECT * FROM grupesinfo
                         ORDER BY id ASC
                         LIMIT $kiekGydytoju"; // LIMIT visada paskutinis, ORDER BY id DESC isves naujausius ivestus (e-shope naujausias prekes)

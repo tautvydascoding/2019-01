@@ -3,6 +3,15 @@
   <!-- ======== prasideda main container white 1200px ===========  -->
   <div class="container">
 
+    <!-- ======== prasideda main ===========  -->
+    <div class="row bg_color_pink">
+      <div class="col-md">
+        <hr>
+        <h3 class="font_article text_center">NAUDINGOS NUORODOS</h3>
+      </div>
+    </div>
+
+
 
     <div class="row bg_color_grey">
 
@@ -17,7 +26,7 @@
             <div class="card-body">
               <h4 class="card-title text_center"><?php echo $gydytojas['link_antraste'] ?></h4>
               <p class="card-text text_center"><?php echo $gydytojas['link_aprasymas'] ?></p>
-              <a href="<?php echo $gydytojas['link_www'] ?>" class="btn btn-primary">Skaitykite</a>
+              <a href="<?php echo $gydytojas['link_www'] ?>" class="btn bg_color_blue color_grey" name="spalva">Skaitykite</a>
             </div>
           </div>
           <br>

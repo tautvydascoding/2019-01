@@ -6,14 +6,16 @@
   <title></title>
   <!-- reikalinga kad prisitaikantis dizainas veiktu tvarkingai -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <link rel="stylesheet" href="libs/css/bootstrap.min.css">
-  <!-- galimos klaidos -->
-  <!-- blogas kelias iki failo -->
-  <!-- "/" ne i ta puse -->
-  <!-- neuzdarete ">" -->
-  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- =============== prideti scriptai del caruseles -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+
   <!-- !!!! VISADA MANO CSS failas pats zemiausias -->
+  <link rel="stylesheet" href="css/master.css">
 </head>
 
 <body>
@@ -26,7 +28,8 @@
         <div class="col-md-2">
         </div>
         <div class="col-md auto_height flex_align_items_center">
-          <img src="img/vm-logo-rausvas.png" class="logo_height" alt="Verslios mamos logo">
+          <a href="index.php"><img src="img/vm-logo-rausvas.png" class="logo_height" alt="Verslios mamos logo"></a>
+
         </div>
   <!-- ============ social media ikoneles======================= -->
         <div class="col-md-2 flex_icons">
@@ -47,7 +50,7 @@
     <div class="row">
       <div class="col-md bg_color_pink">
         <!-- ======== prasideda meniu ===========  -->
-        <nav class="navbar navbar-expand-lg navbar-light bg_color_pink">
+        <nav class="navbar navbar-expand-lg navbar-light bg_color_pink ">
           <a class="navbar-brand text_center" href="index.php">VERSLIOS<br />MAMOS</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

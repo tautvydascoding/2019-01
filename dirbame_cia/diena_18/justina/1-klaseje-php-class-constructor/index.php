@@ -37,7 +37,7 @@
         //echo $Monika->ugis; //ERROR Cannot access private property
         //echo $Monika-> 155; //ERROR Cannot access private property
 
-        echo "Monikos ugis po pakeitimo:", $Monika->getUgis();
+        echo "Monikos ugis po pakeitimo:". $Monika->getUgis();
 
 
 

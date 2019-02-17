@@ -30,6 +30,7 @@ function getPrisijungimas(){
 // 2. Paimti gydytojo, kurio id=3, duomenis:
 
 function getDoctor($nr){  //vienaskaita, nes ieskai vieno id informacijos;
+    $nrUzkoduotas = htmlspecialchars($nr, ENT_QUOTES);
     $manoSQL = "SELECT * FROM grupesinfo WHERE id = $nr"; //issigalvotas kintamasis, tiesiog stringas, gali bet koki teksta rasyti.
     $rezultatai = mysqli_query ( getPrisijungimas(),  $manoSQL);  // mysqli_query tiesiog ivykdo komandas; jei nori delete ar update, tai uztenka sios f-jos
 
@@ -59,6 +60,9 @@ function getDoctor($nr){  //vienaskaita, nes ieskai vieno id informacijos;
 // 5. createDoctor($vardas, $pavarde)
 
 function createDoctor($vardas, $pavarde) {
+  $vardasUzkoduotas = htmlspecialchars($vardas, ENT_QUOTES);
+  $pavardeUzkoduotas = htmlspecialchars($pavarde, ENT_QUOTES);
+
   $manoSQL = "INSERT INTO doctors
               VALUES (NULL, '$vardas', '$pavarde' ); "; //'$vardas' ir '$pavarde' BUTINAI viengubose kabutese
   $arPavyko= mysqli_query(getPrisijungimas(), $manoSQL );  // iskvieciam f-ja (prisijungimas, kad turi prieiga prie DB ir kad suveiktu )
@@ -77,6 +81,8 @@ function createDoctor($vardas, $pavarde) {
 // 6. deleteDoctor($nr)
 
 function deleteDoctor($nr) {
+  $nrUzkoduotas = htmlspecialchars($nr, ENT_QUOTES);
+
   $manoSQL = "DELETE FROM doctors
               WHERE id='$nr'
               LIMIT 1";
@@ -94,6 +100,10 @@ function deleteDoctor($nr) {
 // 7. updateDoctor($nr, $vardas, $pavarde)
 
 function updateDoctor($nr, $vardas, $pavarde){
+  $nrUzkoduotas = htmlspecialchars($nr, ENT_QUOTES);
+  $vardasUzkoduotas = htmlspecialchars($vardas, ENT_QUOTES);
+  $pavardeUzkoduotas = htmlspecialchars($pavarde, ENT_QUOTES);
+
   $manoSQL = "UPDATE doctors
               SET name = '$vardas', lname = '$pavarde'
               WHERE id = '$nr'
@@ -110,6 +120,8 @@ function updateDoctor($nr, $vardas, $pavarde){
 // 8. getDoctors($kiekGydytoju=99999)
 
 function getDoctors($kiekGydytoju=99999){  //daugiskaita, nes ieskai visu;
+    $kiekGydytojuUzkoduotas = htmlspecialchars($kiekGydytoju, ENT_QUOTES);
+
     $manoSQL = "SELECT * FROM grupesinfo
                         ORDER BY id ASC
                         LIMIT $kiekGydytoju"; // LIMIT visada paskutinis, ORDER BY id DESC isves naujausius ivestus (e-shope naujausias prekes)

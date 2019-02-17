@@ -4,10 +4,16 @@
   <div class="container">
 
     <!-- ======== prasideda main ===========  -->
-
     <div class="row bg_color_pink">
+      <div class="col-md">
+        <hr>
+        <h3 class="font_article text_center">APIE VM FACEBOOK GRUPĘ</h3>
+      </div>
+    </div>
 
-      <div class="col-md ">
+    <div class="row bg_color_pink flex_justify_center">
+
+      <div class="col-md-8 ">
         <?php
           require_once('model/db_functions_grupes_info.php');
           $visiGydytojai = getDoctors();
