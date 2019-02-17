@@ -1,0 +1,1 @@
+Norint pasikoreguoti tinklapi URL adreso gale reikia rasyti controlPanel.php
