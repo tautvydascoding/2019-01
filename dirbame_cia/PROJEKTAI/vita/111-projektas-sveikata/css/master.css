@@ -1,14 +1,12 @@
 *{box-sizing: border-box;}
 body,
 html{height: auto;
-  margin: 0;
-  margin-top: 2px;
+  margin-top: 8px;
   background-color: rgb(241, 241, 241);
 }
 
 header{
   margin-bottom: 100px;
-  background-color: rgba(236, 9, 9, 0.05);
 }
 
 img:hover {
@@ -16,44 +14,48 @@ img:hover {
   filter: opacity(50 );
 }
 
-ul {display: block;
-   float: left;
+ul {
+  background-color: rgba(202, 214, 185, 0.44);
+  display: block;
+  float: left;
   width: 100%;
   margin: 0;
-  padding-top: 5px;
-  padding-bottom: 40px;
+  padding-top: 15px;
+  padding-bottom: 20px;
   list-style: none;
   color: black;
 }
 
-
-
  li .desine{
   float: right;
-  width: 11%;
+  width: 13%;
   padding-top: 35px;
   margin-right: 0;
   padding-right: 0;
   font-size: 16px;
   color: black;
-    font-family: 'Cinzel', serif;
-    font-family: 'Vidaloka', serif;
+  font-family: 'Cinzel', serif;
+  font-family: 'Vidaloka', serif;
 }
 
-ul li.logo{
+ li.logo{
   float: left;
-  width: 20%;
-  height: 70px;
+  width: 13%;
+  height: 90px;
   margin-right: 5%;
   color: rgb(81, 89, 68);
-  font-size: 28px;
+  font-size: 18px;
   font-family: 'Cinzel', serif;
   font-family: 'Vidaloka', serif;
   text-align: center;
 }
 
+.aukstis{
+  height: 100px;
+}
+
 .search{
-  padding-top: 35px;
+  padding-top: 28px;
   width: 45%;
   flex-flow: nowrap;
 }
@@ -61,12 +63,13 @@ ul li.logo{
 
 /* start main*/
 .fonas{
-height: 700px;
+  height: 700px;
   background-image: url("../img/444.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 80px;
 }
+
 .relative{
   position: relative;
 }
@@ -77,11 +80,11 @@ height: 700px;
   left:50%;
   top: 10%;
 }
+
 h2, h4{
   font-family: 'Cinzel', serif;
   font-family: 'Vidaloka', serif;
  color: rgb(81, 89, 68);}
-
 
 .main.links.centruojam {
   display: flex;
@@ -90,34 +93,87 @@ h2, h4{
 }
 
 .link-text{
-  font-size: 14px;
+  font-size: 18px;
   font-family: 'Cinzel', serif;
   font-family: 'Vidaloka', serif;
   color: rgb(81, 89, 68);
+  text-align: center;
 }
 
 .centr-antraste{
 margin: 0, auto;
 align-items: center;
 }
+/* end main*/
 
-.straipsniu-centravimas{
+/* start straipsniai*/
+.irasai{
+height: 50px;
+margin-top: 30px;
+background-color: rgb(152, 184, 147);
+padding-top: 15px;
+padding-left: 120px;
+}
+
+.container-straipsniai{
+  margin-top: 50px;
+  padding-bottom:  50px;
+  background-color: rgba(202, 214, 185, 0.44);
+}
+
+.centruoja-straipsn{
+  margin-left: auto;
+  margin-right: auto;
+  }
+
+.centr-straipsn{
+  display: block;
+  float: left;
   margin-top: 40px;
   margin-bottom: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
 }
 
-.card{
-  width: 31%;
+.ciklas-str{
+  margin-left: 10%;
+  margin-right: 5%;
+  width: 35%;
 }
 
+.stop-float{
+  clear: both;
+}
+/* end straipsniai*/
+
+
+/* start vienas straipsnis*/
+.straipsnio-kont{
+  background-color: rgba(202, 214, 185, 0.44);
+  padding-bottom: 30px;
+}
+
+.str-antr{
+  color: rgb(81, 89, 68);
+}
+
+.paraste{
+  margin-top: 100px;
+}
+
+.tekstas{
+  text-indent: 50px;
+  text-align: justify;
+}
+/* end vienas straipsnis*/
+
+/* start footer*/
 .footer{
-margin-top: 100px;
-display: flex;
-justify-content: center;}
-
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(202, 214, 185, 0.44);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 .antraste1{
   margin-left: 20%;
@@ -126,21 +182,74 @@ justify-content: center;}
   margin-left: 18%;
 }
 
-.straipsniai{
-  height: auto;
-}
-
-.ciklas-str{
-  width: 30%;
-}
-
 .susisiekite{
   margin-top: 80px;
-
 }
 
 .forma{
 display: flex;
 justify-content: center;
-  margin-bottom: 5px;
+margin-bottom: 5px;
 }
+
+.tarpas{
+  margin-right: 9px;
+}
+
+.social-icons{
+  background-color: rgb(241, 241, 241);
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin-left: 1.9%;
+}
+
+li.kaire{
+  padding-top: 15px;
+  width: 15%;
+}
+
+/* for tablet */
+/* nuo 0 iki 768px */
+@media (max-width: 768px) {
+ul,
+li.logo,
+li .desine,
+.ciklas-str,
+.antraste1,
+.antraste2,
+.susisiekite,
+.tarpas{
+  width:  70%;
+}
+.social-icons{
+  {display: block; width: 97%;}
+}
+.search
+  {display: none;
+  }
+.centruojam
+  {width: 85%;
+  display: flex;
+  flex-direction:column;
+  flex-wrap: wrap;
+}
+.social-icons
+  {width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+}
+
+/* for mobile */
+/* nuo 0 iki 425px */
+@media (max-width: 425px)  {
+.social-icons{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-left: 30%;
+  }
+  }
