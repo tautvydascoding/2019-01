@@ -67,13 +67,13 @@
                         <img class="d-block w-100" src="img/playground7.jpg" alt="Third slide">
                     </div>
                 </div>
-                
+
             </div>
         </article>
       </div> <!-- end of column-->
     </div> <!-- end of raw-->
     <div class="row relative">
-      <div class="col">
+      <div class="col-md-">
           <article class="ourStory col-md-4 shadow-lg p-3 mb-5">
             <h3 class="font">Our Story</h3>
             <p>Hide when guests come over find a way to fit in tiny box but hiss and stare at nothing then run suddenly away. Instantly break out into full speed gallop across the house for no reason lick human with sandpaper tongue destroy the blinds or check cat door for ambush 10 times before coming in. Throwup on your pillow dream about hunting birds so hide at bottom of staircase to trip human really likes hummus. Kitty poochy. Experiences short bursts of poo-phoria after going to the loo i am the best. </p>
@@ -83,3 +83,9 @@
 
   </div>
 <?php include ('footer.html') ?>
+
+
+
+
+   </div>
+ </div>

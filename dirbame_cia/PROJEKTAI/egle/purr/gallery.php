@@ -112,8 +112,8 @@
 
 
       <div class="row">
-        <div class="col-md-10 mx-auto d-block shadow-lg p-3 mb-5">
-          <article class="adopt">
+        <div class="col-md-10 mx-auto d-block shadow-lg p-3 mb-5 adopt">
+          <article class="">
             <h3 class="font">Become a new mom or dad - adopt today! </h3>
             <p>Did you know that you can adopt any of our pawsome friends here at the playground or you could check out their friends living at the shelter.
               For more information let us know if you are interested in any of the kitties or head to our partner's website to get full details of all fluffy babies.

@@ -1,6 +1,6 @@
 <?php
 include ('header.html');
-include ("functions/events-functions.php");
+include ("events-functions.php");
 ?>
 
 
@@ -84,14 +84,14 @@ include ("functions/events-functions.php");
     <div class="col-md-4 mx-auto d-block shadow-lg p-3 mb-5 regForm">
       <div id="form mx-auto d-block ">
 
-        <form id='register' action="register.php" method="post">
+        <form id='register' action="registration.php" method="post">
           <div class="formgroup" id="name-form">
             <label for="name">Your name</label>
             <input type="text" id="name" name="name" />
           </div>
           <div class="formgroup" id="name-form">
             <label for="surname">Your Surname</label>
-            <input type="text" id="surname" name="name" />
+            <input type="text" id="surname" name="surname" />
           </div>
 
           <div class="formgroup" id="email-form">
@@ -100,27 +100,11 @@ include ("functions/events-functions.php");
           </div>
           <div class="formgroup" id="name-form">
             <label for="phone">Your telephone</label>
-            <input type="text" id="phone" name="name" />
+            <input type="text" id="phone" name="phone" />
           </div>
           <div class="formgroup" id="message-form">
-            <label for="comments">Any comments</label>
-            <textarea id="comments" name="comments"></textarea>
-          </div>
-          <div class=" eventButton  ">
-            <button type="button" class=" event-choice btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Upcoming events
-            </button>
-            <div class="dropdown-menu">
-              <?php
-    $allEvents= getEvents();
-    $event =  mysqli_fetch_assoc( $allEvents );
-    while ( $event != NULL ) {
-        echo "<a class='dropdown-item' href='#'>" .
-          $event['name'] . "  " . $event['date'] . "  ".  $event['time'] . "</a>";
-          $event =  mysqli_fetch_assoc( $allEvents   );
-        }
-    ?>
-            </div>
+            <label for="comment">Event Information</label>
+            <textarea id="comment" name="comment" placeholder="Let us know the name of event and date you wish to aatend"></textarea>
           </div>
           <div class="">
             <input type="submit" value="Click to Register!" />
