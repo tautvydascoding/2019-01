@@ -52,7 +52,7 @@ function sendMessage() {
        function(data){
          // alert("Žinutė išsiūsta");
        });
-  //
+
   // let request = $.ajax({
   //   url: "send-message.php",
   //   type: "POST",
