@@ -50,17 +50,6 @@ function createPrenumeratorius($vardas, $email) {
     }
 }
 
-function createKomentaras($autorius, $email, $komentaras, $straipsnioid) {
-  $mamnoSQL = "INSERT INTO komentarai
-                      VALUES (NULL, '$autorius', '$email', '$komentaras', $straipsnioid, NOW() )" ;
-
-  $arPavyko = mysqli_query( getPrisijungimas(), $mamnoSQL );
-    if ($arPavyko == NULL) {
-    echo "ERROR. sukurti komentaro $autorius, $komentaras, $email nepavyko" . mysqli_error(getPrisijungimas());
-    }
-}
-
-
 function getStraipsniai( $kiekStraipsniu=99999 ){
     $manoSQL = "SELECT * FROM straipsniai
                          ORDER BY  id ASC
@@ -79,5 +68,40 @@ function getStraipsnis2($nr){
     // print_r( $rezultatai_masyvas  );
    return $rezultatai_masyvas;
 }
+
+function createUzklausimas($vardas, $pavarde, $email, $uzklausimas) {
+  $mamnoSQL = "INSERT INTO uzklausimai
+                      VALUES (NULL, '$vardas', $pavarde, '$email', $uzklausimas, NOW() )" ;
+  $arPavyko = mysqli_query( getPrisijungimas(), $mamnoSQL );
+    if ($arPavyko == NULL) {
+    echo "ERROR. sukurti uzklausimo $vardas, $email, $uzklausimas nepavyko" . mysqli_error(getPrisijungimas());
+    }
+}
+
+function createKomentaras($autorius, $email, $komentaras, $straipsnioid) {
+  $mamnoSQL = "INSERT INTO komentarai
+                      VALUES (NULL, '$autorius', '$email', '$komentaras', $straipsnioid, NOW() )" ;
+
+  $arPavyko = mysqli_query( getPrisijungimas(), $mamnoSQL );
+    if ($arPavyko == NULL) {
+    echo "ERROR. sukurti komentaro $autorius, $komentaras, $email nepavyko" . mysqli_error(getPrisijungimas());
+    }
+}
+
+function getKomentaras($nr){
+  $manoSQL = "SELECT * FROM komentarai WHERE id = $nr";
+    $rezultatai = mysqli_query(  getPrisijungimas(),   $manoSQL   );
+
+    $rezultatai_masyvas = mysqli_fetch_assoc(  $rezultatai);
+  // print_r( $rezultatai_masyvas  );
+  return $rezultatai_masyvas;
+  //print_r( $rezultatai );
+  }
+
+
+
+
+
+
 
  ?>

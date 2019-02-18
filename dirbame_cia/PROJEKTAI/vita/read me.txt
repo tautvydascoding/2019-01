@@ -1,0 +1,5 @@
+Prisijungimas prie DB:
+define("HOST", "localhost");
+define("USER", "vitasido"); 
+define("PASSWORD", "mokausisql");
+define("NAME", "blogaslinai");
