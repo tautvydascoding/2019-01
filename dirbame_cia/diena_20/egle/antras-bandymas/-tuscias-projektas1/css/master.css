@@ -1,0 +1,66 @@
+
+body{
+  width: 1200px;
+}
+
+h1{
+  text-align: center;
+}
+.firstRow{
+
+  background-color: gray;
+  height: 100px;
+  margin-bottom: 2%;
+
+}
+
+.column{
+  float: right;
+  width:55%;
+
+}
+
+.secondRow{
+background-color: gray;
+height: 30px;
+margin-bottom: 2%;
+}
+
+h3{
+  text-align: center;
+}
+
+.thirdRow{
+  background-color: gray;
+  margin-bottom: 2%;
+}
+
+.columns3{
+
+  border: 1px dashed pink;
+  text-align: center;
+
+
+}
+
+
+h4{
+  text-align: center;
+}
+
+.long{
+  margin-right: 1%;
+  height: 500px;
+  margin-bottom: 1%;
+  margin-top: 2%;
+}
+
+.short{
+  margin-left: 6%;
+  margin-bottom:2%;
+  height:200px;
+}
+
+.height{
+  height: 300px;
+}

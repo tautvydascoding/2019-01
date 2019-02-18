@@ -14,8 +14,8 @@ require_once("header.php");
         <?php endwhile; ?>
 
         <form class="text-center" >
-          <input id="nameMessage" class="mt-3 plotis-35" type="text" name="nameMessage" value="" placeholder="Name"><br>
-          <input id="emailMessage" class="mt-3 plotis-35" type="email" name="emailMessage" value="" placeholder="Email"><br />
+          <input id="nameMessage" class="mt-3 plotis-35" type="text" name="nameMessage" value="" placeholder="Name *" required><br>
+          <input id="emailMessage" class="mt-3 plotis-35" type="email" name="emailMessage" value="" placeholder="Email *" required><br />
           <input id="telMessage" class="mt-3 plotis-35" type="text" name="telMessage" value="" placeholder="Phone number"><br />
           <textarea id="messageMessage" class="mt-3 plotis-35" name="messageMessage" rows="8" cols="80" placeholder="Message"></textarea><br>
           <div class="">

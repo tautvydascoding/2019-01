@@ -13,6 +13,7 @@
 
      ?>
      <div class="container-fluid secondContainer shadow-lg p-3 mb-5 relative">
+       
        <div class="row">
          <div class="col-md-8 mx-auto d-block mb-3 rules rounded">
            <article class="playgroundRules shadow-lg p-3 mb-5">
@@ -31,7 +32,7 @@
                 $catInfo = getCatInfo(1);
               ?>
               <h3 class="font"> <?php echo $catInfo['name'] ?> (<?php echo $catInfo['age'] ?> year old) </h3>
-              <img src=img/<?php echo $catImg['photo']; ?> alt="" class="ourCats rounded-circle w-50 p-3 mx-auto d-block">
+              <img src=img/<?php echo $catImg['photo']; ?> alt="cat" class="ourCats rounded-circle w-50 p-3 mx-auto d-block">
               <p class="catDescription"> <?php echo $catInfo['description'] ?> </p>
           </div>
 
@@ -40,7 +41,7 @@
               $catInfo = getCatInfo(2);
               ?>
               <h3 class="font"> <?php echo $catInfo['name'] ?> (<?php echo $catInfo['age'] ?> year old) </h3>
-              <img src=img/<?php echo $catImg['photo']; ?> alt="" class="ourCats rounded-circle w-50 p-3 mx-auto d-block">
+              <img src=img/<?php echo $catImg['photo']; ?> alt="cat" class="ourCats rounded-circle w-50 p-3 mx-auto d-block">
               <p class="catDescription"> <?php echo $catInfo['description'] ?> </p>
             </div>
 
@@ -49,7 +50,7 @@
           $catInfo = getCatInfo(3);
           ?>
           <h3 class="font"> <?php echo $catInfo['name'] ?> (<?php echo $catInfo['age'] ?> year old) </h3>
-          <img src=img/<?php echo $catImg['photo']; ?> alt="" class="ourCats rounded-circle w-50 p-3 mx-auto d-block">
+          <img src=img/<?php echo $catImg['photo']; ?> alt="cat" class="ourCats rounded-circle w-50 p-3 mx-auto d-block">
           <p class="catDescription"> <?php echo $catInfo['description'] ?> </p>
         </div>
         <div class="col-md-5 mx-auto d-block shadow-lg p-3 mb-5">
@@ -57,7 +58,7 @@
           $catInfo = getCatInfo(4);
           ?>
           <h3 class="font"> <?php echo $catInfo['name'] ?> (<?php echo $catInfo['age'] ?> year old) </h3>
-          <img src=img/<?php echo $catImg['photo']; ?> alt="" class="ourCats rounded-circle w-50 p-3 mx-auto d-block">
+          <img src=img/<?php echo $catImg['photo']; ?> alt="cat" class="ourCats rounded-circle w-50 p-3 mx-auto d-block">
           <p class="catDescription"> <?php echo $catInfo['description'] ?> </p>
         </div>
         <div class="col-md-5 mx-auto d-block shadow-lg p-3 mb-5">
@@ -65,7 +66,7 @@
           $catInfo = getCatInfo(5);
           ?>
           <h3 class="font"> <?php echo $catInfo['name'] ?> (<?php echo $catInfo['age'] ?> year old) </h3>
-          <img src=img/<?php echo $catImg['photo']; ?> alt="" class="ourCats rounded-circle w-50 p-3 mx-auto d-block">
+          <img src=img/<?php echo $catImg['photo']; ?> alt="cat" class="ourCats rounded-circle w-50 p-3 mx-auto d-block">
           <p class="catDescription"> <?php echo $catInfo['description'] ?> </p>
         </div>
         <div class="col-md-5 mx-auto d-block shadow-lg p-3 mb-5">
@@ -73,7 +74,7 @@
           $catInfo = getCatInfo(6);
           ?>
           <h3 class="font"> <?php echo $catInfo['name'] . "<br />" ?> (He's not even <?php echo $catInfo['age'] ?> year old, but he's already awesome) </h3>
-          <img src=img/<?php echo $catImg['photo']; ?> alt="" class="ourCats rounded-circle w-50 p-3 mx-auto d-block">
+          <img src=img/<?php echo $catImg['photo']; ?> alt="cat" class="ourCats rounded-circle w-50 p-3 mx-auto d-block">
           <p class="catDescription"> <?php echo $catInfo['description'] ?> </p>
         </div>
         <div class="col-md-5 mx-auto d-block shadow-lg p-3 mb-5">
@@ -81,7 +82,7 @@
           $catInfo = getCatInfo(7);
           ?>
           <h3 class="font"> <?php echo $catInfo['name'] ?> (<?php echo $catInfo['age'] ?> year old) </h3>
-          <img src=img/<?php echo $catImg['photo']; ?> alt="" class="ourCats rounded-circle w-50 p-3 mx-auto d-block">
+          <img src=img/<?php echo $catImg['photo']; ?> alt="cat" class="ourCats rounded-circle w-50 p-3 mx-auto d-block">
           <p class="catDescription"> <?php echo $catInfo['description'] ?> </p>
         </div>
         <div class="col-md-5 mx-auto d-block shadow-lg p-3 mb-5">
@@ -89,7 +90,7 @@
           $catInfo = getCatInfo(8);
           ?>
           <h3 class="font"> <?php echo $catInfo['name'] ?> (<?php echo $catInfo['age'] ?> year old) </h3>
-          <img src=img/<?php echo $catImg['photo']; ?> alt="" class="ourCats rounded-circle w-50 p-3 mx-auto d-block">
+          <img src=img/<?php echo $catImg['photo']; ?> alt="cat" class="ourCats rounded-circle w-50 p-3 mx-auto d-block">
           <p class="catDescription"> <?php echo $catInfo['description'] ?> </p>
         </div>
         <div class="col-md-4 mx-auto d-block shadow-lg p-3 mb-5">
@@ -97,7 +98,7 @@
           $catInfo = getCatInfo(9);
           ?>
           <h3 class="font"> <?php echo $catInfo['name'] ?> (<?php echo $catInfo['age'] ?> year old) </h3>
-          <img src=img/<?php echo $catImg['photo']; ?> alt="" class="ourCats rounded-circle w-50 p-3 mx-auto d-block">
+          <img src=img/<?php echo $catImg['photo']; ?> alt="cat" class="ourCats rounded-circle w-50 p-3 mx-auto d-block">
           <p class="catDescription"> <?php echo $catInfo['description'] ?> </p>
         </div>
         <div class="col-md-4 mx-auto d-block shadow-lg p-3 mb-5">
@@ -105,15 +106,15 @@
           $catInfo = getCatInfo(10);
           ?>
           <h3 class="font"> <?php echo $catInfo['name'] ?> (<?php echo $catInfo['age'] ?> year old) </h3>
-          <img src=img/<?php echo $catImg['photo']; ?> alt="" class="ourCats rounded-circle w-50 p-3 mx-auto d-block">
+          <img src=img/<?php echo $catImg['photo']; ?> alt="cat" class="ourCats rounded-circle w-50 p-3 mx-auto d-block">
           <p class="catDescription"> <?php echo $catInfo['description'] ?> </p>
         </div>
       </div> <!--end of row -->
 
 
       <div class="row">
-        <div class="col-md-10 mx-auto d-block shadow-lg p-3 mb-5">
-          <article class="adopt">
+        <div class="col-md-10 mx-auto d-block shadow-lg p-3 mb-5 adopt">
+          <article class="">
             <h3 class="font">Become a new mom or dad - adopt today! </h3>
             <p>Did you know that you can adopt any of our pawsome friends here at the playground or you could check out their friends living at the shelter.
               For more information let us know if you are interested in any of the kitties or head to our partner's website to get full details of all fluffy babies.

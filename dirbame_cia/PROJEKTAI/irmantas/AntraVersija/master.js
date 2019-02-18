@@ -27,7 +27,24 @@ function setNavigation() {
     if(pageRef === href){
       $(this).closest('li').addClass("active-nav");
     }
-  })
+  });
+
+  function sendMessage() {
+    let nameMessage = document.getElementById("nameMessage").value;
+    let emailMessage = document.getElementById("emailMessage").value;
+    let telMessage = document.getElementById("telMessage").value;
+    let messageMessage = document.getElementById("messageMessage").value;
+
+   $.post("send-message.php", {
+             nameMessage: nameMessage,
+             emailMessage: emailMessage,
+             telMessage: telMessage,
+             messageMessage : messageMessage,
+           },
+         function(data){
+           // alert("Žinutė išsiūsta");
+         });
+
 }
 
 // let nameMessage = document.getElementById("nameMessage").value;
@@ -37,22 +54,22 @@ function setNavigation() {
 // console.log(nameMessage);
 
 
-function sendMessage() {
-  let nameMessage = document.getElementById("nameMessage").value;
-  let emailMessage = document.getElementById("emailMessage").value;
-  let telMessage = document.getElementById("telMessage").value;
-  let messageMessage = document.getElementById("messageMessage").value;
+// function sendMessage() {
+//   let nameMessage = document.getElementById("nameMessage").value;
+//   let emailMessage = document.getElementById("emailMessage").value;
+//   let telMessage = document.getElementById("telMessage").value;
+//   let messageMessage = document.getElementById("messageMessage").value;
+//
+//  $.post("send-message.php", {
+//            nameMessage: nameMessage,
+//            emailMessage: emailMessage,
+//            telMessage: telMessage,
+//            messageMessage : messageMessage,
+//          },
+//        function(data){
+//          // alert("Žinutė išsiūsta");
+//        });
 
- $.post("send-message.php", {
-           nameMessage: nameMessage,
-           emailMessage: emailMessage,
-           telMessage: telMessage,
-           messageMessage : messageMessage,
-         },
-       function(data){
-         // alert("Žinutė išsiūsta");
-       });
-  //
   // let request = $.ajax({
   //   url: "send-message.php",
   //   type: "POST",

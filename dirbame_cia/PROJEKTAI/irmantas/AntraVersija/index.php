@@ -11,7 +11,7 @@ $pradinis = getPradinis(1);
       <h1 class="position-absolute mt-3"><?php echo $pradinis["title"]?></h1>
       <article class="position-index-article plotis-30 index-article">
       <h2 class="mb-3"><?php echo $pradinis["subtitle"]?></h2>
-      <p ><?php echo $pradinis["textas"]?></p>
+      <p id="index-p"><?php echo $pradinis["textas"]?></p>
       </article>
     </div>
   </div>

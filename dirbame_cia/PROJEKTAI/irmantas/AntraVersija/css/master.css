@@ -41,7 +41,7 @@ nav a {
   padding: 0.5rem 1rem;
   display: block;
   border: 3px solid #343a40;
-
+  font-size: 18px;
 }
 
 nav a:hover {
@@ -156,6 +156,10 @@ footer p {
   padding: 10px;
 }
 
+#index-p {
+  color: yellow;
+}
+
 .position-index-article {
   position: absolute;
   left: 30%;
@@ -182,6 +186,9 @@ a.carousel-control-next ,
 a.carousel-control-prev {
     height: 250px;
     margin-top: 200px;
+}
+.float-r {
+  float: right;
 }
 
 @media (max-width: 1280px) {

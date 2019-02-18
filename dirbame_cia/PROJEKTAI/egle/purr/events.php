@@ -1,6 +1,6 @@
 <?php
 include ('header.html');
-include ("functions/events-functions.php");
+include ("events-functions.php");
 ?>
 
 
@@ -9,7 +9,7 @@ include ("functions/events-functions.php");
     <div class=" col-md-5 shadow-lg p-3 mb-5 therapy">
       <article class="">
         <h4 class="font">The therapy of a furry friends</h4>
-        <p>Cat Therapy is a treatment for anxiety, stress and depression. It improves a person’s quality of life and creates a very special connection between the feline and its owner. In addition, according to several studies, people with heart
+        <p >Cat Therapy is a treatment for anxiety, stress and depression. It improves a person’s quality of life and creates a very special connection between the feline and its owner. In addition, according to several studies, people with heart
           issues gradually improve after living with a cat.
           Interestingly, the same research with dogs had very different results. Dog owners, unlike cat owners, didn’t show the same improvement.
           It seems to suggest that those who own cats are less likely to die from a heart attack than those who do not.Cats are usually recommended for people who live alone, especially the elderly. Even people with dementia or Alzheimer’s sometimes
@@ -64,7 +64,7 @@ include ("functions/events-functions.php");
           // echo "<hr />";
 
           echo "<table class='table'>
-  <thead> <tr> <th scope='row'>" .
+  <thead> <tr> <th scope='row' class='eventList'>" .
             $event['name'] . " <br />" . "On ".
 
             $event['date'] . " at ".   $event['time']  . " o'clock <br />".  "<br />".
@@ -84,14 +84,14 @@ include ("functions/events-functions.php");
     <div class="col-md-4 mx-auto d-block shadow-lg p-3 mb-5 regForm">
       <div id="form mx-auto d-block ">
 
-        <form id='register' action="register.php" method="post">
+        <form id='register' action="registration.php" method="post">
           <div class="formgroup" id="name-form">
             <label for="name">Your name</label>
             <input type="text" id="name" name="name" />
           </div>
           <div class="formgroup" id="name-form">
             <label for="surname">Your Surname</label>
-            <input type="text" id="surname" name="name" />
+            <input type="text" id="surname" name="surname" />
           </div>
 
           <div class="formgroup" id="email-form">
@@ -100,27 +100,11 @@ include ("functions/events-functions.php");
           </div>
           <div class="formgroup" id="name-form">
             <label for="phone">Your telephone</label>
-            <input type="text" id="phone" name="name" />
+            <input type="text" id="phone" name="phone" />
           </div>
           <div class="formgroup" id="message-form">
-            <label for="comments">Any comments</label>
-            <textarea id="comments" name="comments"></textarea>
-          </div>
-          <div class=" eventButton  ">
-            <button type="button" class=" event-choice btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Upcoming events
-            </button>
-            <div class="dropdown-menu">
-              <?php
-    $allEvents= getEvents();
-    $event =  mysqli_fetch_assoc( $allEvents );
-    while ( $event != NULL ) {
-        echo "<a class='dropdown-item' href='#'>" .
-          $event['name'] . "  " . $event['date'] . "  ".  $event['time'] . "</a>";
-          $event =  mysqli_fetch_assoc( $allEvents   );
-        }
-    ?>
-            </div>
+            <label for="comment">Event Information</label>
+            <textarea id="comment" name="comment" placeholder="Let us know the name of event and date you wish to aatend"></textarea>
           </div>
           <div class="">
             <input type="submit" value="Click to Register!" />
