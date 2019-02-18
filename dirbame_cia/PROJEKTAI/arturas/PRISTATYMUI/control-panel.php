@@ -37,7 +37,6 @@ while ($order = mysqli_fetch_assoc($orders)) {
   <p><strong>Prekė:</strong> {$product_array['name']} <strong>Pristatymo būdas:</strong> {$shipping_array['name']} </p>
   <p>Užsakymo suma: <strong>{$order['total_price']} €</strong></p>
   </div></div>";
-  echo "<br>";
 }
 echo "</div>"; // END ORDER COL
 echo "<div class='col'>
@@ -48,6 +47,7 @@ while ($question = mysqli_fetch_assoc($questions)) {
   <div class='col border'>
   <p><strong>Vardas:</strong> {$question['name']} <strong>Email:</strong> {$question['email']} <strong>Data:</strong> {$question['date']}</p>
   <p><strong>Klausimas:</strong> {$question['comment']} </p></div></div>";
+
 }
 echo "</div>"; // END QUESTiO COL
 echo "</div>"; // END ROW
