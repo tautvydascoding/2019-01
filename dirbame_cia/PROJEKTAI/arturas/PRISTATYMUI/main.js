@@ -117,7 +117,7 @@ function validateQuestion() {
 }
 //MAZU EKRANU MENU MYGTUKAS
 function smallMenuButton() {
-  var x = document.querySelector("topnav");
+  let x = document.querySelector("topnav");
   if (x.className === "topnav") {
     x.className += " responsive";
   } else {
