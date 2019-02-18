@@ -9,7 +9,7 @@ include ("events-functions.php");
     <div class=" col-md-5 shadow-lg p-3 mb-5 therapy">
       <article class="">
         <h4 class="font">The therapy of a furry friends</h4>
-        <p>Cat Therapy is a treatment for anxiety, stress and depression. It improves a person’s quality of life and creates a very special connection between the feline and its owner. In addition, according to several studies, people with heart
+        <p >Cat Therapy is a treatment for anxiety, stress and depression. It improves a person’s quality of life and creates a very special connection between the feline and its owner. In addition, according to several studies, people with heart
           issues gradually improve after living with a cat.
           Interestingly, the same research with dogs had very different results. Dog owners, unlike cat owners, didn’t show the same improvement.
           It seems to suggest that those who own cats are less likely to die from a heart attack than those who do not.Cats are usually recommended for people who live alone, especially the elderly. Even people with dementia or Alzheimer’s sometimes
@@ -64,7 +64,7 @@ include ("events-functions.php");
           // echo "<hr />";
 
           echo "<table class='table'>
-  <thead> <tr> <th scope='row'>" .
+  <thead> <tr> <th scope='row' class='eventList'>" .
             $event['name'] . " <br />" . "On ".
 
             $event['date'] . " at ".   $event['time']  . " o'clock <br />".  "<br />".

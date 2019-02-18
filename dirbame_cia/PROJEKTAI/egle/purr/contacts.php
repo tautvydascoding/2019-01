@@ -4,7 +4,6 @@ require_once('functions/contacts-functions.php');
 
 
  ?>
-
     <div class="row">
      <div class="col-md-12 mx-auto d-block my-5">
        <h3 class="font">Here's how to find us:</h3>

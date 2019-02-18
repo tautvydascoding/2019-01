@@ -48,8 +48,8 @@ try {
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
     $mail->Subject = " Registration Confirmation";
-    $mail->Body    = " <b>Thank you for registering to: $name, $surname, $email, $phone, $comment  <br /> <b>See you soon!</b>";
-    $mail->AltBody = "REgistration confirmed to:  $name, $surname, $email, $phone, $comment" ;
+    $mail->Body    = " <b>Thank you for registering to: $comment  <br /> <b>See you soon!</b>";
+    $mail->AltBody = "Registration confirmed to:  $comment" ;
 
     $mail->send();
 

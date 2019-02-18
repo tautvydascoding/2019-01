@@ -2,6 +2,11 @@
 <?php include ('header.html') ?>
 <!-- main body -->
 <div class="container-fluid secondContainer shadow-lg p-3 mb-5 relative">
+  <div class="row">
+    <div class="col-md-12 mx-auto">
+      <h1 class="font">Welcome to Purr Playground, 'cause cats rule!</h1>
+    </div>
+  </div>
     <div class="row">
       <div class="col-md-7">
         <article class="food shadow-lg p-3 mb-5">

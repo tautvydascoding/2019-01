@@ -8,11 +8,11 @@ DEFINE('USER', "egle");  //  root
 $prisijungimas = mysqli_connect(HOST,  USER, PASSWORD, NAME );
 
 // test if connected to DB:
-if ($prisijungimas) {
-   echo "connected successfully.<BR />";
-} else {
-   echo "ERROR: Connection has failed .<BR />" . mysqli_connect_error();
-}
+// if ($prisijungimas) {
+//    echo "connected successfully.<BR />";
+// } else {
+//    echo "ERROR: Connection has failed .<BR />" . mysqli_connect_error();
+// }
 
 // function that returns connection to DB:
 function getPrisijungimas() {
