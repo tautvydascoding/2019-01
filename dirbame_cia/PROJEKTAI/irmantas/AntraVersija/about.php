@@ -20,8 +20,8 @@ require_once("header.php");
           endif; ?>
           <div class="col-4 border border-dark">
             <h2 class="mx-5"><?php echo $about["vardas"] . " " . $about["pavarde"]?></h2>
-              <img class="d-inline-block " src="img/<?php echo $about["foto"] ?>" alt="" width="200" >
-              <p class="d-inline-block w-50"><?php echo $about["aprasymas"] ?></p>
+            <p class="float-r w-50"><?php echo $about["aprasymas"] ?></p>
+            <img class=" mb-5" src="img/<?php echo $about["foto"] ?>" alt="" width="200" >
           </div>
         <?php $i++; endwhile;?>
       </div>
