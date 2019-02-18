@@ -89,12 +89,12 @@ function createKomentaras($autorius, $email, $komentaras, $straipsnioid) {
 }
 
 function getKomentaras($nr){
-  $manoSQL = "SELECT * FROM komentarai WHERE id = $nr";
+  $manoSQL = "SELECT * FROM komentarai WHERE straipsnioid = $nr";
     $rezultatai = mysqli_query(  getPrisijungimas(),   $manoSQL   );
 
     $rezultatai_masyvas = mysqli_fetch_assoc(  $rezultatai);
   // print_r( $rezultatai_masyvas  );
-  return $rezultatai_masyvas;
+  //return $rezultatai_masyvas;
   //print_r( $rezultatai );
   }
 

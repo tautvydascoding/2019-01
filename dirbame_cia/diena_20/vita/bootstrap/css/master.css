@@ -1,0 +1,22 @@
+h1 {
+    color: red;
+}
+
+.margin{
+  margin: 5px;
+}
+
+.aukstis1{
+  height: 100px;
+  background-color: grey;
+}
+
+.aukstis2{
+  height: 50px;
+    background-color: grey;
+}
+
+.aukstis3{
+  height: 200px;
+  background-color: grey;
+}

@@ -58,6 +58,8 @@
               </div>
             </div>
 
+              <input type="hidden" name="straipsnioid" value="<?php echo $nr; ?>">
+
             <div class="row forma">
               <div class="col-md-6">
                 <button type="submit" class="btn btn-outline-success" name="button">Komentuoti!</button>
@@ -72,15 +74,23 @@
           <p class="">Komentarai:</p>
         </div>
       </div>
+
+
   <div class="row">
     <div class="col-md-12 paraste ">
         <?php
-                $komentaras = getKomentaras( $nr );
-                echo   "<h5 class='mx-auto mt-15 ' >" .  $komentaras['autorius'] . "</h5>" . "<br>";
-                echo "<p class='mx-auto' style='width: 150px;' >" .  $komentaras['data']  . "</p>" . "<br>"
-                       .  "<p class='mx-auto tekstas' style='width: 600px;' >" . $komentaras['komentaras'] . "</p>"  . "<br>"
-                       ;
+
+
+          //  while  ( $komentaras['id'] > $komentaras['id']  )
+
+            if ($komentaras = getKomentaras( $nr )){
+            echo   "<h5 class='mx-auto mt-15 ' >" .  $komentaras['autorius'] . "</h5>" . "<br>";
+            echo "<p class='' style='width: 150px;' >" .  $komentaras['date']  . "</p>" . "<br>"
+                   .  "<h6 class='' style='width: 600px;' >" . $komentaras['komentaras'] . "</h6>"  . "<br>"
+                   ;
+}
          ?>
+
        </div> <!--end  of  col -->
      </div>   <!--end  of  col -->
 </div> <!-- end  of container -->

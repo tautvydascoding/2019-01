@@ -6,17 +6,10 @@ require_once('db-functions.php');
 $autorius = $_GET['autorius'];
 $email = $_GET['email'];
 $komentaras = $_GET['komentaras'];
-$_GET['xx'] = $straipsnioid;
-$straipsnioid = $_GET['straipsnioid'];
+$nr = $_GET['straipsnioid'];
 
+createKomentaras($autorius, $email, $komentaras, $nr);
 
-//if (isset($_GET['$straipsnioid'])) {
-  //$straipsnioid = $_GET['id'];
-//}
-// $_GET['data'];
-
-createKomentaras($autorius, $email, $komentaras, $straipsnioid);
-//header('Location: straipsnis.php');
-
+header("Location: straipsnis.php?xx=$nr");
 
  ?>
