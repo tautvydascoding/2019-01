@@ -66,5 +66,37 @@
         </form>
 </section>
 
+<div class="container straipsnio-kont">
+      <div class="row forma irasai">
+        <div class="col-md-3 ">
+          <p class="">Komentarai:</p>
+        </div>
+      </div>
+  <div class="row">
+    <div class="col-md-12 paraste ">
+        <?php
+                $komentaras = getKomentaras( $nr );
+                echo   "<h5 class='mx-auto mt-15 ' >" .  $komentaras['autorius'] . "</h5>" . "<br>";
+                echo "<p class='mx-auto' style='width: 150px;' >" .  $komentaras['data']  . "</p>" . "<br>"
+                       .  "<p class='mx-auto tekstas' style='width: 600px;' >" . $komentaras['komentaras'] . "</p>"  . "<br>"
+                       ;
+         ?>
+       </div> <!--end  of  col -->
+     </div>   <!--end  of  col -->
+</div> <!-- end  of container -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <?php  require_once("footer.php");
 ?>

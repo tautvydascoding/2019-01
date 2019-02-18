@@ -7,10 +7,10 @@
          <meta name="robots" content="nofollow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="libs/bootstrap-4/css/bootstrap.min.css">
-        <!-- !! mano CSS failas visada pats zemiausias -->
-        <link rel="stylesheet" href="css/master.css">
         <link href="https://fonts.googleapis.com/css?family=IM+Fell+Double+Pica" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Cinzel|Vidaloka" rel="stylesheet">
+        <!-- !! mano CSS failas visada pats zemiausias -->
+        <link rel="stylesheet" href="css/master.css">
     </head>
     <body>
           <section class="container-fluid">
