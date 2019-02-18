@@ -91,24 +91,37 @@
           echo "<div class='row'>";
           for ($i=0; $i <count($visosPrekes) ; $i++) {
             echo "<div class='col'>";
-            echo "<h2>". $visosPrekes[$i][0] ."</h2>";
+            echo "<h2 class='bg-info'>". $visosPrekes[$i][0] ."</h2>";
+            echo "<p>". $visosPrekes[$i][2] ."</p>";
+            echo "<button class = 'btn-lg' >". $visosPrekes[$i][3] ."</button>";
+            printf("<img src='./img/" . $visosPrekes[$i][1] . "' width='200px;' alt=''  />");
               echo "</div>";
           }
-
-
           echo "</div>";
+
+          // $vardas1 = "Petras";
+          // $tikslas = "Silelis";
+          // $kiekis = 9.5;
+          //
+          // printf("Aukstas %s nori keiauti uz %.2f ezeru i %s", $vardas1, $kiekis, $tikslas);
 
           // ARBA:
 
-          echo "<div class='row'";
-            for ($i=0; $i < count($visosPrekes) ; $i++) {
-              echo "<div class='col'>
-                  <h2 class='bg-info'> {$visosPrekes[$i][0]} </h2>
-                      </div>";
-            }
-            echo "</div>";
+          // echo "<div class='row'";
+          //   for ($i=0; $i < count($visosPrekes) ; $i++) {
+          //     echo "<div class='col'>
+          //         <h2 class='bg-info'> {$visosPrekes[$i][0]} </h2>
+          //             </div>";
+          //   }
+          //   echo "</div>";
+
          // nuotrauka (javascript kalbai)
          // let x = "<img src='img/1.jpg' alt='medziginis fotelis'>";
+
+         // printf("<img src='./img/" . $visosPrekes[$i][1] . "' width='200px;' alt=''  />")
+
+
+
 
          // 2  budai nuotraukoms (PHP kalbai)
           // printf("<img src='./img/" . $visosPrekes[$i][1] . "' width='200px;' alt=''  />");
@@ -125,6 +138,44 @@
 
 
        ?>
+       <!--nutraukiam PHP-->
+
+       <div class="row">
+          <?php for ($i=0; $i < count($visosPrekes); $i++) :     ?>
+            <div class="col">
+                <h2 class="bg-info"> <?php echo $visosPrekes[$i][0]; ?> </h2>
+                <p> <?php echo $visosPrekes[$i][2]; ?> </p>
+                <button class = 'btn-lg'> <?php echo $visosPrekes[$i][3]; ?>  </button>
+                <img class= "img-fluid" src="./img/<?php echo $visosPrekes[$i][1]; ?>" alt="">
+
+
+
+            </div>
+
+
+          <?php endfor;?>
+       </div>
+
+
+        <!-- prekiu isvedimas 3 stulpeliais -->
+       <div class="row">
+          <?php for ($i=0; $i < count($visosPrekes); $i++) :
+                    if ($i % 3 === 0 && $i !==0) :
+                      echo "</div> <div class='row'>";
+                    endif;  ?>
+            <div class="col-md-4">
+                <h2 class="bg-info"> <?php echo $visosPrekes[$i][0]; ?> </h2>
+                <p> <?php echo $visosPrekes[$i][2]; ?> </p>
+                <button class = 'btn-lg'> <?php echo $visosPrekes[$i][3]; ?>  </button>
+                <img class= "img-fluid"  src="./img/<?php echo $visosPrekes[$i][1]; ?>" alt="">
+
+
+
+            </div>
+
+
+          <?php endfor;?>
+       </div>
 
 
      </div> <!-- uzdaromas container -->

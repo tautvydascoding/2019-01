@@ -51,12 +51,17 @@ try {
     $mail->Subject = $klientoVardas;
     $mail->Body    = $klientoKlausimas;
     $mail->AltBody = $klientoPastas;
-
     $mail->send();
-    echo 'Zinute issiusta sekmingai';
+
+
+
+    //echo 'Zinute issiusta sekmingai';
 } catch (Exception $e) {
     echo 'Neveikia', $mail->ErrorInfo;
-
-
 }
+header('Location: kontaktai2.php');
+
+
+
+
  ?>

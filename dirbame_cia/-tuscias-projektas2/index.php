@@ -7,7 +7,8 @@
          <meta name="robots" content="nofollow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="libs/bootstrap-4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="libs/css/bootstrap.min.css">
+        <link rel="stylesheet" href="libs/js/bootstrap.min.js">
         <!-- !! mano CSS failas visada pats zemiausias -->
         <link rel="stylesheet" href="css/master.css">
 

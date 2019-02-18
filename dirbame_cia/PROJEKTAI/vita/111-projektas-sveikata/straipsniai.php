@@ -1,51 +1,27 @@
 <?php require_once("header.php");
 require_once("db-functions.php"); ?>
 
-
-<div class="container-fluid">
-  <div class="row straipsniu-centravimas">
-    <div class="col mr-20 straipsniu-centravimas">
+<div class="container container-straipsniai">
+  <div class="row centruoja-straipsn">
+    <div class="col-md-12 ">
+      <h5 class="irasai ">NAUJAUSI ĮRAŠAI</h5>
         <?php
+          for ($i=1; $i < 8 ; $i++) {
+            echo "<div class='ciklas-str centr-straipsn'>";
 
-        for ($i=1; $i < 4 ; $i++) {
-          echo "<div class='ciklas-str '>";
-        $straipsnis = getStraipsnis( $i );
-        $foto = getFoto( $i );
-        //print_r( $straipsnis );
-        //var_dump($straipsnis);
+              $straipsnis = getStraipsnis( $i );
+              $foto = getFoto( $i );
 
-        //print_r($foto);
-        printf('<img src="img/%s" width="345px"/>', $foto['fotopav']);
-        echo "<br /> ".  $straipsnis['data'] . "<br /> " . "<h4  >" ."<a href='straipsnis.php'>" . $straipsnis['antraste'] . "</a>"  . "</h4>" . "<br /> ";
-        echo "</div>";
-        }
+              printf('<img src="img/%s" width="300px"/>', $foto['fotopav']);
+              echo "<br/>".  $straipsnis['data'] . "<br/>"
+              . "<h5>" . "<a href='straipsnis.php?xx=$i'>"
+              . $straipsnis['antraste'] . "</a>" . "</h5>" ;
+             echo "</div>";
+           }
          ?>
+         <span class="stop-float"></span>
       </div> <!-- uzdaro col -->
     </div> <!-- uzdaro row -->
   </div> <!-- uzdaro container -->
-
-  <div class="container-fluid straipsniu-centravimas">
-    <div class="row ">
-      <div class="col-md-12 main straipsniu-centravimas">
-        <?php
-
-        for ($i=4; $i < 7 ; $i++) {
-          echo "<div class='ciklas-str '>";
-        $straipsnis = getStraipsnis( $i );
-        $foto = getFoto( $i );
-        //print_r( $straipsnis );
-        //var_dump($straipsnis);
-
-        //print_r($foto);
-        printf('<img src="img/%s" width="345px"/>', $foto['fotopav']);
-        echo "<br /> ".  $straipsnis['data'] . "<br /> " . "<h4  >" . "<a href='straipsnis.php'>" . $straipsnis['antraste'] . "</a>" . "</h4>" . "<br /> ";
-        echo "</div>";
-        }
-         ?>
-
-        </div> <!-- uzdaro col -->
-      </div> <!-- uzdaro row -->
-    </div> <!-- uzdaro container -->
-
 
 <?php  require_once("footer.php");?>

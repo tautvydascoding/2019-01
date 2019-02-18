@@ -30,8 +30,8 @@
     $mail->Password = 'Romas123';                 // SMTP username
 
     //Recipients
-    $mail->setFrom('tomastomsonas1234@gmail.com', 'Maileras');
-    $mail->addAddress('tomastomsonas1234@gmail.com', 'Joe User');     // Add a recipient
+    $mail->setFrom('tomastomsonas1234@gmail.com', 'Projektas');
+    $mail->addAddress('tomastomsonas1234@gmail.com', 'Projektas');     // Add a recipient
     $mail->addReplyTo($klientoEmail, $klientoVardas . $klientoPavarde);
 
     //Content
