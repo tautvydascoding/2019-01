@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title></title>
+        <meta name="title" content="Video klipų filmavimas - montavimas">
+        <meta name="description" content="Video filmavimo paslaugos, renginių filmavimas, filmavimas iš oro, video montavimas, reklaminių video klipų montavimas">
+        <title>Antra versija</title>
         <link rel="stylesheet" href="libs/bootstrap-4/css/bootstrap.css">
         <link rel="stylesheet" href="css/master.css">
         <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
